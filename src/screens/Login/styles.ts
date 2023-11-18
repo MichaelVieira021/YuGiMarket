@@ -4,16 +4,19 @@ export const styles = StyleSheet.create({
     
     container:{
         justifyContent: "space-between",
-        width: '50%',
+        width: '67%',
         height: 250,
         alignItems: 'center',
-        marginTop: 210
+        marginTop: 210,
+        resizeMode: 'contain',
+
     },
 
     backgroundImage: {
         flex: 1,
         alignItems: 'center',
         justifyContent: 'center',
+        position:"relative"
     
     
     },
@@ -22,15 +25,18 @@ export const styles = StyleSheet.create({
         width: '100%',
         height: '50%'        
     },
-
-    input: {
-        margin: 3,
-        padding: 11,
+    inputView: {
+        margin: 6,
+        padding: 8,
         width: '100%',
         backgroundColor: '#f3da86ce',
-        shadowRadius: 10,
+        shadowRadius: 50,
+        elevation:10,
         borderRadius: 9,
         
+    },
+    input :{
+        fontSize:18
     },
 
     enigmaImage: {
@@ -41,8 +47,7 @@ export const styles = StyleSheet.create({
        
     },
     containerEnigma:{
-       
-        backgroundColor: '#fff',
+        paddingLeft:14,
         width: 137,
         height: 137
     }

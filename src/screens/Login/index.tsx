@@ -8,6 +8,11 @@ import enigmaLogin from '../../assets/images/enigmaLogin.png'
 export const Login = () => {
     const enigmaImage = useRef(new Animated.Value(0)).current;
 
+    const teste = () => {
+        console.log("teste");
+
+    }
+
     useEffect(() => {
         Animated.loop(
             Animated.timing(
@@ -15,43 +20,55 @@ export const Login = () => {
                 {
                     toValue: 1,
                     duration: 1500,
-                    useNativeDriver: false,
+                    useNativeDriver: true,
                 }
             )
         ).start();
     }, []);
     
+
     return (
-       
+
         <ImageBackground source={backgroundLogin} style={styles.backgroundImage}>
             <View style={styles.container}>
-            <View style={styles.containerInput} >
-                <View>
-                    <TextInput
-                        style={styles.input}
-                        placeholder="Login"
-                        placeholderTextColor="black"
-                    />
-                </View>
+                <View style={styles.containerInput} >
+                    <View style={styles.inputView}>
+                        <TextInput
+                            style={styles.input}
+                            placeholder="Login"
+                            placeholderTextColor="black"
+                        />
+                    </View>
 
-                <View>
-                    <TextInput
-                        style={styles.input}
-                        placeholder="Password"
-                        placeholderTextColor="black"
-                        secureTextEntry={true}
-                    />
+                    <View style={styles.inputView}>
+                        <TextInput
+                            style={styles.input}
+                            placeholder="Password"
+                            placeholderTextColor="black"
+                            secureTextEntry={true}
+                        />
+                    </View>
                 </View>
-            </View>
-            <View style={styles.containerEnigma}>
-                <Pressable>
+                <Pressable onPress={teste} style={styles.containerEnigma}>
                     <Animated.Image
                         source={enigmaLogin}
-                        style={[styles.enigmaImage, { transform: [{ translateY: enigmaImage.interpolate({ inputRange: [0, 1], outputRange: [0, -50] }) }] }]}
+                        style={[
+                            styles.enigmaImage,
+                            {
+                                transform: [
+                                    {
+                                        scale: enigmaImage.interpolate({
+                                            inputRange: [0, 1],
+                                            outputRange: [0.1,1.3], // Adjust the output range to change the scaling factor
+                                        }),
+                                    },
+                                ],
+                            },
+                        ]}
                     />
                 </Pressable>
+              
             </View>
-        </View>
         </ImageBackground>
     )
 }
