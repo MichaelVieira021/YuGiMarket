@@ -25,7 +25,6 @@ export const Login = () => {
             )
         ).start();
     }, []);
-    
 
     return (
 
@@ -41,6 +40,7 @@ export const Login = () => {
                     </View>
 
                     <View style={styles.inputView}>
+
                         <TextInput
                             style={styles.input}
                             placeholder="Password"
@@ -49,6 +49,7 @@ export const Login = () => {
                         />
                     </View>
                 </View>
+
                 <Pressable onPress={teste} style={styles.containerEnigma}>
                     <Animated.Image
                         source={enigmaLogin}
@@ -67,7 +68,7 @@ export const Login = () => {
                         ]}
                     />
                 </Pressable>
-              
+                
             </View>
         </ImageBackground>
     )
