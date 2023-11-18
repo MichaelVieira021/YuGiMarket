@@ -20,38 +20,36 @@ export const Login = () => {
             )
         ).start();
     }, []);
-    
+
     return (
-       
+
         <ImageBackground source={backgroundLogin} style={styles.backgroundImage}>
             <View style={styles.container}>
-            <View style={styles.containerInput} >
-                <View>
-                    <TextInput
-                        style={styles.input}
-                        placeholder="Login"
-                        placeholderTextColor="black"
-                    />
-                </View>
+                <View style={styles.containerInput} >
+                    <View>
+                        <TextInput
+                            style={styles.input}
+                            placeholder="Login"
+                            placeholderTextColor="black"
 
-                <View>
-                    <TextInput
-                        style={styles.input}
-                        placeholder="Password"
-                        placeholderTextColor="black"
-                        secureTextEntry={true}
-                    />
+                        />
+                    </View>
+
+                    <View>
+                        <TextInput
+                            style={styles.input}
+                            placeholder="Password"
+                            placeholderTextColor="black"
+                            secureTextEntry={true}
+                        />
+                    </View>
+                </View>
+                <View style={styles.containerEnigma}>
+                    <Pressable>
+
+                    </Pressable>
                 </View>
             </View>
-            <View style={styles.containerEnigma}>
-                <Pressable>
-                    <Animated.Image
-                        source={enigmaLogin}
-                        style={[styles.enigmaImage, { transform: [{ translateY: enigmaImage.interpolate({ inputRange: [0, 1], outputRange: [0, -50] }) }] }]}
-                    />
-                </Pressable>
-            </View>
-        </View>
         </ImageBackground>
     )
 }

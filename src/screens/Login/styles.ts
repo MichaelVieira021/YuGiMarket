@@ -42,7 +42,6 @@ export const styles = StyleSheet.create({
     },
     containerEnigma:{
        
-        backgroundColor: '#fff',
         width: 137,
         height: 137
     }
