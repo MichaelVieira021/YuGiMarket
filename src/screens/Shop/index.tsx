@@ -1,6 +1,6 @@
 import { Image, ImageBackground, Text, TouchableOpacity, View } from "react-native"
 import background from '../../assets/images/Group_2dsds.png'
-import { styles } from "./style"
+import { styles } from "./styles"
 import card from '../../assets/images/cartaVertical.png'
 
 export const Shop = () => {
