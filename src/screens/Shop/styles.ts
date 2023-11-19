@@ -49,7 +49,7 @@ export const styles = StyleSheet.create({
 
     textQtdCard: {
         // marginTop: 4,
-        fontFamily: 'Squealer',
+        fontFamily: 'Yugi-Normal',
         fontSize: 16,
         fontWeight: "600",
     },

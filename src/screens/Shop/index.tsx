@@ -2,10 +2,25 @@ import { Image, ImageBackground, Text, TouchableOpacity, View } from "react-nati
 import background from '../../assets/images/Group_2dsds.png'
 import { styles } from "./styles"
 import card from '../../assets/images/cartaVertical.png'
+import { Welcome } from "../Welcome"
+import { useEffect, useState } from "react"
 
 export const Shop = () => {
+    const [showWelcome, setShowWelcome] = useState(true); // State to control whether to show Welcome or Shop
 
+    useEffect(() => {
+        setTimeout(() => {
+            setShowWelcome(false); // After a certain time, set showWelcome to false, rendering Shop
+        }, 2500); // Set timeout for 5 seconds
+    }, []); // Run useEffect only once
+
+    if (showWelcome) {
+        return <Welcome />; // Render Welcome if showWelcome is true
+    }
+
+    
     return (
+
         <ImageBackground source={background} style={styles.container}>
 
             <View style={styles.containerCards}>

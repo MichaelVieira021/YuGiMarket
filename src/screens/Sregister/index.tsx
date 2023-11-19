@@ -2,9 +2,16 @@ import React from "react"
 import { View, ImageBackground, TextInput, Text, Button, Alert, TouchableOpacity } from "react-native"
 import { styles } from "./styles"
 import fundoCadastro from "../../assets/images/fundoCadastro.png"
+import { useNavigation } from "@react-navigation/native"
+import { ButtonNav } from "../../components/ButtonNav"
 
 export const Sregister = () => {
+
+    const navigation = useNavigation<any>();
     
+    function openScreen() {
+        navigation.navigate("Login");
+    }
     return (
         <ImageBackground source={fundoCadastro} style={styles.backgroundImage}>
             <View style={styles.container}>
@@ -48,11 +55,9 @@ export const Sregister = () => {
                             secureTextEntry={true}
                         />
                     </View>
-                    <View style={styles.inputViewButton}>
-                        <TouchableOpacity style={styles.button}>
-                            <Text style={styles.buttonText}>Register</Text>
-                        </TouchableOpacity>
-                    </View>
+                   <ButtonNav 
+                   title="Register"
+                   openScreen={()=>{openScreen()}}/>
 
                 </View>
             </View>

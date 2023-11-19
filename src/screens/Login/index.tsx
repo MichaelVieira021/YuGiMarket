@@ -3,6 +3,9 @@ import React, { useEffect, useRef } from 'react'
 import { styles } from './styles'
 import backgroundLogin from '../../assets/images/backgroundLogin.jpg'
 import enigmaLogin from '../../assets/images/enigmaLogin.png'
+import { useNavigation } from "@react-navigation/native"
+import { ButtonNav } from '../../components/ButtonNav'
+
 
 
 export const Login = () => {
@@ -25,6 +28,16 @@ export const Login = () => {
             )
         ).start();
     }, []);
+
+    const navigation = useNavigation<any>();
+    
+    function openScreen() {
+        navigation.navigate("Todos");
+    }
+
+    function openRegister(){
+        navigation.navigate("Registro");
+    }
 
     return (
 
@@ -50,7 +63,7 @@ export const Login = () => {
                     </View>
                 </View>
 
-                <Pressable onPress={teste} style={styles.containerEnigma}>
+                <Pressable onPress={openScreen} style={styles.containerEnigma}>
                     <Animated.Image
                         source={enigmaLogin}
                         style={[
@@ -68,6 +81,10 @@ export const Login = () => {
                         ]}
                     />
                 </Pressable>
+                {/* <TouchableOpacity>
+                    <Text style={styles.register} onPress={openRegister}>Registrar</Text>
+                </TouchableOpacity> */}
+                <ButtonNav style={styles.button} title='Não tem cadastro? Cadastre-se!' openScreen={openRegister}/>
                 
             </View>
         </ImageBackground>

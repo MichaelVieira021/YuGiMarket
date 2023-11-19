@@ -9,6 +9,7 @@ export const styles = StyleSheet.create({
         alignItems: 'center',
         marginTop: 210,
         resizeMode: 'contain',
+        fontFamily:""
 
     },
 
@@ -50,5 +51,19 @@ export const styles = StyleSheet.create({
         paddingLeft:14,
         width: 137,
         height: 137
+    },
+    register:{
+        color:"white"
+    },
+    button:{
+        color:"black",
+        backgroundColor:"#D5BB76",
+        textAlign:"center",
+        opacity:0.875,
+        shadowRadius: 5,
+        elevation:10,
+        borderRadius: 8,
+        margin:0,
+        padding:5
     }
 })

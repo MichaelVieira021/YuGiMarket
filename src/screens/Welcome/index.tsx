@@ -4,6 +4,7 @@ import {Image, View, Text } from "react-native"
 
 
 export const Welcome = () =>{
+
     return(
 
         <View  style={styles.background}>
