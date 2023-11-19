@@ -6,6 +6,7 @@ import { background } from '../../assets/images/navbarpedra.png'
 import { Entypo, MaterialCommunityIcons } from '@expo/vector-icons';
 import iconCards from '../../assets/icons/cards.png'
 import cards from '../../assets/images/cartaHorizontal.jpg'
+import { Cards } from '../../screens/Cards';
 
 const Tab = createBottomTabNavigator();
 
@@ -101,7 +102,7 @@ export function BottonTabRoutes() {
           ))
         }}
         name="CARDS" 
-        component={Login}
+        component={Cards}
       />
 
     </Tab.Navigator>
