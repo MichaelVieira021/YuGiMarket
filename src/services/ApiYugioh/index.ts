@@ -9,9 +9,13 @@ export function getTodasCartas(){
 };
 
 export function getPorNome(nome: string): Promise<AxiosResponse<any, any>>{
-    return ApiYugioh.get(`?name=${nome}`)
+    return ApiYugioh.get(`cardinfo.php?name=${nome}`)
 }
 
 export function getPorId(id: string): Promise<AxiosResponse<any, any>>{
-    return ApiYugioh.get(`?id=${id}`)
+    return ApiYugioh.get(`cardinfo.php?id=${id}`)
+}
+
+export function getPorTipo (tipo: string): Promise<AxiosResponse<any, any>>{
+    return ApiYugioh.get(`cardinfo.php?&type=${tipo}`);
 }

@@ -18,9 +18,13 @@ export const styles = StyleSheet.create({
     },
     title:{
         alignSelf:"center",
-        fontSize:28,
+        fontSize:30,
         color:"white",
-        // fontWeight:"bold"
+        fontFamily: 'Yugi-Bold',
+        Color: '#f3da86ce',
+        shadowRadius: 50,
+        elevation:10,
+        borderRadius: 9,
     },
     textCard:{
         color:"black"

@@ -5,7 +5,7 @@ import card from '../../assets/images/cartaVertical.png'
 import { Welcome } from "../Welcome"
 import { useContext, useEffect, useState } from "react"
 import { InfosUser } from "../../components/InfosUser"
-import { getTodasCartas } from "../../services/ApiYugioh"
+import { getPorTipo, getTodasCartas } from "../../services/ApiYugioh"
 // import { StorageContext } from "../../contexts/StorageContext"
 import { patchUsuarioCards } from "../../services/ApiConta"
 import { LoginContext } from "../../contexts/LoginContext"
@@ -20,6 +20,8 @@ export const Shop = () => {
     const [todasCartas, setTodasCartas] = useState([{}])
     const [cartasSorteadas, setCartasSorteadas] = useState<Array<number>>([])
     const {usuario, infos, postUsuarioCards, atualizar} = useContext(LoginContext)
+    const [todasTipoTrap, setTodasTipoTrap] = useState([{}])
+    const [todasTipoSpell, setTodasTipoSpell] = useState([{}])
     
     // useEffect(() => {
     //     setTimeout(() => {
@@ -33,15 +35,17 @@ export const Shop = () => {
     useEffect(()=>{
         teste()
         infos()
+       
     },[])
 
     useEffect(()=>{
+        infos()
         // testeAdd()
-    },[usuario])
+    },[todasTipoTrap, todasTipoSpell])
 
     useEffect(()=>{
         // testeAdd()
-    },[cartasSorteadas])
+    },[])
 
     const teste = async() => {
         getTodasCartas().then((response)=>{
@@ -50,29 +54,56 @@ export const Shop = () => {
         }).catch((Error)=>{
             console.log("Tudo errado")
         })
+        await buscarTipo("Trap Card", setTodasTipoTrap)
+        await buscarTipo("spell card&race=equip", setTodasTipoSpell)
     }
 
-    const testeAdd = async (qtd:number) => {
-        // console.log("teste", teste)
-        setCartasSorteadas([])
-        for(let i=1; i<=qtd; i++){
-            await infos()
-            try {
-                const indiceAleatorio = Math.floor(Math.random() * todasCartas.length);
-                const cartaAleatoria = todasCartas[indiceAleatorio];
-                console.log(cartaAleatoria.id);
-                setCartasSorteadas([...cartasSorteadas, cartasSorteadas.id])
-                const cartasDoUsuario = await usuario.cartas;
-                const atualizado = [...cartasDoUsuario, cartaAleatoria.id]
-                await patchUsuarioCards(usuario.id, atualizado);
-            } catch (error) {
-                console.error('Erro ao adicionar carta:', error);
-            }
-            
-            // postUsuarioCards(usuarioLogado.id,)
-            // setCartasSorteadas([...cartasSorteadas, cartaAleatoria])
-        }
+    const buscarTipo = async(tipo: string, state: any) => {
+        getPorTipo(tipo).then((response)=>{
+            state(response.data.data)
+            console.log(response.data.data)
+        }).catch((Error)=>{
+            console.log("Tudo errado de novo")
+        })
+    }
 
+    const trapAdd = async () => {
+     
+        const indiceAleatorio = Math.floor(Math.random() * todasTipoTrap.length);
+        const cartaAleatoria = todasTipoTrap[indiceAleatorio];
+        console.log(cartaAleatoria.id);
+        const cartasDoUsuario = await usuario.cartas;
+        const atualizado = [...cartasDoUsuario, cartaAleatoria.id]
+        await patchUsuarioCards(usuario.id, atualizado);  
+        await infos()
+
+       
+    }
+
+    const spellAdd = async () => {
+     
+        const indiceAleatorio = Math.floor(Math.random() * todasTipoSpell.length);
+        const cartaAleatoria = todasTipoSpell[indiceAleatorio];
+        console.log(cartaAleatoria.id);
+        const cartasDoUsuario = await usuario.cartas;
+        const atualizado = [...cartasDoUsuario, cartaAleatoria.id]
+        await patchUsuarioCards(usuario.id, atualizado);
+        await infos()
+
+    }
+
+    const testeAdd = async () => {
+        
+    
+        const indiceAleatorio = Math.floor(Math.random() * todasCartas.length);
+        const cartaAleatoria = todasCartas[indiceAleatorio];
+        console.log(cartaAleatoria.id);
+        setCartasSorteadas([...cartasSorteadas, cartasSorteadas.id])
+        const cartasDoUsuario = await usuario.cartas;
+        const atualizado = [...cartasDoUsuario, cartaAleatoria.id]
+        await patchUsuarioCards(usuario.id, atualizado);
+        await infos()
+            
     }
     
     return (
@@ -82,7 +113,7 @@ export const Shop = () => {
             <InfosUser/>
             <View style={styles.containerCards}>
 
-                <TouchableOpacity onPress={()=>testeAdd(2)} style={[styles.card, styles.cardCanto]}>
+                <TouchableOpacity onPress={()=>trapAdd()} style={[styles.card, styles.cardCanto]}>
                     <Image source={card} style={styles.imgCard}/>
 
                     <View style={styles.containerQtdCard}>
@@ -91,7 +122,7 @@ export const Shop = () => {
 
                 </TouchableOpacity>
                 
-                <TouchableOpacity onPress={()=>testeAdd(6)} style={styles.card}>
+                <TouchableOpacity onPress={()=>testeAdd()} style={styles.card}>
                     <Image source={card} style={styles.imgCard}/>
 
                     <View style={styles.containerQtdCard}>
@@ -100,7 +131,7 @@ export const Shop = () => {
 
                 </TouchableOpacity>
 
-                <TouchableOpacity onPress={()=>testeAdd(4)} style={[styles.card, styles.cardCanto, {marginRight: 0}]}>
+                <TouchableOpacity onPress={()=>spellAdd()} style={[styles.card, styles.cardCanto, {marginRight: 0}]}>
                     <Image source={card} style={styles.imgCard}/>
 
                     <View style={styles.containerQtdCard}>

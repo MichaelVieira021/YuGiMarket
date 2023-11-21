@@ -162,6 +162,7 @@ export function LoginContextProvider({children}: ContextProps){
     async function atualizar(email: string){
         getUsuario(email).then((response)=>{
             if(response.data.length === 1){
+
                 setUsuario((prevState) => { 
                     const novoUsuario = {
                         id: response.data[0].id,
