@@ -7,7 +7,7 @@ import { useContext, useEffect, useState } from "react"
 import { InfosUser } from "../../components/InfosUser"
 import { getPorTipo, getTodasCartas } from "../../services/ApiYugioh"
 // import { StorageContext } from "../../contexts/StorageContext"
-import { patchUsuarioCards } from "../../services/ApiConta"
+import { patchUsuarioCards, patchUsuarioCash } from "../../services/ApiConta"
 import { LoginContext } from "../../contexts/LoginContext"
 
 interface cartaAleatoriaType{
@@ -19,7 +19,7 @@ export const Shop = () => {
 
     const [todasCartas, setTodasCartas] = useState([{}])
     const [cartasSorteadas, setCartasSorteadas] = useState<Array<number>>([])
-    const {usuario, infos, postUsuarioCards, atualizar} = useContext(LoginContext)
+    const {usuario, infos, postUsuarioCards, atualizar, usuarioStorage} = useContext(LoginContext)
     const [todasTipoTrap, setTodasTipoTrap] = useState([{}])
     const [todasTipoSpell, setTodasTipoSpell] = useState([{}])
     
@@ -35,6 +35,7 @@ export const Shop = () => {
     useEffect(()=>{
         teste()
         infos()
+        usuarioStorage()
        
     },[])
 
@@ -45,7 +46,8 @@ export const Shop = () => {
 
     useEffect(()=>{
         // testeAdd()
-    },[])
+        usuarioStorage()
+    },[usuario])
 
     const teste = async() => {
         getTodasCartas().then((response)=>{
@@ -77,13 +79,20 @@ export const Shop = () => {
             name: cartaAleatoria.name,
             type: cartaAleatoria.type,
             desc: cartaAleatoria.desc,
+            preco: cartaAleatoria.card_prices[0].cardmarket_price,
             img: cartaAleatoria.card_images[0].image_url
         }
 
         const cartasDoUsuario = await usuario.cartas;
         const atualizado = [...cartasDoUsuario, {carta}]
-        await patchUsuarioCards(usuario.id, atualizado);  
+        await patchUsuarioCards(usuario.id, atualizado);
+        
+        const novoCash = (Number(await usuario.cash) - 0.50)
+        console.log(novoCash);
+        
+        await patchUsuarioCash(usuario.id, novoCash)
         await infos()
+
 
        
     }
@@ -93,9 +102,22 @@ export const Shop = () => {
         const indiceAleatorio = Math.floor(Math.random() * todasTipoSpell.length);
         const cartaAleatoria = todasTipoSpell[indiceAleatorio];
         console.log(cartaAleatoria.id);
+        const carta = {
+            id: cartaAleatoria.id,
+            name: cartaAleatoria.name,
+            type: cartaAleatoria.type,
+            desc: cartaAleatoria.desc,
+            preco: cartaAleatoria.card_prices[0].cardmarket_price,
+            img: cartaAleatoria.card_images[0].image_url
+        }
         const cartasDoUsuario = await usuario.cartas;
-        const atualizado = [...cartasDoUsuario, cartaAleatoria.id]
+        const atualizado = [...cartasDoUsuario, {carta}]
         await patchUsuarioCards(usuario.id, atualizado);
+        
+        const novoCash = (Number(await usuario.cash) - 0.50)
+        console.log(novoCash);
+        
+        await patchUsuarioCash(usuario.id, novoCash)
         await infos()
 
     }
@@ -106,10 +128,24 @@ export const Shop = () => {
         const indiceAleatorio = Math.floor(Math.random() * todasCartas.length);
         const cartaAleatoria = todasCartas[indiceAleatorio];
         console.log(cartaAleatoria.id);
-        setCartasSorteadas([...cartasSorteadas, cartasSorteadas.id])
+        const carta = {
+            id: cartaAleatoria.id,
+            name: cartaAleatoria.name,
+            type: cartaAleatoria.type,
+            desc: cartaAleatoria.desc,
+            preco: cartaAleatoria.card_prices[0].cardmarket_price,
+            img: cartaAleatoria.card_images[0].image_url
+        }
+
         const cartasDoUsuario = await usuario.cartas;
-        const atualizado = [...cartasDoUsuario, cartaAleatoria.id]
+        const atualizado = [...cartasDoUsuario, {carta}]
         await patchUsuarioCards(usuario.id, atualizado);
+        
+        
+        const novoCash = (Number(await usuario.cash) - 0.50)
+        console.log(novoCash);
+        
+        await patchUsuarioCash(usuario.id, novoCash)
         await infos()
             
     }
@@ -121,30 +157,30 @@ export const Shop = () => {
             <InfosUser/>
             <View style={styles.containerCards}>
 
-                <TouchableOpacity onPress={()=>trapAdd()} style={[styles.card, styles.cardCanto]}>
+                <TouchableOpacity onPress={()=>trapAdd()} style={[styles.cardTrap, styles.cardCanto]}>
                     <Image source={card} style={styles.imgCard}/>
 
-                    <View style={styles.containerQtdCard}>
-                        <Text style={styles.textQtdCard}>2X</Text>
-                    </View>
+                    {/* <View style={[styles.containerQtdCard, {backgroundColor: "#ff007f"}]}>
+                        <Text style={styles.textQtdCard}>Trap</Text>
+                    </View> */}
 
                 </TouchableOpacity>
                 
                 <TouchableOpacity onPress={()=>testeAdd()} style={styles.card}>
                     <Image source={card} style={styles.imgCard}/>
 
-                    <View style={styles.containerQtdCard}>
-                        <Text style={styles.textQtdCard}>6X</Text>
-                    </View>
+                    {/* <View style={[styles.containerQtdCard, {backgroundColor: "#ffd700"}]}>
+                        <Text style={styles.textQtdCard}>Normal</Text>
+                    </View> */}
 
                 </TouchableOpacity>
 
-                <TouchableOpacity onPress={()=>spellAdd()} style={[styles.card, styles.cardCanto, {marginRight: 0}]}>
+                <TouchableOpacity onPress={()=>spellAdd()} style={[styles.cardEquip, styles.cardCanto, {marginRight: 0}]}>
                     <Image source={card} style={styles.imgCard}/>
 
-                    <View style={styles.containerQtdCard}>
-                        <Text style={styles.textQtdCard}>4X</Text>
-                    </View>
+                    {/* <View style={[styles.containerQtdCard, {backgroundColor: "#009cff"}]}>
+                        <Text style={styles.textQtdCard}>Equip</Text>
+                    </View> */}
 
                 </TouchableOpacity>
 

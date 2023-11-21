@@ -5,6 +5,7 @@ import {BottonTabRoutes} from '../BottonTabRoutes'
 import { useContext, useEffect, useState } from 'react';
 import { LoginContext } from '../../contexts/LoginContext';
 import AsyncStorage from '@react-native-async-storage/async-storage';
+import { useNavigation } from '@react-navigation/native';
 
 
 const Stack = createStackNavigator();
@@ -12,43 +13,20 @@ const Stack = createStackNavigator();
 export function StackNavigator() {
   
     const { logado, verificarLogado} = useContext(LoginContext);
-    const [initial, setInitial] = useState("")
+    const navigate = useNavigation<any>()
 
-    // useEffect(() => {
-    //   verificarLogado();
-    // }, []);
+    useEffect(() => {
+      verificarLogado();
+    }, []);
   
-    // useEffect(() => {
-    //   verificarLogado()
-    //   if(logado !== "false"){
-    //     console.log("oi", logado)
-    //     setInitial("Todos")
-    //   }else{
-    //     setInitial("Login")
-    //   }
-    // }, [logado]);
-  
-    // useEffect(()=>{
-    //   verificarLogado()
-    //   console.log(initial)
-    // },[])
-
-    // useEffect(()=>{
-    //   console.log(initial)
-    // },[initial])
-  
-    // async function verificarLogado(){
-    //   const verificado = await AsyncStorage.getItem("logado");
-    //   if(verificado === "true" || verificado === "false"){
-    //       // setLogado((prevState) => { return verificado})
-    //       if(verificado === "true"){
-    //         setInitial((prevState) => (prevState !== "Todos" ? "Todos" : prevState))
-    //       }
-    //       // alert(initial)
-    //     }else{
-    //       console.log("deu errado ?")
-    //   }
-    // }
+    useEffect(() => {
+      if(logado == "true"){
+        console.log("oi", logado)
+        navigate.navigate("Todos")
+      }else{
+        navigate.navigate("Login")
+      }
+    }, [logado]);
 
   return (
     
@@ -57,11 +35,11 @@ export function StackNavigator() {
         headerShown:false,
       }}
 
-      initialRouteName={"Todos"}
+      initialRouteName={"Login"}
     >
 
-      <Stack.Screen name="Registro" component={Sregister} />
       <Stack.Screen name="Login" component={Login} />
+      <Stack.Screen name="Registro" component={Sregister} />
       <Stack.Screen name="Todos" component={BottonTabRoutes} />
 
     </Stack.Navigator>

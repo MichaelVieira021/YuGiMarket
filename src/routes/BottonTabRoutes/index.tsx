@@ -5,6 +5,7 @@ import { Image, View } from 'react-native';
 import { Entypo, MaterialCommunityIcons } from '@expo/vector-icons';
 import iconCards from '../../assets/icons/cards.png'
 import { Cards } from '../../screens/Cards';
+import { Deck } from '../../screens/Deck';
 
 const Tab = createBottomTabNavigator();
 
@@ -57,7 +58,7 @@ export function BottonTabRoutes() {
           ))
         }}
         name="DECK" 
-        component={Login}
+        component={Deck}
       />
 
       <Tab.Screen 

@@ -1,59 +1,74 @@
-import { Text, View, Image, ImageBackground, FlatList } from "react-native";
+import { Text, View, Image, ImageBackground, FlatList, TouchableOpacity } from "react-native";
 import { styles } from "./styles";
 import carta from '../../assets/images/Dark.jpeg'
 import dragao from '../../assets/images/dragon.png'
 import { Loading } from "../Loading";
 import { useContext, useEffect, useState } from "react";
 import { LoginContext } from "../../contexts/LoginContext";
+import { CustomModal } from "../../components/ModalCarta";
+import { ButtonNav } from "../../components/ButtonNav";
+import { patchUsuarioCards, patchUsuarioCash, patchUsuarioDeck } from "../../services/ApiConta";
 
 
 
 export const Cards = () => {
     
     const {usuario, infos} = useContext (LoginContext)
-    const [] = useState ([])
+    const [cartasUsuario, setCartasUsuario] = useState ([])
+    const [modalVisible, setModalVisible] = useState(false);
+    const [dataToPass, setDataToPass] = useState<any>(null);
+
+    
+    useEffect(()=>{
+        infos()
+    },[])
+
+    useEffect(()=>{
+    },[usuario])
 
     useEffect(()=>{
         infos()
         console.log(usuario.cartas[0],"tudo errado");
-        
-    },[])
+        setCartasUsuario(usuario.cartas)
+        console.log(usuario.cartas)
+    },[cartasUsuario])
+    
+    const closeModal = () => {
+        setDataToPass(null);
+        setModalVisible(false);
+    };
+    
+    const openModal = (data: any) => {
+        setDataToPass(data.carta);
+        setModalVisible(true);
+    };
 
-    const data = [
-        {id: usuario.cartas[0].carta.id ,name :usuario.cartas[0].carta.name, image: usuario.cartas[0].carta.img},
-        {id: usuario.cartas[1].carta.id ,name :usuario.cartas[1].carta.name, image: usuario.cartas[1].carta.img},
-        {id: usuario.cartas[1].carta.id ,name :usuario.cartas[1].carta.name, image: usuario.cartas[1].carta.img},
-        {id: usuario.cartas[1].carta.id ,name :usuario.cartas[1].carta.name, image: usuario.cartas[1].carta.img},
-        {id: usuario.cartas[1].carta.id ,name :usuario.cartas[1].carta.name, image: usuario.cartas[1].carta.img},
-        {id: usuario.cartas[1].carta.id ,name :usuario.cartas[1].carta.name, image: usuario.cartas[1].carta.img},
-        {id: usuario.cartas[1].carta.id ,name :usuario.cartas[1].carta.name, image: usuario.cartas[1].carta.img},
-        {id: usuario.cartas[1].carta.id ,name :usuario.cartas[1].carta.name, image: usuario.cartas[1].carta.img},
-        {id: usuario.cartas[1].carta.id ,name :usuario.cartas[1].carta.name, image: usuario.cartas[1].carta.img},
-        {id: usuario.cartas[1].carta.id ,name :usuario.cartas[1].carta.name, image: usuario.cartas[1].carta.img},
-        {id: usuario.cartas[1].carta.id ,name :usuario.cartas[1].carta.name, image: usuario.cartas[1].carta.img},
-        {id: usuario.cartas[1].carta.id ,name :usuario.cartas[1].carta.name, image: usuario.cartas[1].carta.img},
-        {id: usuario.cartas[1].carta.id ,name :usuario.cartas[1].carta.name, image: usuario.cartas[1].carta.img},
-        {id: usuario.cartas[1].carta.id ,name :usuario.cartas[1].carta.name, image: usuario.cartas[1].carta.img},
-        {id: usuario.cartas[1].carta.id ,name :usuario.cartas[1].carta.name, image: usuario.cartas[1].carta.img},
-        {id: usuario.cartas[1].carta.id ,name :usuario.cartas[1].carta.name, image: usuario.cartas[1].carta.img},
-        {id: usuario.cartas[1].carta.id ,name :usuario.cartas[1].carta.name, image: usuario.cartas[1].carta.img},
-
-     
-    ]
-
-    interface Tipo {
-        name?: string;
-        image:any;
+    const addAoDeck = async (carta: any) => {
+        const deckDoUsuario = await usuario.deck;
+        const atualizado = [...deckDoUsuario, {carta}]
+        await patchUsuarioDeck(usuario.id, atualizado)
+        await infos()
+        closeModal()
     }
 
-    const Card =({name, image}:Tipo) =>(
-        <View style={styles.cardContainer}>
-            <Image source={{uri: image}} style={styles.imgCard}/>
-            {/* <Text style={styles.textCard}>{name}</Text> */}
-        </View>
-    )
+    const vender = async (cartaDel: any) => {
+        const deckDoUsuario = await usuario.deck;    
+        const novoDeck = deckDoUsuario.filter(carta => carta.carta.id != cartaDel.id);
+        await patchUsuarioDeck(usuario.id, novoDeck)
+        
+        const cartasDoUsuario = await usuario.cartas;
+        const novasCartas = cartasDoUsuario.filter(carta => carta.carta.id != cartaDel.id);
+        await patchUsuarioCards(usuario.id, novasCartas)
 
-    const [showWelcome, setShowWelcome] = useState(true); // State to control whether to show Welcome or Shop
+        const novoCash:number = (Number(await usuario.cash) + Number(cartaDel.preco))
+        console.log(novoCash);
+        
+        await patchUsuarioCash(usuario.id, novoCash)
+        await infos()
+        closeModal()
+    }
+
+    // const [showWelcome, setShowWelcome] = useState(true); // State to control whether to show Welcome or Shop
 
     // useEffect(() => {
     //     setTimeout(() => {
@@ -62,20 +77,38 @@ export const Cards = () => {
     // }, []); // Run useEffect only once
 
     // if (showWelcome) {
-    //     return <Loading />; // Render Welcome if showWelcome is true
-    // }
+    //         return <Loading />; // Render Welcome if showWelcome is true
+    //     }
+        
+    const Card =({carta}:any) =>(
+        <TouchableOpacity onPress={() => openModal({ carta })} style={styles.cardContainer}>
+            <Image source={{uri: carta.img}} style={styles.imgCard}/>
+        </TouchableOpacity>
+        
+    )
 
     return (
         <ImageBackground source={dragao} style={styles.container}>
             <Text style={styles.title}>Lista de Cartas</Text>
             <FlatList
-            data={data}
-            keyExtractor={(item)=>item.id}
-            renderItem={({item}) => <Card  image={item.image}/>}
-            numColumns={3}
+            data={usuario.cartas.slice().reverse()}
+            // keyExtractor={(item)=>item.id}
+            renderItem={({item}) => <Card  carta={item.carta}/>}
             showsVerticalScrollIndicator={false}
+            // inverted={true}
+            numColumns={3}
             
             />
+            <CustomModal visible={modalVisible} onClose={closeModal}>
+                {dataToPass && 
+                <View style={{alignItems: "center", height:460, width: "100%"}}>
+                    <Image source={{uri: dataToPass.img}} style={[styles.imgCard, {height:450}]}/>
+                    {/* <Text style={{color: "white"}}>Tipo: {dataToPass.type}</Text> */}
+                    <ButtonNav  style={{backgroundColor: '#b88019'}} title='ADICIONAR AO DECK' openScreen={()=>addAoDeck(dataToPass)}/>
+                    <ButtonNav  style={{backgroundColor: '#b88019'}} title="VENDER  R$" algo={dataToPass.preco} openScreen={()=>vender(dataToPass)}/>
+                </View>}
+                
+            </CustomModal>
         </ImageBackground>
     )
 }

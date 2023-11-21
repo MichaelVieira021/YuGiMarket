@@ -5,42 +5,216 @@
       "nome": "Michael021",
       "email": "teste",
       "senha": "123",
-      "cash": 0,
+      "cash": 986.86,
       "cartas": [
         {
           "carta": {
-            "id": 50727844,
-            "name": "Synchro Forceback",
-            "type": "Trap Card",
-            "desc": "Target monsters on the field, up to the number of Synchro Monsters with different names you control; return them to the hand. You can only activate 1 \"Synchro Forceback\" per turn.",
-            "img": "https://images.ygoprodeck.com/images/cards/50727844.jpg"
+            "id": 90448279,
+            "name": "Divine Arsenal AA-ZEUS - Sky Thunder",
+            "type": "XYZ Monster",
+            "desc": "2 Level 12 monsters\r\nOnce per turn, if an Xyz Monster battled this turn, you can also Xyz Summon \"Divine Arsenal AA-ZEUS - Sky Thunder\" by using 1 Xyz Monster you control as material. (Transfer its materials to this card.) (Quick Effect): You can detach 2 materials from this card; send all other cards from the field to the GY. Once per turn, if another card(s) you control is destroyed by battle or an opponent's card effect: You can attach 1 card from your hand, Deck, or Extra Deck to this card as material.",
+            "preco": "18.29",
+            "img": "https://images.ygoprodeck.com/images/cards/90448279.jpg"
           }
         },
         {
           "carta": {
-            "id": 35100834,
-            "name": "Powerhold the Moving Battery",
-            "type": "Trap Card",
-            "desc": "Special Summon this card as an Effect Monster (Machine/EARTH/Level 4/ATK 0/DEF 2000), then, you can equip 1 Level 4 Machine \"Gadget\" monster from your hand or Deck to this card. (This card is also still a Trap.) If Summoned this way, this card gains ATK equal to double the ATK of the monster equipped to it by this effect.",
-            "img": "https://images.ygoprodeck.com/images/cards/35100834.jpg"
+            "id": 59438930,
+            "name": "Ghost Ogre & Snow Rabbit",
+            "type": "Tuner Monster",
+            "desc": "When a monster on the field activates its effect, or when a Spell/Trap that is already face-up on the field activates its effect (Quick Effect): You can send this card from your hand or field to the GY; destroy that card on the field. You can only use this effect of \"Ghost Ogre & Snow Rabbit\" once per turn.",
+            "preco": "0.59",
+            "img": "https://images.ygoprodeck.com/images/cards/59438930.jpg"
           }
         },
         {
           "carta": {
-            "id": 5479217,
-            "name": "Jurrac Impact",
-            "type": "Trap Card",
-            "desc": "If you control a Dinosaur-Type monster with 2500 or more ATK: Destroy all cards on the field.",
-            "img": "https://images.ygoprodeck.com/images/cards/5479217.jpg"
+            "id": 2316186,
+            "name": "Princess Curran",
+            "type": "Effect Monster",
+            "desc": "This card cannot be Normal Summoned or Set. This card cannot be Special Summoned except with \"Trial of the Princesses\". During your Standby Phase, inflict 600 damage to your opponent for each monster they control.",
+            "preco": "47.98",
+            "img": "https://images.ygoprodeck.com/images/cards/2316186.jpg"
           }
         },
         {
           "carta": {
-            "id": 14613029,
-            "name": "Morphtronic Mix-up",
+            "id": 1127737,
+            "name": "Sargasso the D.D. Battlefield",
+            "type": "Spell Card",
+            "desc": "Each time a monster is Xyz Summoned: The Summoning player takes 500 damage. During each player's End Phase, the turn player takes 500 damage if they control a face-up Xyz Monster.",
+            "preco": "0.10",
+            "img": "https://images.ygoprodeck.com/images/cards/1127737.jpg"
+          }
+        },
+        {
+          "carta": {
+            "id": 41061625,
+            "name": "Yashinoki",
+            "type": "Normal Monster",
+            "desc": "An intelligent palm tree that drops a hail of rock-hard coconuts on its enemies.",
+            "preco": "0.00",
+            "img": "https://images.ygoprodeck.com/images/cards/41061625.jpg"
+          }
+        },
+        {
+          "carta": {
+            "id": 66194206,
+            "name": "Lightsworn Judgment",
             "type": "Trap Card",
-            "desc": "If you control 2 or more face-up \"Morphtronic\" monsters, select 2 cards your opponent controls. Destroy 1 card of your opponent's choice from those 2.",
-            "img": "https://images.ygoprodeck.com/images/cards/14613029.jpg"
+            "desc": "Place this card on top of the Deck. If this card is sent from the Deck to the Graveyard by a \"Lightsworn\" monster's effect: You can add 1 \"Judgment Dragon\" from your Deck to your hand.",
+            "preco": "0.15",
+            "img": "https://images.ygoprodeck.com/images/cards/66194206.jpg"
+          }
+        },
+        {
+          "carta": {
+            "id": 24661486,
+            "name": "Cold Enchanter",
+            "type": "Effect Monster",
+            "desc": "You can discard 1 card to target 1 face-up monster on the field; place an Ice Counter on that target. This card gains 300 ATK for each Ice Counter on the field.",
+            "preco": "0.14",
+            "img": "https://images.ygoprodeck.com/images/cards/24661486.jpg"
+          }
+        },
+        {
+          "carta": {
+            "id": 33907039,
+            "name": "Piri Reis Map",
+            "type": "Spell Card",
+            "desc": "At the start of your Main Phase 1: Add 1 monster with 0 ATK from your Deck to your hand, but halve your LP. After adding it to your hand, until the end of the next turn after this card was activated, you cannot activate the added monster's effects, or the effects of cards with its name, until you Normal Summon that monster or a card with its name.",
+            "preco": "0.15",
+            "img": "https://images.ygoprodeck.com/images/cards/33907039.jpg"
+          }
+        },
+        {
+          "carta": {
+            "id": 75574498,
+            "name": "Princess Cologne",
+            "type": "XYZ Monster",
+            "desc": "2 Level 4 monsters\nWhen this card is Xyz Summoned: You can target 1 \"Box of Friends\" in your Graveyard; Special Summon that target. If you control another monster, your opponent cannot target this card with cards, effects, or for attacks. If a face-up Normal Monster(s) you control is destroyed by battle or by card effect and sent to the Graveyard: You can detach 1 Xyz Material from this card; Special Summon 1 Normal Monster from your Deck or Graveyard in face-up Defense Position.",
+            "preco": "0.06",
+            "img": "https://images.ygoprodeck.com/images/cards/75574498.jpg"
+          }
+        },
+        {
+          "carta": {
+            "id": 15092394,
+            "name": "Raidraptor - Stranger Falcon",
+            "type": "XYZ Monster",
+            "desc": "2 Level 5 monsters\nIf this card has an Xyz Monster as Xyz Material, it gains this effect.\n● Once per turn: You can detach 1 Xyz Material from this card, then target 1 monster your opponent controls; destroy it, and if you do, inflict damage to your opponent equal its original ATK.\nIf this card in your possession is destroyed by your opponent's card (by battle or card effect) and sent to your Graveyard: You can target 1 \"Raidraptor\" Xyz Monster in your Graveyard, except \"Raidraptor - Stranger Falcon\"; Special Summon it, and if you do, attach this card to it as Xyz Material.",
+            "preco": "0.30",
+            "img": "https://images.ygoprodeck.com/images/cards/15092394.jpg"
+          }
+        },
+        {
+          "carta": {
+            "id": 43716289,
+            "name": "Poison Mummy",
+            "type": "Flip Effect Monster",
+            "desc": "FLIP: Inflict 500 damage to your opponent.",
+            "preco": "0.18",
+            "img": "https://images.ygoprodeck.com/images/cards/43716289.jpg"
+          }
+        },
+        {
+          "carta": {
+            "id": 53829412,
+            "name": "Griffore",
+            "type": "Normal Monster",
+            "desc": "This monster's tough hide deflects almost any attack.",
+            "preco": "0.19",
+            "img": "https://images.ygoprodeck.com/images/cards/53829412.jpg"
+          }
+        },
+        {
+          "carta": {
+            "id": 70491413,
+            "name": "Surprise Chain",
+            "type": "Spell Card",
+            "desc": "Activate only as Chain Link 2 or higher; apply the following effects, depending on the Chain Link number of this card, in sequence (skip over any that do not apply). You cannot activate this card if multiple cards/effects with the same name are in that Chain.\r\n● 2+: Excavate the top cards of your Deck, equal to the Chain Link number of this card, then place them on the top of your Deck in any order.\r\n● 3+: Send the top card of your Deck to the GY.\r\n● 4+: Draw 1 card.\r\nYou can only activate 1 \"Surprise Chain\" per turn.",
+            "preco": "0.03",
+            "img": "https://images.ygoprodeck.com/images/cards/70491413.jpg"
+          }
+        },
+        {
+          "carta": {
+            "id": 5338223,
+            "name": "Evo-Force",
+            "type": "Spell Card",
+            "desc": "Tribute 1 \"Evoltile\" monster; Special Summon 1 \"Evolsaur\" monster from your Deck. It is treated as if it was Special Summoned by the effect of an \"Evoltile\" monster.",
+            "preco": "0.10",
+            "img": "https://images.ygoprodeck.com/images/cards/5338223.jpg"
+          }
+        },
+        {
+          "carta": {
+            "id": 82012319,
+            "name": "Scrap Golem",
+            "type": "Effect Monster",
+            "desc": "Once per turn: You can target 1 Level 4 or lower \"Scrap\" monster in your GY; Special Summon that target to either player's field.",
+            "preco": "0.18",
+            "img": "https://images.ygoprodeck.com/images/cards/82012319.jpg"
+          }
+        },
+        {
+          "carta": {
+            "id": 8730435,
+            "name": "Gladiator Beast's Battle Archfiend Shield",
+            "type": "Spell Card",
+            "desc": "Equip only to a \"Gladiator Beast\" monster. If the equipped monster would be destroyed, destroy this card instead. When this card is sent to your Graveyard because the equipped monster you controlled was shuffled into your Deck: Return this card to your hand.",
+            "preco": "0.06",
+            "img": "https://images.ygoprodeck.com/images/cards/8730435.jpg"
+          }
+        },
+        {
+          "carta": {
+            "id": 61884774,
+            "name": "Yosenju Oroshi Channeling",
+            "type": "Spell Card",
+            "desc": "If you control no monsters: Activate 1 of the following effects; also for the rest of this turn after this card resolves, you cannot Special Summon monsters, except \"Yosenju\" monsters.\r\n● Add 1 Level 5 or higher \"Yosenju\" monster from your Deck to your hand.\r\n● Place 1 \"Yosenju Shinchu L\" and 1 \"Yosenju Shinchu R\" from your Deck in your Pendulum Zones, but destroy them during your opponent's next End Phase.",
+            "preco": "0.13",
+            "img": "https://images.ygoprodeck.com/images/cards/61884774.jpg"
+          }
+        },
+        {
+          "carta": {
+            "id": 69170557,
+            "name": "Number C40: Gimmick Puppet of Dark Strings",
+            "type": "XYZ Monster",
+            "desc": "3 Level 9 monsters\nWhen this card is Special Summoned: Destroy the monsters with String Counters, and if you do, draw 1 card, then inflict damage to your opponent equal to the highest original ATK among those destroyed monsters in the Graveyard (your choice, if tied). Once per turn: You can detach 1 Xyz Material from this card; place 1 String Counter on each face-up monster your opponent controls.",
+            "preco": "1.48",
+            "img": "https://images.ygoprodeck.com/images/cards/69170557.jpg"
+          }
+        },
+        {
+          "carta": {
+            "id": 17589298,
+            "name": "Sword of Dark Rites",
+            "type": "Spell Card",
+            "desc": "Equip only to a DARK monster. It gains 400 ATK. When the equipped monster is Tributed and this card is sent to the Graveyard, return this card to your hand.",
+            "preco": "0.25",
+            "img": "https://images.ygoprodeck.com/images/cards/17589298.jpg"
+          }
+        },
+        {
+          "carta": {
+            "id": 83293307,
+            "name": "Krawler Receptor",
+            "type": "Flip Effect Monster",
+            "desc": "FLIP: You can add 1 \"Krawler\" monster from your Deck to your hand.\r\nIf this face-up card in its owner's control leaves the field because of an opponent's card effect: You can Special Summon 2 \"Krawler\" monsters with different names from your Deck in face-down Defense Position, except \"Krawler Receptor\". You can only use each effect of \"Krawler Receptor\" once per turn.",
+            "preco": "0.09",
+            "img": "https://images.ygoprodeck.com/images/cards/83293307.jpg"
+          }
+        },
+        {
+          "carta": {
+            "id": 17444133,
+            "name": "Kaiser Sea Horse",
+            "type": "Effect Monster",
+            "desc": "This card can be treated as 2 Tributes for the Tribute Summon of a LIGHT monster.",
+            "preco": "0.04",
+            "img": "https://images.ygoprodeck.com/images/cards/17444133.jpg"
           }
         }
       ],

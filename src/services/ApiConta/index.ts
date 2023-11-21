@@ -1,4 +1,5 @@
 import axios, { AxiosResponse } from "axios";
+import { Double } from "react-native/Libraries/Types/CodegenTypes";
 
 interface UsuarioResponse {
     usuario: {
@@ -38,6 +39,14 @@ export function postNovoUsuario(nome: string, email: string, senha: string, cash
 
 export function patchUsuarioCards(id: number, cartas:[]) {
     return ApiConta.patch(`usuarios/${id}`, { cartas });
+}
+
+export function patchUsuarioDeck(id: number, deck:[]) {
+    return ApiConta.patch(`usuarios/${id}`, { deck });
+}
+
+export function patchUsuarioCash(id: number, cash:number) {
+    return ApiConta.patch(`usuarios/${id}`, {cash} );
 }
 
 export function postUsuarioCards(id: number,nome: string, email: string, senha: string, cash: number, cartas: number[], deck: number[]){

@@ -172,6 +172,7 @@ export function LoginContextProvider({children}: ContextProps){
                         deck: response.data[0].deck,
                         cash: response.data[0].cash,
                     };
+                    console.log(response,"oioioioi")
                   
                     AsyncStorage.setItem('usuario', JSON.stringify(novoUsuario));
                     

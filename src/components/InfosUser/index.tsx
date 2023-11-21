@@ -15,14 +15,15 @@ interface Usuario {
 
 export const InfosUser = () => {
 
-    const { usuarioStorage, usuarioInfos, deslogar } = useContext(LoginContext);
+    const { usuarioStorage, usuarioInfos, deslogar, usuario, infos } = useContext(LoginContext);
     // const [usuarioInfos, setUsuarioInfos] = useState<Usuario>();
 
     useEffect(()=> {
+        infos()
         usuarioStorage()
     },[])
 
-    useEffect(()=>{},[usuarioInfos])
+    useEffect(()=>{},[usuarioInfos,usuario]) 
 
     return (
         <View style={styles.container}>
@@ -39,7 +40,8 @@ export const InfosUser = () => {
 
             <TouchableOpacity style={styles.userContainer}>
                 <MaterialIcons name="attach-money" size={22} color="#b88019" />
-                <Text style={[styles.text,{marginRight: 10, fontSize: 16, marginLeft: 0}]}>{usuarioInfos?.cash}</Text>
+                {usuarioInfos && usuarioInfos.cash != undefined && usuarioInfos.cash != null && (
+                <Text style={[styles.text,{marginRight: 10, fontSize: 16, marginLeft: 0}]}>{usuarioInfos?.cash.toFixed(2)}</Text>)}
             </TouchableOpacity>
 
         </View>
