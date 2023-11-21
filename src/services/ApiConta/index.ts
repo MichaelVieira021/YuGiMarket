@@ -36,7 +36,7 @@ export function postNovoUsuario(nome: string, email: string, senha: string, cash
     return ApiConta.post("usuarios", {nome, email, senha, cash, cartas, deck}) 
 }
 
-export function patchUsuarioCards(id: number, cartas: number[]) {
+export function patchUsuarioCards(id: number, cartas:[]) {
     return ApiConta.patch(`usuarios/${id}`, { cartas });
 }
 

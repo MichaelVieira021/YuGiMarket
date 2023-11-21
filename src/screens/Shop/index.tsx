@@ -71,9 +71,17 @@ export const Shop = () => {
      
         const indiceAleatorio = Math.floor(Math.random() * todasTipoTrap.length);
         const cartaAleatoria = todasTipoTrap[indiceAleatorio];
-        console.log(cartaAleatoria.id);
+        console.log(cartaAleatoria);
+        const carta = {
+            id: cartaAleatoria.id,
+            name: cartaAleatoria.name,
+            type: cartaAleatoria.type,
+            desc: cartaAleatoria.desc,
+            img: cartaAleatoria.card_images[0].image_url
+        }
+
         const cartasDoUsuario = await usuario.cartas;
-        const atualizado = [...cartasDoUsuario, cartaAleatoria.id]
+        const atualizado = [...cartasDoUsuario, {carta}]
         await patchUsuarioCards(usuario.id, atualizado);  
         await infos()
 

@@ -4,22 +4,23 @@ export const styles = StyleSheet.create({
     container: {
         flex:1,
         flexDirection:"column",
+        backgroundColor:'rgba (0 , 0 , 0, 0.5)'
     },
     cardContainer :{
         flex:1,
         alignItems: 'center',
         justifyContent: 'space-between',
-        paddingTop:10
+        margin:10
       },
     imgCard:{
-        width:'50%',
-        height:100,
+        width:'120%',
+        height:170,
         resizeMode:"contain",
     },
     title:{
         alignSelf:"center",
         fontSize:30,
-        color:"white",
+        color:"#f3da86ce",
         fontFamily: 'Yugi-Bold',
         Color: '#f3da86ce',
         shadowRadius: 50,

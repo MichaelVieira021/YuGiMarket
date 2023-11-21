@@ -1,7 +1,7 @@
 import { Text, View, Image, ImageBackground, FlatList } from "react-native";
 import { styles } from "./styles";
 import carta from '../../assets/images/Dark.jpeg'
-import redemoinho from '../../assets/images/RedemoinhoCartas.jpg'
+import dragao from '../../assets/images/dragon.png'
 import { Loading } from "../Loading";
 import { useContext, useEffect, useState } from "react";
 import { LoginContext } from "../../contexts/LoginContext";
@@ -9,41 +9,47 @@ import { LoginContext } from "../../contexts/LoginContext";
 
 
 export const Cards = () => {
-
-    const {usuario} = useContext (LoginContext)
+    
+    const {usuario, infos} = useContext (LoginContext)
     const [] = useState ([])
+
+    useEffect(()=>{
+        infos()
+        console.log(usuario.cartas[0],"tudo errado");
+        
+    },[])
+
     const data = [
-        {id: "1", name: "Dark Magician", image: carta},
-        {id: "2", name: "Dark Magician", image: carta},
-        {id: "3", name: "Dark Magician", image: carta},
-        {id: "1", name: "Dark Magician", image: carta},
-        {id: "2", name: "Dark Magician", image: carta},
-        {id: "3", name: "Dark Magician", image: carta},
-        {id: "1", name: "Dark Magician", image: carta},
-        {id: "2", name: "Dark Magician", image: carta},
-        {id: "3", name: "Dark Magician", image: carta},
-        {id: "1", name: "Dark Magician", image: carta},
-        {id: "2", name: "Dark Magician", image: carta},
-        {id: "1", name: "Dark Magician", image: carta},
-        {id: "2", name: "Dark Magician", image: carta},
-        {id: "1", name: "Dark Magician", image: carta},
-        {id: "2", name: "Dark Magician", image: carta},
-        {id: "1", name: "Dark Magician", image: carta},
-        {id: "2", name: "Dark Magician", image: carta},
-        {id: "1", name: "Dark Magician", image: carta},
-        {id: "2", name: "Dark Magician", image: carta},
-        {id: "3", name: "Dark Magician", image: carta}
+        {id: usuario.cartas[0].carta.id ,name :usuario.cartas[0].carta.name, image: usuario.cartas[0].carta.img},
+        {id: usuario.cartas[1].carta.id ,name :usuario.cartas[1].carta.name, image: usuario.cartas[1].carta.img},
+        {id: usuario.cartas[1].carta.id ,name :usuario.cartas[1].carta.name, image: usuario.cartas[1].carta.img},
+        {id: usuario.cartas[1].carta.id ,name :usuario.cartas[1].carta.name, image: usuario.cartas[1].carta.img},
+        {id: usuario.cartas[1].carta.id ,name :usuario.cartas[1].carta.name, image: usuario.cartas[1].carta.img},
+        {id: usuario.cartas[1].carta.id ,name :usuario.cartas[1].carta.name, image: usuario.cartas[1].carta.img},
+        {id: usuario.cartas[1].carta.id ,name :usuario.cartas[1].carta.name, image: usuario.cartas[1].carta.img},
+        {id: usuario.cartas[1].carta.id ,name :usuario.cartas[1].carta.name, image: usuario.cartas[1].carta.img},
+        {id: usuario.cartas[1].carta.id ,name :usuario.cartas[1].carta.name, image: usuario.cartas[1].carta.img},
+        {id: usuario.cartas[1].carta.id ,name :usuario.cartas[1].carta.name, image: usuario.cartas[1].carta.img},
+        {id: usuario.cartas[1].carta.id ,name :usuario.cartas[1].carta.name, image: usuario.cartas[1].carta.img},
+        {id: usuario.cartas[1].carta.id ,name :usuario.cartas[1].carta.name, image: usuario.cartas[1].carta.img},
+        {id: usuario.cartas[1].carta.id ,name :usuario.cartas[1].carta.name, image: usuario.cartas[1].carta.img},
+        {id: usuario.cartas[1].carta.id ,name :usuario.cartas[1].carta.name, image: usuario.cartas[1].carta.img},
+        {id: usuario.cartas[1].carta.id ,name :usuario.cartas[1].carta.name, image: usuario.cartas[1].carta.img},
+        {id: usuario.cartas[1].carta.id ,name :usuario.cartas[1].carta.name, image: usuario.cartas[1].carta.img},
+        {id: usuario.cartas[1].carta.id ,name :usuario.cartas[1].carta.name, image: usuario.cartas[1].carta.img},
+
+     
     ]
 
     interface Tipo {
-        name: string;
+        name?: string;
         image:any;
     }
 
     const Card =({name, image}:Tipo) =>(
         <View style={styles.cardContainer}>
-            <Image source={image} style={styles.imgCard}/>
-            <Text style={styles.textCard}>{name}</Text>
+            <Image source={{uri: image}} style={styles.imgCard}/>
+            {/* <Text style={styles.textCard}>{name}</Text> */}
         </View>
     )
 
@@ -60,12 +66,12 @@ export const Cards = () => {
     // }
 
     return (
-        <ImageBackground source={redemoinho} style={styles.container}>
-            <Text style={styles.title}>Suas Cartas</Text>
+        <ImageBackground source={dragao} style={styles.container}>
+            <Text style={styles.title}>Lista de Cartas</Text>
             <FlatList
             data={data}
             keyExtractor={(item)=>item.id}
-            renderItem={({item}) => <Card name={item.name} image={item.image}/>}
+            renderItem={({item}) => <Card  image={item.image}/>}
             numColumns={3}
             showsVerticalScrollIndicator={false}
             
