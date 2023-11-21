@@ -103,7 +103,7 @@ export const Cards = () => {
 
     return (
         <ImageBackground source={dragao} style={styles.container}>
-            <Text style={styles.title}>Lista de Cartas</Text>
+            <Text style={styles.title}>CARDS</Text>
             <FlatList
             data={usuario.cartas.slice().reverse()}
             // keyExtractor={(item)=>item.id}

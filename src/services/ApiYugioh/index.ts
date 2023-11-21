@@ -19,3 +19,7 @@ export function getPorId(id: string): Promise<AxiosResponse<any, any>>{
 export function getPorTipo (tipo: string): Promise<AxiosResponse<any, any>>{
     return ApiYugioh.get(`cardinfo.php?&type=${tipo}`);
 }
+
+export function getPorRace (race: string): Promise<AxiosResponse<any, any>>{
+    return ApiYugioh.get(`cardinfo.php?&race=${race}`);
+}

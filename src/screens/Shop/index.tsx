@@ -2,10 +2,11 @@ import { Image, ImageBackground, Text, TouchableOpacity, View } from "react-nati
 import background from '../../assets/images/Group_2dsds.png'
 import { styles } from "./styles"
 import card from '../../assets/images/cartaVertical.png'
+import cardDragon from '../../assets/images/IconDragon.png'
 import { Welcome } from "../Welcome"
 import { useContext, useEffect, useState } from "react"
 import { InfosUser } from "../../components/InfosUser"
-import { getPorTipo, getTodasCartas } from "../../services/ApiYugioh"
+import { getPorTipo, getTodasCartas, getPorRace } from "../../services/ApiYugioh"
 // import { StorageContext } from "../../contexts/StorageContext"
 import { patchUsuarioCards, patchUsuarioCash } from "../../services/ApiConta"
 import { LoginContext } from "../../contexts/LoginContext"
@@ -23,6 +24,7 @@ export const Shop = () => {
     const {usuario, infos, postUsuarioCards, atualizar, usuarioStorage} = useContext(LoginContext)
     const [todasTipoTrap, setTodasTipoTrap] = useState([{}])
     const [todasTipoSpell, setTodasTipoSpell] = useState([{}])
+    const [todasTipoDragon, setTodasTipoDragon] = useState([{}])
     
     // useEffect(() => {
     //     setTimeout(() => {
@@ -43,7 +45,7 @@ export const Shop = () => {
     useEffect(()=>{
         infos()
         // testeAdd()
-    },[todasTipoTrap, todasTipoSpell])
+    },[todasTipoTrap, todasTipoSpell, todasTipoDragon])
 
     useEffect(()=>{
         // testeAdd()
@@ -59,10 +61,20 @@ export const Shop = () => {
         })
         await buscarTipo("Trap Card", setTodasTipoTrap)
         await buscarTipo("spell card&race=equip", setTodasTipoSpell)
+        await buscarRace("dragon", setTodasTipoDragon)
     }
 
     const buscarTipo = async(tipo: string, state: any) => {
         getPorTipo(tipo).then((response)=>{
+            state(response.data.data)
+            console.log(response.data.data)
+        }).catch((Error)=>{
+            console.log("Tudo errado de novo")
+        })
+    }
+
+    const buscarRace = async(tipo: string, state: any) => {
+        getPorRace(tipo).then((response)=>{
             state(response.data.data)
             console.log(response.data.data)
         }).catch((Error)=>{
@@ -93,8 +105,6 @@ export const Shop = () => {
         
         await patchUsuarioCash(usuario.id, novoCash)
         await infos()
-
-
        
     }
 
@@ -116,6 +126,31 @@ export const Shop = () => {
         await patchUsuarioCards(usuario.id, atualizado);
         
         const novoCash = (Number(await usuario.cash) - 0.50)
+        console.log(novoCash);
+        
+        await patchUsuarioCash(usuario.id, novoCash)
+        await infos()
+
+    }
+
+    const dragonAdd = async () => {
+     
+        const indiceAleatorio = Math.floor(Math.random() * todasTipoDragon.length);
+        const cartaAleatoria = todasTipoDragon[indiceAleatorio];
+        console.log(cartaAleatoria.id);
+        const carta = {
+            id: cartaAleatoria.id,
+            name: cartaAleatoria.name,
+            type: cartaAleatoria.type,
+            desc: cartaAleatoria.desc,
+            preco: cartaAleatoria.card_prices[0].cardmarket_price,
+            img: cartaAleatoria.card_images[0].image_url
+        }
+        const cartasDoUsuario = await usuario.cartas;
+        const atualizado = [...cartasDoUsuario, {carta}]
+        await patchUsuarioCards(usuario.id, atualizado);
+        
+        const novoCash = (Number(await usuario.cash) - 1)
         console.log(novoCash);
         
         await patchUsuarioCash(usuario.id, novoCash)
@@ -158,6 +193,13 @@ export const Shop = () => {
         }
     }
 
+    async function playSoundDragon(son:number) {
+        if(son == 1){
+            const { sound } = await Audio.Sound.createAsync( require('../../assets/sons/somCardDragon.mp3'));
+            await sound.playAsync();
+        }
+    }
+
      
     
     return (
@@ -195,6 +237,14 @@ export const Shop = () => {
                 </TouchableOpacity>
 
             </View>
+            <TouchableOpacity onPress={()=>{playSoundDragon(1),dragonAdd()}} style={[styles.cardEquipDragon, styles.cardMeio, {marginRight: 0}]}>
+                    <Image source={cardDragon} style={styles.imgCardDragon}/>
+
+                    {/* <View style={[styles.containerQtdCard, {backgroundColor: "#009cff"}]}>
+                        <Text style={styles.textQtdCard}>Equip</Text>
+                    </View> */}
+
+                </TouchableOpacity>
 
         </ImageBackground>
     )

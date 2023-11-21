@@ -26,7 +26,7 @@ export const styles = StyleSheet.create({
         shadowRadius: 50,
         elevation:10,
         borderRadius: 9,
-        margin: 10
+        marginTop: 10
     },
     textCard:{
         color:"black"
