@@ -1,15 +1,18 @@
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
 import { Shop } from '../../screens/Shop';
-import { Login } from '../../screens/Login';
 import { Image, View } from 'react-native';
 import { Entypo, MaterialCommunityIcons } from '@expo/vector-icons';
 import iconCards from '../../assets/icons/cards.png'
 import { Cards } from '../../screens/Cards';
 import { Deck } from '../../screens/Deck';
 
+
 const Tab = createBottomTabNavigator();
 
 export function BottonTabRoutes() {
+
+
+   
   return (
 
     <Tab.Navigator 

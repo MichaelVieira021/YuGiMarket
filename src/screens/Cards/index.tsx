@@ -8,10 +8,10 @@ import { LoginContext } from "../../contexts/LoginContext";
 import { CustomModal } from "../../components/ModalCarta";
 import { ButtonNav } from "../../components/ButtonNav";
 import { patchUsuarioCards, patchUsuarioCash, patchUsuarioDeck } from "../../services/ApiConta";
+import { Audio } from 'expo-av';
+ 
 
-
-
-export const Cards = () => {
+export const Cards = () => { 
     
     const {usuario, infos} = useContext (LoginContext)
     const [cartasUsuario, setCartasUsuario] = useState ([])
@@ -32,6 +32,20 @@ export const Cards = () => {
         setCartasUsuario(usuario.cartas)
         console.log(usuario.cartas)
     },[cartasUsuario])
+
+    async function playSound(son:number) {
+        if(son == 1){ 
+            const { sound } = await Audio.Sound.createAsync( require('../../assets/sons/venderCarta.wav'));
+            await sound.playAsync();
+        }else if (son == 2){ 
+            const { sound } = await Audio.Sound.createAsync( require('../../assets/sons/addInDeck.wav'));  
+            await sound.playAsync();
+        }else if (son == 3){
+            const { sound } = await Audio.Sound.createAsync( require('../../assets/sons/abrirCarta.wav'));  
+            await sound.playAsync();
+        }
+    }
+    
     
     const closeModal = () => {
         setDataToPass(null);
@@ -81,7 +95,7 @@ export const Cards = () => {
     //     }
         
     const Card =({carta}:any) =>(
-        <TouchableOpacity onPress={() => openModal({ carta })} style={styles.cardContainer}>
+        <TouchableOpacity onPress={() => {playSound(3),openModal({ carta })}} style={styles.cardContainer}>
             <Image source={{uri: carta.img}} style={styles.imgCard}/>
         </TouchableOpacity>
         
@@ -104,8 +118,8 @@ export const Cards = () => {
                 <View style={{alignItems: "center", height:460, width: "100%"}}>
                     <Image source={{uri: dataToPass.img}} style={[styles.imgCard, {height:450}]}/>
                     {/* <Text style={{color: "white"}}>Tipo: {dataToPass.type}</Text> */}
-                    <ButtonNav  style={{backgroundColor: '#b88019'}} title='ADICIONAR AO DECK' openScreen={()=>addAoDeck(dataToPass)}/>
-                    <ButtonNav  style={{backgroundColor: '#b88019'}} title="VENDER  R$" algo={dataToPass.preco} openScreen={()=>vender(dataToPass)}/>
+                    <ButtonNav  style={{backgroundColor: '#b88019'}} title='ADICIONAR AO DECK' openScreen={()=>{playSound(2),addAoDeck(dataToPass)}}/>
+                    <ButtonNav  style={{backgroundColor: '#b88019'}} title="VENDER  R$" algo={dataToPass.preco} openScreen={()=>{playSound(1),vender(dataToPass)}}/>
                 </View>}
                 
             </CustomModal>

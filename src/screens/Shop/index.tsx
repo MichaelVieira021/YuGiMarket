@@ -9,6 +9,7 @@ import { getPorTipo, getTodasCartas } from "../../services/ApiYugioh"
 // import { StorageContext } from "../../contexts/StorageContext"
 import { patchUsuarioCards, patchUsuarioCash } from "../../services/ApiConta"
 import { LoginContext } from "../../contexts/LoginContext"
+import { Audio } from 'expo-av';
 
 interface cartaAleatoriaType{
     id: number
@@ -149,6 +150,15 @@ export const Shop = () => {
         await infos()
             
     }
+
+    async function playSound(son:number) {
+        if(son == 1){
+            const { sound } = await Audio.Sound.createAsync( require('../../assets/sons/comprarCarta.wav'));
+            await sound.playAsync();
+        }
+    }
+
+     
     
     return (
 
@@ -157,7 +167,7 @@ export const Shop = () => {
             <InfosUser/>
             <View style={styles.containerCards}>
 
-                <TouchableOpacity onPress={()=>trapAdd()} style={[styles.cardTrap, styles.cardCanto]}>
+                <TouchableOpacity onPress={()=>{playSound(1),trapAdd()}} style={[styles.cardTrap, styles.cardCanto]}>
                     <Image source={card} style={styles.imgCard}/>
 
                     {/* <View style={[styles.containerQtdCard, {backgroundColor: "#ff007f"}]}>
@@ -166,7 +176,7 @@ export const Shop = () => {
 
                 </TouchableOpacity>
                 
-                <TouchableOpacity onPress={()=>testeAdd()} style={styles.card}>
+                <TouchableOpacity onPress={()=>{playSound(1),testeAdd()}} style={styles.card}>
                     <Image source={card} style={styles.imgCard}/>
 
                     {/* <View style={[styles.containerQtdCard, {backgroundColor: "#ffd700"}]}>
@@ -175,7 +185,7 @@ export const Shop = () => {
 
                 </TouchableOpacity>
 
-                <TouchableOpacity onPress={()=>spellAdd()} style={[styles.cardEquip, styles.cardCanto, {marginRight: 0}]}>
+                <TouchableOpacity onPress={()=>{playSound(1),spellAdd()}} style={[styles.cardEquip, styles.cardCanto, {marginRight: 0}]}>
                     <Image source={card} style={styles.imgCard}/>
 
                     {/* <View style={[styles.containerQtdCard, {backgroundColor: "#009cff"}]}>

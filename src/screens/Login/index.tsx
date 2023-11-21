@@ -16,18 +16,18 @@ export const Login = () => {
     const [senha, setSenha] = useState("");
     const navigation = useNavigation<any>();
 
-    useEffect(() => {
-        Animated.loop(
-            Animated.timing(
-                enigmaImage,
-                {
-                    toValue: 1,
-                    duration: 1500,
-                    useNativeDriver: true,
-                }
-            )
-        ).start();
-    }, []);
+    // useEffect(() => {
+    //     Animated.loop(
+    //         Animated.timing(
+    //             enigmaImage,
+    //             {
+    //                 toValue: 1,
+    //                 duration: 1500,
+    //                 useNativeDriver: true,
+    //             }
+    //         )
+    //     ).start();
+    // }, []);
 
     function openRegister(){
         navigation.navigate("Registro");
@@ -60,8 +60,8 @@ export const Login = () => {
                     </View>
                 </View>
 
-                <Pressable onPress={()=>verificarLogin(email, senha)} style={styles.containerEnigma}>
-                    <Animated.Image
+                <TouchableOpacity onPress={()=>verificarLogin(email, senha)} style={styles.containerEnigma}>
+                    {/* <Animated.Image
                         source={enigmaLogin}
                         style={[
                             styles.enigmaImage,
@@ -76,8 +76,8 @@ export const Login = () => {
                                 ],
                             },
                         ]}
-                    />
-                </Pressable>
+                    /> */}
+                </TouchableOpacity>
                 {/* <TouchableOpacity>
                     <Text style={styles.register} onPress={openRegister}>Registrar</Text>
                 </TouchableOpacity> */}
