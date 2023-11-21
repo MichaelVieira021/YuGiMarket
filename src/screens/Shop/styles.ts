@@ -18,7 +18,7 @@ export const styles = StyleSheet.create({
         width: 68, 
         height: 99,
         marginRight: 21,
-        backgroundColor: "red",
+        // backgroundColor: "red",
 
         shadowColor: "#ff007f",
         shadowOffset: {
@@ -34,9 +34,10 @@ export const styles = StyleSheet.create({
         width: 68, 
         height: 99,
         marginRight: 21,
-        backgroundColor: "red",
+        // backgroundColor: "red",
 
-        shadowColor: "#ffd700",
+        // shadowColor: "#ffff00",
+        shadowColor: "white",
         shadowOffset: {
             width: 0,
             height: 0
@@ -50,7 +51,7 @@ export const styles = StyleSheet.create({
         width: 68, 
         height: 99,
         marginRight: 21,
-        backgroundColor: "red",
+        // backgroundColor: "red",
 
         shadowColor: "#009cff",
         shadowOffset: {
@@ -100,5 +101,33 @@ export const styles = StyleSheet.create({
         height: "100%",
         resizeMode: "contain",
 
+    },
+    cardMeio: {
+        width: 100, 
+        height: 100, 
+        marginBottom: -100
+        
+    },
+
+    cardEquipDragon: {
+        width: 80, 
+        height: 99,
+        marginRight: 21,
+       
+    },
+
+    imgCardDragon: {
+        width: "100%",
+        height: "100%",
+        resizeMode: "contain",
+         shadowColor: "yellow",
+        shadowOffset: {
+            width: 0,
+            height: 0
+        },
+
+        shadowOpacity: 25,
+        shadowRadius: 5
+        
     },
 })
