@@ -1,39 +1,33 @@
 import { Animated, Text, View, Image, TextInput, TouchableOpacity, ImageBackground, Pressable } from 'react-native'
-import React, { useEffect, useRef } from 'react'
+import React, { useContext, useEffect, useRef, useState } from 'react'
 import { styles } from './styles'
 import backgroundLogin from '../../assets/images/backgroundLogin.jpg'
 import enigmaLogin from '../../assets/images/enigmaLogin.png'
 import { useNavigation } from "@react-navigation/native"
 import { ButtonNav } from '../../components/ButtonNav'
+import { LoginContext } from '../../contexts/LoginContext'
 
 
 
 export const Login = () => {
     const enigmaImage = useRef(new Animated.Value(0)).current;
-
-    const teste = () => {
-        console.log("teste");
-
-    }
-
-    useEffect(() => {
-        Animated.loop(
-            Animated.timing(
-                enigmaImage,
-                {
-                    toValue: 1,
-                    duration: 1500,
-                    useNativeDriver: true,
-                }
-            )
-        ).start();
-    }, []);
-
+    const { verificarLogin} = useContext(LoginContext);
+    const [email, setEmail] = useState("");
+    const [senha, setSenha] = useState("");
     const navigation = useNavigation<any>();
-    
-    function openScreen() {
-        navigation.navigate("Todos");
-    }
+
+    // useEffect(() => {
+    //     Animated.loop(
+    //         Animated.timing(
+    //             enigmaImage,
+    //             {
+    //                 toValue: 1,
+    //                 duration: 1500,
+    //                 useNativeDriver: true,
+    //             }
+    //         )
+    //     ).start();
+    // }, []);
 
     function openRegister(){
         navigation.navigate("Registro");
@@ -42,6 +36,7 @@ export const Login = () => {
     return (
 
         <ImageBackground source={backgroundLogin} style={styles.backgroundImage}>
+            
             <View style={styles.container}>
                 <View style={styles.containerInput} >
                     <View style={styles.inputView}>
@@ -49,6 +44,7 @@ export const Login = () => {
                             style={styles.input}
                             placeholder="Login"
                             placeholderTextColor="black"
+                            onChangeText={(texto) => setEmail(texto)}
                         />
                     </View>
 
@@ -59,12 +55,13 @@ export const Login = () => {
                             placeholder="Password"
                             placeholderTextColor="black"
                             secureTextEntry={true}
+                            onChangeText={(texto) => setSenha(texto)}
                         />
                     </View>
                 </View>
 
-                <Pressable onPress={openScreen} style={styles.containerEnigma}>
-                    <Animated.Image
+                <TouchableOpacity onPress={()=>verificarLogin(email, senha)} style={styles.containerEnigma}>
+                    {/* <Animated.Image
                         source={enigmaLogin}
                         style={[
                             styles.enigmaImage,
@@ -79,12 +76,12 @@ export const Login = () => {
                                 ],
                             },
                         ]}
-                    />
-                </Pressable>
+                    /> */}
+                </TouchableOpacity>
                 {/* <TouchableOpacity>
                     <Text style={styles.register} onPress={openRegister}>Registrar</Text>
                 </TouchableOpacity> */}
-                <ButtonNav style={styles.button} title='Não tem cadastro? Cadastre-se!' openScreen={openRegister}/>
+                <ButtonNav style={styles.button} title='Não tem cadastro? Cadastre-se!' openScreen={()=>openRegister()}/>
                 
             </View>
         </ImageBackground>

@@ -14,11 +14,52 @@ export const styles = StyleSheet.create({
         justifyContent: "center"
     },
 
+    cardTrap: {
+        width: 68, 
+        height: 99,
+        marginRight: 21,
+        backgroundColor: "red",
+
+        shadowColor: "#ff007f",
+        shadowOffset: {
+            width: 0,
+            height: 0
+        },
+
+        shadowOpacity: 25,
+        shadowRadius: 10
+    },
+
     card: {
         width: 68, 
         height: 99,
         marginRight: 21,
         backgroundColor: "red",
+
+        shadowColor: "#ffd700",
+        shadowOffset: {
+            width: 0,
+            height: 0
+        },
+
+        shadowOpacity: 25,
+        shadowRadius: 10
+    },
+
+    cardEquip: {
+        width: 68, 
+        height: 99,
+        marginRight: 21,
+        backgroundColor: "red",
+
+        shadowColor: "#009cff",
+        shadowOffset: {
+            width: 0,
+            height: 0
+        },
+
+        shadowOpacity: 25,
+        shadowRadius: 10
     },
 
     cardCanto: {
@@ -58,5 +99,6 @@ export const styles = StyleSheet.create({
         width: "100%",
         height: "100%",
         resizeMode: "contain",
+
     },
 })

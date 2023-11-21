@@ -1,18 +1,19 @@
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
 import { Shop } from '../../screens/Shop';
-import { Login } from '../../screens/Login';
-import { Image, ImageBackground, View } from 'react-native';
-import { background } from '../../assets/images/navbarpedra.png'
+import { Image, View } from 'react-native';
 import { Entypo, MaterialCommunityIcons } from '@expo/vector-icons';
 import iconCards from '../../assets/icons/cards.png'
 import { Cards } from '../../screens/Cards';
+import { Deck } from '../../screens/Deck';
+
 
 const Tab = createBottomTabNavigator();
 
 export function BottonTabRoutes() {
-  return (
 
-    <ImageBackground source={background} style={{flex: 1, width: "100%", height: "100%", overflow: "hidden"}}>
+
+   
+  return (
 
     <Tab.Navigator 
       screenOptions={{
@@ -38,45 +39,14 @@ export function BottonTabRoutes() {
           alignItems: 'center',
           marginBottom: -5,
           justifyContent: 'center',
-        },
-
-        // tabBarBackground : () => 
-        //             <Image
-        //               source={require('../../assets/icons/cards.png')}
-        //               resizeMode="cover"
-        //               style={{
-
-        //                 width: '100%',
-        //                 height: '100%',
-        //                 position: 'absolute',
-        //                 top: 0,
-        //                 left: 0,
-        //               }}
-        //         />,
-
-        
-      }}
-      >
+        } 
+      }}>
 
       <Tab.Screen
         options={{
           tabBarIcon: (({ color }) => (
             <Entypo name="shop" size={24} color={color} />
-          )),
-
-      //     tabBarBackground : () => 
-      //     <Image
-      //       source={require('../../assets/images/cartaHorizontal.jpg')}
-      //       resizeMode="contain"
-      //       style={{
-
-      //         width: '140%',
-      //         height: '150%',
-      //         position: 'absolute',
-      //         top: 0,
-      //         left: -200,
-      //       }}
-      // />,
+          ))
         }}
         name="SHOP" 
         component={Shop} 
@@ -91,7 +61,7 @@ export function BottonTabRoutes() {
           ))
         }}
         name="DECK" 
-        component={Login}
+        component={Deck}
       />
 
       <Tab.Screen 
@@ -105,6 +75,6 @@ export function BottonTabRoutes() {
       />
 
     </Tab.Navigator>
-    </ImageBackground>
+
   );
 }
