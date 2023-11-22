@@ -58,6 +58,10 @@ export const Login = () => {
                             onChangeText={(texto) => setSenha(texto)}
                         />
                     </View>
+                    {/* <ButtonNav style={styles.button} title='Não tem cadastro? Cadastre-se!' openScreen={()=>openRegister()}/> */}
+                    <TouchableOpacity onPress={()=>openRegister()} style={styles.buttonCadastro}>
+                 <Text style={styles.buttonCadastroText}>Não tem cadastro? Cadastre-se!</Text>
+              </TouchableOpacity>
                 </View>
 
                 <TouchableOpacity onPress={()=>verificarLogin(email, senha)} style={styles.containerEnigma}>
@@ -81,7 +85,7 @@ export const Login = () => {
                 {/* <TouchableOpacity>
                     <Text style={styles.register} onPress={openRegister}>Registrar</Text>
                 </TouchableOpacity> */}
-                <ButtonNav style={styles.button} title='Não tem cadastro? Cadastre-se!' openScreen={()=>openRegister()}/>
+                
                 
             </View>
         </ImageBackground>

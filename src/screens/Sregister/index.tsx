@@ -95,11 +95,14 @@ export const Sregister = () => {
                     </View>
 
                     <ButtonNav 
-                        title="Register"
+                        title="REGISTER"
                         openScreen={()=>{handleCadastro()}}
                     />
-
-                    <Pressable onPress={()=> navigation.navigate("Login")}><Text>Login</Text></Pressable>
+                    <TouchableOpacity onPress={()=> navigation.navigate("Login")()} style={styles.buttonCadastro}>
+                 <Text style={styles.buttonCadastroText}>Já possui cadastro?</Text>
+                 </TouchableOpacity>
+                    {/* <Pressable onPress={()=> navigation.navigate("Login")}><Text>Login</Text></Pressable> */}
+                     {/* <ButtonNav  title='Login' openScreen={()=> navigation.navigate("Login")}/> */}
 
                 </View>
             </View>

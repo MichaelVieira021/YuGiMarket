@@ -26,7 +26,7 @@ export const CustomModal: React.FC<ModalProps> = ({ visible, onClose, children }
       <View style={styles.modalContainer}>
         <View style={styles.modalContent}>
           <TouchableOpacity style={styles.closeButton} onPress={()=>{playSound(),onClose()}}>
-            <Text>X</Text>
+            <Text style={styles.x}>X</Text>
           </TouchableOpacity>
           {children}
         </View>

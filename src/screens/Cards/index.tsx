@@ -118,8 +118,8 @@ export const Cards = () => {
                 <View style={{alignItems: "center", height:460, width: "100%"}}>
                     <Image source={{uri: dataToPass.img}} style={[styles.imgCard, {height:450}]}/>
                     {/* <Text style={{color: "white"}}>Tipo: {dataToPass.type}</Text> */}
-                    <ButtonNav  style={{backgroundColor: '#b88019'}} title='ADICIONAR AO DECK' openScreen={()=>{playSound(2),addAoDeck(dataToPass)}}/>
-                    <ButtonNav  style={{backgroundColor: '#b88019'}} title="VENDER  R$" algo={dataToPass.preco} openScreen={()=>{playSound(1),vender(dataToPass)}}/>
+                    <ButtonNav  style={styles.ButtonNav} title='ADICIONAR AO DECK' openScreen={()=>{playSound(2),addAoDeck(dataToPass)}}/>
+                    <ButtonNav  style={styles.ButtonNav} title="VENDER  R$ " algo={dataToPass.preco} openScreen={()=>{playSound(1),vender(dataToPass)}}/>
                 </View>}
                 
             </CustomModal>

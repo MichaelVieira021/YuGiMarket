@@ -42,5 +42,16 @@ export const styles = StyleSheet.create({
         fontFamily: 'Yugi-Normal'
         
     },
+    buttonCadastro:{
+        
+        alignItems: 'center'
+      },
+      buttonCadastroText: {
+          color: 'white',
+          fontSize: 21,
+          fontFamily: 'Yugi-Normal',
+          fontWeight: 'bold'
+  
+      },
 
 })

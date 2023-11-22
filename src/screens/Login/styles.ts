@@ -55,15 +55,14 @@ export const styles = StyleSheet.create({
     register:{
         color:"white"
     },
-    button:{
-        color:"black",
-        backgroundColor:"#D5BB76",
-        textAlign:"center",
-        opacity:0.875,
-        shadowRadius: 5,
-        elevation:10,
-        borderRadius: 8,
-        margin:0,
-        padding:5
-    }
+    buttonCadastro:{
+      marginLeft: 9
+    },
+    buttonCadastroText: {
+        color: 'white',
+        fontSize: 17,
+        fontFamily: 'Yugi-Normal',
+        fontWeight: 'bold'
+
+    },
 })

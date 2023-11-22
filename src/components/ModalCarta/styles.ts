@@ -17,14 +17,23 @@ export const styles = StyleSheet.create({
         alignItems: 'center',
     },
     closeButton: {
-        backgroundColor: "red",
-        width: "6%",
+        backgroundColor: "#b88019",
+        width: "15%",
         borderRadius: 100,
         padding: 5,
-        
+        alignItems: 'center',
+        fontSize: '20px',
+        fontWeight: '900',
         position: 'absolute',
         top: 10,
         right: 15,
     },
+    x:{
+        color: 'white',
+        fontSize: 17,
+        fontFamily: 'Yugi-Normal',
+        fontWeight: 'bold'
+     
+    }
 });
   
