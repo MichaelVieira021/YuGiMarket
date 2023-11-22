@@ -13,10 +13,19 @@
       "nome": "Dudu",
       "email": "dudu@gmail.com",
       "senha": "123456",
-      "cash": 1000,
+      "cash": 1004.7299999999999,
       "cartas": [],
       "deck": [],
       "id": 2
+    },
+    {
+      "nome": "dudu2",
+      "email": "dudu2@gmail.com",
+      "senha": "123456",
+      "cash": 1000,
+      "cartas": [],
+      "deck": [],
+      "id": 3
     }
   ]
 }

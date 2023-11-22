@@ -19,7 +19,6 @@ interface Usuario {
 export const InfosUser = () => {
 
     const { usuarioStorage, usuarioInfos, deslogar, usuario, infos } = useContext(LoginContext);
-    // const [usuarioInfos, setUsuarioInfos] = useState<Usuario>();
     const [modalVisible, setModalVisible] = useState(false);
     const [todasCartas, setTodasCartas] = useState<any>([])
 
@@ -31,12 +30,10 @@ export const InfosUser = () => {
     useEffect(()=>{},[usuarioInfos,usuario])
 
     const closeModal = () => {
-        // setDataToPass(null);
         setModalVisible(false);
     };
     
     const openModal = (data: any) => {
-        // setDataToPass(data.carta);
         obterNumeroCartas()
         setModalVisible(true);
     };
