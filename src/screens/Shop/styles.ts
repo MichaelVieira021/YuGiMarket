@@ -5,12 +5,12 @@ export const styles = StyleSheet.create({
     container:{
         flex: 1,
         alignItems: "center",
-        justifyContent: "center"
+        justifyContent: "flex-end"
     },
 
     containerCards: {
         flexDirection: "row",
-        marginTop: 285,
+        marginTop: "100%",
         justifyContent: "center"
     },
 
@@ -102,17 +102,15 @@ export const styles = StyleSheet.create({
 
     },
     cardMeio: {
-        width: 100, 
-        height: 100, 
-        marginBottom: -100
+        // width: 100, 
+        // height: 100, 
+        // marginBottom: -100
         
     },
 
     cardEquipDragon: {
-        width: 80, 
-        height: 99,
-        marginRight: 21,
-       
+        width: "100%", 
+        height: "100%",    
     },
 
     imgCardDragon: {

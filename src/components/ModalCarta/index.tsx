@@ -1,12 +1,12 @@
 import React, { useEffect, useState } from 'react';
-import { View, Modal, Text, TouchableOpacity} from 'react-native';
+import { View, Modal, Text, TouchableOpacity, ViewStyle, StyleProp} from 'react-native';
 import { styles } from './styles';
 import { Audio } from 'expo-av';
 interface ModalProps {
   visible: boolean;
   onClose: () => void;
   children: any
-  estilo?: any
+  estilo?: StyleProp<ViewStyle>
 }
 
 export const CustomModal: React.FC<ModalProps> = ({ visible, onClose, estilo, children }:any) => {
