@@ -20,7 +20,7 @@ export const styles = StyleSheet.create({
         marginRight: 21,
         // backgroundColor: "red",
 
-        shadowColor: "#ff007f",
+        shadowColor: "red",
         shadowOffset: {
             width: 0,
             height: 0
@@ -37,7 +37,7 @@ export const styles = StyleSheet.create({
         // backgroundColor: "red",
 
         // shadowColor: "#ffff00",
-        shadowColor: "white",
+        shadowColor: "orange",
         shadowOffset: {
             width: 0,
             height: 0
@@ -53,7 +53,7 @@ export const styles = StyleSheet.create({
         marginRight: 21,
         // backgroundColor: "red",
 
-        shadowColor: "#009cff",
+        shadowColor: "blue",
         shadowOffset: {
             width: 0,
             height: 0
@@ -70,7 +70,6 @@ export const styles = StyleSheet.create({
     },
 
     containerQtdCard:{
-        backgroundColor: "#ffffff9b",
         alignItems: "center",
         justifyContent: "center",
         height: 25,
@@ -120,7 +119,7 @@ export const styles = StyleSheet.create({
         width: "100%",
         height: "100%",
         resizeMode: "contain",
-         shadowColor: "yellow",
+         shadowColor: "green",
         shadowOffset: {
             width: 0,
             height: 0
