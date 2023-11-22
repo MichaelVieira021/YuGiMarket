@@ -1,10 +1,9 @@
-import React, { createContext, useEffect, useState } from "react";
-import { getLoginUsuario, getUsuario } from "../../services/ApiConta";
+import React, { createContext, useState } from "react";
+import { getUsuario } from "../../services/ApiConta";
 import AsyncStorage from '@react-native-async-storage/async-storage';
-import { useNavigation } from "@react-navigation/native";
 
 interface ContextProps {
-	children: React.ReactNode
+    children: React.ReactNode
 }
 
 interface Usuario {
@@ -18,15 +17,15 @@ interface Usuario {
 
 export const StorageContext = createContext<any>({})
 
-export function StorageContextProvider({children}: ContextProps){
+export function StorageContextProvider({ children }: ContextProps) {
     const [usuarioLogado, setUsuarioLogado] = useState({});
     const [usuario, setUsuario] = useState<Usuario | {}>({});
 
-    async function infos(){
-        // atualizar()
+    async function infos() {
+
         try {
             const usuarioInfos = await AsyncStorage.getItem("usuario");
-        
+
             if (usuarioInfos) {
                 const usuarioObjeto = JSON.parse(usuarioInfos);
                 setUsuarioLogado(await usuarioObjeto);
@@ -43,28 +42,28 @@ export function StorageContextProvider({children}: ContextProps){
         }
     }
 
-    async function atualizar(email: string){
-        getUsuario(email).then((response)=>{
-            if(response.data.length === 1){
+    async function atualizar(email: string) {
+        getUsuario(email).then((response) => {
+            if (response.data.length === 1) {
                 setUsuario((prevState) => {
                     const novoUsuario = {
-                      id: response.data[0].id,
-                      nome: response.data[0].nome,
-                      email: response.data[0].email,
-                      cartas: response.data[0].cartas,
-                      deck: response.data[0].deck,
-                      cash: response.data[0].cash,
+                        id: response.data[0].id,
+                        nome: response.data[0].nome,
+                        email: response.data[0].email,
+                        cartas: response.data[0].cartas,
+                        deck: response.data[0].deck,
+                        cash: response.data[0].cash,
                     };
-                  
+
                     AsyncStorage.setItem('usuario', JSON.stringify(novoUsuario));
-                  
+
                     return novoUsuario;
                 });
-            }else{
+            } else {
                 console.log("Tudo errado")
             }
 
-        }).catch((error)=> {
+        }).catch((error) => {
             console.log("Tudo errado", error)
         })
     }
@@ -76,6 +75,6 @@ export function StorageContextProvider({children}: ContextProps){
             infos,
             atualizar
         }}>
-        {children}</StorageContext.Provider>
+            {children}</StorageContext.Provider>
     )
 }

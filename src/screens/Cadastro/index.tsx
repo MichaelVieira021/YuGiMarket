@@ -1,5 +1,5 @@
 import React, { useState } from "react"
-import { View, ImageBackground, TextInput, Text, Button, Alert, TouchableOpacity, Pressable } from "react-native"
+import { View, ImageBackground, TextInput, Text, TouchableOpacity } from "react-native"
 import { styles } from "./styles"
 import fundoCadastro from "../../assets/images/fundoCadastro.png"
 import { useNavigation } from "@react-navigation/native"
@@ -17,48 +17,49 @@ export const Cadastro = () => {
 
         const response = await getUsuario(email)
 
-        
+
         if (!email.match(/^\w+@gmail.com$/)) {
             alert("@gmail.com obrigatório");
             return;
         }
-       
-        else if(nome.length >= 4){
+
+        else if (nome.length >= 4) {
             alert("Preencha o nome e minimo de 4 caracteres")
         }
-        else if (senha !== confirmarSenha) {
-          alert('As senhas não coincidem')
-          return
-        }
         
-        else if(senha.length <6){
+        else if (senha !== confirmarSenha) {
+            alert('As senhas não coincidem')
+            return
+        }
+
+        else if (senha.length < 6) {
             alert("Minimo 6 caracteres")
-            
-        } else{
-  
-        if(response.data.length == 0 ) {
-            try {
-                await postNovoUsuario(
-                    nome,
-                    email,
-                    senha,
-                    1000,
-                    [],
-                    [],
-                )
-      
-                alert('Cadastro realizado com sucesso!');
-                navigation.navigate("Login")
-          
-            } catch (error) { 
-                alert('Erro ao cadastrar');
-            }
 
         } else {
-          alert('Email já cadastrado')
+
+            if (response.data.length == 0) {
+                try {
+                    await postNovoUsuario(
+                        nome,
+                        email,
+                        senha,
+                        1000,
+                        [],
+                        [],
+                    )
+
+                    alert('Cadastro realizado com sucesso!');
+                    navigation.navigate("Login")
+
+                } catch (error) {
+                    alert('Erro ao cadastrar');
+                }
+
+            } else {
+                alert('Email já cadastrado')
+            }
         }
     }
-}
     return (
         <ImageBackground source={fundoCadastro} style={styles.backgroundImage}>
             <View style={styles.container}>
@@ -107,16 +108,13 @@ export const Cadastro = () => {
                         />
                     </View>
 
-                    <ButtonNav 
+                    <ButtonNav
                         title="REGISTER"
-                        openScreen={()=>{handleCadastro()}}
+                        openScreen={() => { handleCadastro() }}
                     />
-                    <TouchableOpacity onPress={()=> navigation.navigate("Login")()} style={styles.buttonCadastro}>
-                 <Text style={styles.buttonCadastroText}>Já possui cadastro?</Text>
-                 </TouchableOpacity>
-                    {/* <Pressable onPress={()=> navigation.navigate("Login")}><Text>Login</Text></Pressable> */}
-                     {/* <ButtonNav  title='Login' openScreen={()=> navigation.navigate("Login")}/> */}
-
+                    <TouchableOpacity onPress={() => navigation.navigate("Login")()} style={styles.buttonCadastro}>
+                        <Text style={styles.buttonCadastroText}>Já possui cadastro?</Text>
+                    </TouchableOpacity>
                 </View>
             </View>
 
