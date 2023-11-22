@@ -6,7 +6,319 @@
       "email": "teste",
       "senha": "123",
       "cash": 1000,
-      "cartas": []
+      "cartas": [],
+      "deck": []
+    },
+    {
+      "nome": "edu",
+      "email": "edu@gmail.com",
+      "senha": "123",
+      "cash": 985.72,
+      "cartas": [
+        {
+          "carta": {
+            "id": 2009101,
+            "name": "Blackwing - Gale the Whirlwind",
+            "type": "Tuner Monster",
+            "desc": "If you control a \"Blackwing\" monster other than \"Blackwing - Gale the Whirlwind\", you can Special Summon this card (from your hand). Once per turn: You can target 1 face-up monster your opponent controls; that target's ATK and DEF become half its current ATK and DEF.",
+            "preco": "0.25",
+            "img": "https://images.ygoprodeck.com/images/cards/2009101.jpg"
+          }
+        },
+        {
+          "carta": {
+            "id": 42199039,
+            "name": "Cursed Bamboo Sword",
+            "type": "Spell Card",
+            "desc": "The equipped monster gains 0 ATK. You can target 1 other \"Bamboo Sword\" card you control; return it to the hand, and if you do, the equipped monster can attack your opponent directly this turn. You can only use this effect of \"Cursed Bamboo Sword\" once per turn. If this card is sent to the Graveyard: You can add 1 \"Bamboo Sword\" card from your Deck to your hand, except \"Cursed Bamboo Sword\".",
+            "preco": "11.33",
+            "img": "https://images.ygoprodeck.com/images/cards/42199039.jpg"
+          }
+        },
+        {
+          "carta": {
+            "id": 53860621,
+            "name": "Glowing Crossbow",
+            "type": "Spell Card",
+            "desc": "Equip only to a \"Blackwing\" monster. It gains 500 ATK/DEF. You can only use each of the following effects of \"Glowing Crossbow\" once per turn.\r\n● If the equipped monster destroys an opponent's monster by battle: You can discard 1 random card from your opponent's hand.\r\n● If this card is sent to the GY because the equipped monster was used as a Synchro Material: You can add this card from the GY to your hand.",
+            "preco": "0.09",
+            "img": "https://images.ygoprodeck.com/images/cards/53860621.jpg"
+          }
+        },
+        {
+          "carta": {
+            "id": 88610708,
+            "name": "Bashing Shield",
+            "type": "Spell Card",
+            "desc": "Equip only to a Normal Summoned/Set monster. It gains 1000 ATK. You take no battle damage from attacks involving it.",
+            "preco": "0.50",
+            "img": "https://images.ygoprodeck.com/images/cards/88610708.jpg"
+          }
+        },
+        {
+          "carta": {
+            "id": 12174035,
+            "name": "Hydro Pressure Cannon",
+            "type": "Spell Card",
+            "desc": "Equip only to a Level 3 or lower WATER monster. If it destroys an opponent's monster by battle, send 1 random card in your opponent's hand to the Graveyard.",
+            "preco": "0.05",
+            "img": "https://images.ygoprodeck.com/images/cards/12174035.jpg"
+          }
+        },
+        {
+          "carta": {
+            "id": 55569674,
+            "name": "Celestial Sword - Eatos",
+            "type": "Spell Card",
+            "desc": "(This card is always treated as a \"Noble Arms\" card.)\nThe equipped monster gains 500 ATK. When this card is sent from the field to the Graveyard: You can target 1 \"Guardian Eatos\" you control; it gains 500 ATK for each banished monster.",
+            "preco": "0.08",
+            "img": "https://images.ygoprodeck.com/images/cards/55569674.jpg"
+          }
+        },
+        {
+          "carta": {
+            "id": 83584898,
+            "name": "Darkworld Shackles",
+            "type": "Spell Card",
+            "desc": "The equipped monster cannot attack, also its ATK and DEF become 100. During each of your Standby Phases: Inflict 500 damage to the controller of the equipped monster.",
+            "preco": "0.26",
+            "img": "https://images.ygoprodeck.com/images/cards/83584898.jpg"
+          }
+        },
+        {
+          "carta": {
+            "id": 57736667,
+            "name": "Mikanko Dance - Mayowashidori",
+            "type": "Spell Card",
+            "desc": "The equipped monster cannot be destroyed by card effects. You can only use each of the following effects of \"Mikanko Dance - Mayowashidori\" once per turn. At the end of the Damage Step, if your \"Mikanko\" monster battled: You can target 1 card on the field; return it to the hand. If this card is in your GY: You can target 1 \"Mikanko\" monster in your GY; Special Summon it, and if you do, equip it with this card, but banish it when it leaves the field.",
+            "preco": "0.10",
+            "img": "https://images.ygoprodeck.com/images/cards/57736667.jpg"
+          }
+        },
+        {
+          "carta": {
+            "id": 7817703,
+            "name": "Morphtronic Engine",
+            "type": "Spell Card",
+            "desc": "Equip only to a Level 3 \"Morphtronic\" monster. Its ATK becomes double its original ATK. During your second Standby Phase after this card's activation, destroy this card, and take damage equal to the original ATK of the equipped monster.",
+            "preco": "0.15",
+            "img": "https://images.ygoprodeck.com/images/cards/7817703.jpg"
+          }
+        },
+        {
+          "carta": {
+            "id": 48447192,
+            "name": "Sword of Sparkles",
+            "type": "Spell Card",
+            "desc": "Equip only to an \"X-Saber\" monster. If it destroys an opponent's monster by battle, you can destroy 1 card your opponent controls. You can Tribute 1 monster you control to return this card from your Graveyard to the top of your Deck.",
+            "preco": "0.10",
+            "img": "https://images.ygoprodeck.com/images/cards/48447192.jpg"
+          }
+        },
+        {
+          "carta": {
+            "id": 96458440,
+            "name": "Legendary Black Belt",
+            "type": "Spell Card",
+            "desc": "Equip only to \"Chu-Ske the Mouse Fighter\", \"Monk Fighter\", or \"Master Monk\". When the equipped monster destroys your opponent's monster by battle and sends it to the Graveyard, inflict damage to your opponent equal to the DEF of the destroyed monster.",
+            "preco": "0.38",
+            "img": "https://images.ygoprodeck.com/images/cards/96458440.jpg"
+          }
+        },
+        {
+          "carta": {
+            "id": 37120512,
+            "name": "Sword of Dark Destruction",
+            "type": "Spell Card",
+            "desc": "Equip only to a DARK monster. It gains 400 ATK and loses 200 DEF.",
+            "preco": "0.12",
+            "img": "https://images.ygoprodeck.com/images/cards/37120512.jpg"
+          }
+        },
+        {
+          "carta": {
+            "id": 5371656,
+            "name": "Sword of the Soul-Eater",
+            "type": "Spell Card",
+            "desc": "You can only equip this card to a Level 3 or lower Normal Monster on your side of the field. When you activate this card, Tribute all Normal Monsters (except Tokens) on your side of the field, except the equipped monster. Increase the ATK of the equipped monster by 1000 points for each Normal Monster that you Tributed.",
+            "preco": "0.18",
+            "img": "https://images.ygoprodeck.com/images/cards/5371656.jpg"
+          }
+        },
+        {
+          "carta": {
+            "id": 11471117,
+            "name": "Light Laser",
+            "type": "Spell Card",
+            "desc": "Equip only to a LIGHT Warrior-Type monster. Remove from play any monsters that battle with it at the end of Damage Step.",
+            "preco": "0.81",
+            "img": "https://images.ygoprodeck.com/images/cards/11471117.jpg"
+          }
+        },
+        {
+          "carta": {
+            "id": 74694807,
+            "name": "Re-Fusion",
+            "type": "Spell Card",
+            "desc": "Activate this card by paying 800 LP, then target 1 Fusion Monster in your GY; Special Summon it and equip it with this card. When this card is destroyed, banish the equipped monster.",
+            "preco": "0.11",
+            "img": "https://images.ygoprodeck.com/images/cards/74694807.jpg"
+          }
+        },
+        {
+          "carta": {
+            "id": 27967615,
+            "name": "Fusion Weapon",
+            "type": "Spell Card",
+            "desc": "Equip only to a Level 6 or lower Fusion Monster. The equipped monster gains 1500 ATK and DEF.",
+            "preco": "0.11",
+            "img": "https://images.ygoprodeck.com/images/cards/27967615.jpg"
+          }
+        },
+        {
+          "carta": {
+            "id": 25769732,
+            "name": "Machine Conversion Factory",
+            "type": "Spell Card",
+            "desc": "Equip only to a Machine monster. It gains 300 ATK/DEF.",
+            "preco": "0.08",
+            "img": "https://images.ygoprodeck.com/images/cards/25769732.jpg"
+          }
+        },
+        {
+          "carta": {
+            "id": 99013397,
+            "name": "Gladiator Beast's Battle Halberd",
+            "type": "Spell Card",
+            "desc": "Equip only to a \"Gladiator Beast\" monster. When it attacks, destroy 1 Spell or Trap Card at the end of the Damage Step. When the equipped monster is returned from your side of the field to the Deck and this card is sent to the Graveyard, return this card to your hand.",
+            "preco": "0.10",
+            "img": "https://images.ygoprodeck.com/images/cards/99013397.jpg"
+          }
+        },
+        {
+          "carta": {
+            "id": 70423794,
+            "name": "Morphtronic Cord",
+            "type": "Spell Card",
+            "desc": "Equip only to a \"Morphtronic\" monster. Each time the equipped monster's battle position is changed, destroy 1 Spell or Trap Card on the field.",
+            "preco": "0.11",
+            "img": "https://images.ygoprodeck.com/images/cards/70423794.jpg"
+          }
+        },
+        {
+          "carta": {
+            "id": 37364101,
+            "name": "Stoic Challenge",
+            "type": "Spell Card",
+            "desc": "You can only control 1 \"Stoic Challenge\". Equip only to a face-up Xyz Monster that has Xyz Material. It gains 600 ATK for each Xyz Material attached to a monster you control, and any battle damage your opponent takes from battles involving it and their monster is doubled, but its effects cannot be activated. During your opponent's End Phase: Send this card to the Graveyard. When this card leaves the field, destroy the equipped monster.",
+            "preco": "0.29",
+            "img": "https://images.ygoprodeck.com/images/cards/37364101.jpg"
+          }
+        },
+        {
+          "carta": {
+            "id": 87973893,
+            "name": "Inzektor Axe - Zektahawk",
+            "type": "Spell Card",
+            "desc": "Equip only to an \"Inzektor\" monster. It gains 1000 ATK. When the equipped monster declares an attack, your opponent cannot activate Spell/Trap Cards.",
+            "preco": "0.23",
+            "img": "https://images.ygoprodeck.com/images/cards/87973893.jpg"
+          }
+        },
+        {
+          "carta": {
+            "id": 10204849,
+            "name": "Fleuret de Fleur",
+            "type": "Spell Card",
+            "desc": "Activate this card by targeting 1 Level 2 or lower monster in your GY; Special Summon it, but negate its effects, also equip it with this card. When this card, equipped by this effect, leaves the field, destroy that monster. The equipped monster gains 700 ATK. If this card is sent from the Spell & Trap Zone to the GY: You can equip this card to 1 Synchro Monster you control. You can only use this effect of \"Fleuret de Fleur\" once per turn. You can only activate 1 \"Fleuret de Fleur\" per turn.",
+            "preco": "0.18",
+            "img": "https://images.ygoprodeck.com/images/cards/10204849.jpg"
+          }
+        },
+        {
+          "carta": {
+            "id": 67227834,
+            "name": "Magic Formula",
+            "type": "Spell Card",
+            "desc": "Equip only to \"Dark Magician\" or \"Dark Magician Girl\". It gains 700 ATK. If this card is sent from the field to the GY: Gain 1000 LP.",
+            "preco": "0.08",
+            "img": "https://images.ygoprodeck.com/images/cards/67227834.jpg"
+          }
+        },
+        {
+          "carta": {
+            "id": 14745409,
+            "name": "Noble Arms - Gallatin",
+            "type": "Spell Card",
+            "desc": "You can only control 1 \"Noble Arms - Gallatin\". Equip only to a Warrior-Type monster. It gains 1000 ATK. During each of your Standby Phases, it loses 200 ATK. If this face-up card on the field is destroyed and sent to the Graveyard: You can target 1 Warrior-Type \"Noble Knight\" monster you control; equip this card to that target. You can only use this effect of \"Noble Arms - Gallatin\" once per turn.",
+            "preco": "0.20",
+            "img": "https://images.ygoprodeck.com/images/cards/14745409.jpg"
+          }
+        },
+        {
+          "carta": {
+            "id": 95515060,
+            "name": "Rod of Silence - Kay'est",
+            "type": "Spell Card",
+            "desc": "The equipped monster gains 500 DEF. Negate other Spell effects that target the equipped monster, and if you do, destroy that Spell Card.",
+            "preco": "0.52",
+            "img": "https://images.ygoprodeck.com/images/cards/95515060.jpg"
+          }
+        },
+        {
+          "carta": {
+            "id": 47274077,
+            "name": "Neos Force",
+            "type": "Spell Card",
+            "desc": "Equip only to \"Elemental HERO Neos\". It gains 800 ATK. When it destroys a monster by battle and sends it to the Graveyard: Inflict damage to your opponent equal to the original ATK of the destroyed monster in the Graveyard. During the End Phase: Shuffle this card into the Deck.",
+            "preco": "0.32",
+            "img": "https://images.ygoprodeck.com/images/cards/47274077.jpg"
+          }
+        },
+        {
+          "carta": {
+            "id": 33114323,
+            "name": "Metalsilver Armor",
+            "type": "Spell Card",
+            "desc": "As long as you control the monster equipped with this card, your opponent cannot use the effect of a Spell, Trap, or Effect Monster that targets 1 monster, except the equipped monster.",
+            "preco": "4.72",
+            "img": "https://images.ygoprodeck.com/images/cards/33114323.jpg"
+          }
+        },
+        {
+          "carta": {
+            "id": 41410651,
+            "name": "Mathmech Billionblade Nayuta",
+            "type": "Spell Card",
+            "desc": "Equip only to a Cyberse monster. If the equipped monster battles an opponent's monster, during damage calculation: You can send 1 \"Mathmech\" monster from your Deck to the GY; the equipped monster gains ATK equal to the sent monster's ATK, until the end of this turn (even if this card leaves the field). If this card is sent from the Spell & Trap Zone to the GY: You can target 1 \"Mathmech\" card in your GY, except \"Mathmech Billionblade Nayuta\"; add it to your hand. You can only use each effect of \"Mathmech Billionblade Nayuta\" once per turn.",
+            "preco": "0.17",
+            "img": "https://images.ygoprodeck.com/images/cards/41410651.jpg"
+          }
+        }
+      ],
+      "deck": [
+        {
+          "carta": {
+            "id": 42199039,
+            "name": "Cursed Bamboo Sword",
+            "type": "Spell Card",
+            "desc": "The equipped monster gains 0 ATK. You can target 1 other \"Bamboo Sword\" card you control; return it to the hand, and if you do, the equipped monster can attack your opponent directly this turn. You can only use this effect of \"Cursed Bamboo Sword\" once per turn. If this card is sent to the Graveyard: You can add 1 \"Bamboo Sword\" card from your Deck to your hand, except \"Cursed Bamboo Sword\".",
+            "preco": "11.33",
+            "img": "https://images.ygoprodeck.com/images/cards/42199039.jpg"
+          }
+        },
+        {
+          "carta": {
+            "id": 2009101,
+            "name": "Blackwing - Gale the Whirlwind",
+            "type": "Tuner Monster",
+            "desc": "If you control a \"Blackwing\" monster other than \"Blackwing - Gale the Whirlwind\", you can Special Summon this card (from your hand). Once per turn: You can target 1 face-up monster your opponent controls; that target's ATK and DEF become half its current ATK and DEF.",
+            "preco": "0.25",
+            "img": "https://images.ygoprodeck.com/images/cards/2009101.jpg"
+          }
+        }
+      ],
+      "id": 2
     }
   ]
 }

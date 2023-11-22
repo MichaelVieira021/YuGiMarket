@@ -28,7 +28,9 @@ export const styles = StyleSheet.create({
         borderRadius: 9,
         marginTop: 10
     },
-    textCard:{
-        color:"black"
+   
+    ButtonNav:{
+        backgroundColor: '#b88019',
+        fontFamily: 'Yugi-Bold',
     }
 })

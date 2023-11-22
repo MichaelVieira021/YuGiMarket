@@ -86,7 +86,9 @@ export const Shop = () => {
 
         const indiceAleatorio = Math.floor(Math.random() * todasTipoTrap.length);
         const cartaAleatoria = todasTipoTrap[indiceAleatorio];
-        console.log(cartaAleatoria);
+        const verificador = await verificaDeck( cartaAleatoria );
+        console.log(verificador);
+        if (!verificador) {
         const carta = {
             id: cartaAleatoria.id,
             name: cartaAleatoria.name,
@@ -99,22 +101,32 @@ export const Shop = () => {
         const cartasDoUsuario = await usuario.cartas;
         const atualizado = [...cartasDoUsuario, { carta }]
         await patchUsuarioCards(usuario.id, atualizado);
+        }
+        // const novoCash = (Number(await usuario.cash) - 0.50)
+        // console.log(novoCash);
 
-        const novoCash = (Number(await usuario.cash) - 0.50)
-        console.log(novoCash);
-
-        await patchUsuarioCash(usuario.id, novoCash)
+        // await patchUsuarioCash(usuario.id, novoCash)
         await infos()
 
     }
 
-    const verificaIdExiste = async (id: number): boolean => {
-        const cartasDoUsuario = await usuario.cartas;
-        for (const carta of cartasDoUsuario) {
-            if (carta.carta.id === id) {
+    const verificaDeck = async ( carta ) => {
+        for (const card of usuario.cartas) {
+            console.log(usuario.cash)
+            if (card.carta.id === carta.id) {
+                const novoCash = ((Number(await usuario.cash) - 0.50) + Number(carta.card_prices[0].cardmarket_price));
+                console.log(novoCash)
+                await patchUsuarioCash(usuario.id, novoCash);
+                console.log(card.carta.id)
+                await infos();
+                console.log(usuario.cash)
                 return true;
             }
         }
+        const novoCash = (Number(await usuario.cash) - 0.50);
+        console.log(novoCash);
+    
+        await patchUsuarioCash(usuario.id, novoCash);
         return false;
     };
 
@@ -122,31 +134,37 @@ export const Shop = () => {
 
         const indiceAleatorio = Math.floor(Math.random() * todasTipoSpell.length);
         const cartaAleatoria = todasTipoSpell[indiceAleatorio];
-        const carta = {
-            id: cartaAleatoria.id,
-            name: cartaAleatoria.name,
-            type: cartaAleatoria.type,
-            desc: cartaAleatoria.desc,
-            preco: cartaAleatoria.card_prices[0].cardmarket_price,
-            img: cartaAleatoria.card_images[0].image_url
-        }
+        const verificador = await verificaDeck( cartaAleatoria );
+        console.log(verificador);
+        if (!verificador) {
+            const carta = {
+                id: cartaAleatoria.id,
+                name: cartaAleatoria.name,
+                type: cartaAleatoria.type,
+                desc: cartaAleatoria.desc,
+                preco: cartaAleatoria.card_prices[0].cardmarket_price,
+                img: cartaAleatoria.card_images[0].image_url
+            };
             const cartasDoUsuario = await usuario.cartas;
             const atualizado = [...cartasDoUsuario, { carta }];
             await patchUsuarioCards(usuario.id, atualizado);
-
-            const novoCash = (Number(await usuario.cash) - 0.50)
-            console.log(novoCash);
-
-            await patchUsuarioCash(usuario.id, novoCash)
-            await infos()
-
         }
+    
+        // const novoCash = (Number(await usuario.cash) - 0.50);
+        // console.log(novoCash);
+    
+        // await patchUsuarioCash(usuario.id, novoCash);
+        await infos();
+    
+    };
 
-        const dragonAdd = async () => {
+    const dragonAdd = async () => {
 
             const indiceAleatorio = Math.floor(Math.random() * todasTipoDragon.length);
             const cartaAleatoria = todasTipoDragon[indiceAleatorio];
-            console.log(cartaAleatoria.id);
+            const verificador = await verificaDeck( cartaAleatoria );
+            console.log(verificador);
+            if (!verificador) {
             const carta = {
                 id: cartaAleatoria.id,
                 name: cartaAleatoria.name,
@@ -158,13 +176,14 @@ export const Shop = () => {
             const cartasDoUsuario = await usuario.cartas;
             const atualizado = [...cartasDoUsuario, { carta }]
             await patchUsuarioCards(usuario.id, atualizado);
+            }
 
-            const novoCash = (Number(await usuario.cash) - 1)
-            console.log(novoCash);
+            // const novoCash = (Number(await usuario.cash) - 1)
+            // console.log(novoCash);
 
-            await patchUsuarioCash(usuario.id, novoCash)
+            // await patchUsuarioCash(usuario.id, novoCash)
             await infos()
-
+            
         }
 
         const testeAdd = async () => {
@@ -172,7 +191,9 @@ export const Shop = () => {
 
             const indiceAleatorio = Math.floor(Math.random() * todasCartas.length);
             const cartaAleatoria = todasCartas[indiceAleatorio];
-            console.log(cartaAleatoria.id);
+            const verificador = await verificaDeck( cartaAleatoria );
+            console.log(verificador);
+            if (!verificador) {
             const carta = {
                 id: cartaAleatoria.id,
                 name: cartaAleatoria.name,
@@ -185,12 +206,11 @@ export const Shop = () => {
             const cartasDoUsuario = await usuario.cartas;
             const atualizado = [...cartasDoUsuario, { carta }]
             await patchUsuarioCards(usuario.id, atualizado);
+            }
+            // const novoCash = (Number(await usuario.cash) - 0.50)
+            // console.log(novoCash);
 
-
-            const novoCash = (Number(await usuario.cash) - 0.50)
-            console.log(novoCash);
-
-            await patchUsuarioCash(usuario.id, novoCash)
+            // await patchUsuarioCash(usuario.id, novoCash)
             await infos()
 
         }

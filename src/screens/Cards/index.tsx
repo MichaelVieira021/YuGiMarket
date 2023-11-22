@@ -129,12 +129,23 @@ export const Cards = () => {
 
             />
             <CustomModal visible={modalVisible} onClose={closeModal}>
+
+                {/* {dataToPass && 
+                <View style={{alignItems: "center", height:460, width: "100%"}}>
+                    <Image source={{uri: dataToPass.img}} style={[styles.imgCard, {height:450}]}/>
+                   
+                    <ButtonNav  style={styles.ButtonNav} title='ADICIONAR AO DECK' openScreen={()=>{playSound(2),addAoDeck(dataToPass)}}/>
+                    <ButtonNav  style={styles.ButtonNav} title="VENDER  R$ " algo={dataToPass.preco} openScreen={()=>{playSound(1),vender(dataToPass)}}/>
+                </View>}
+                 */}
+
                 {dataToPass &&
                     <View style={{ alignItems: "center", height: 460, width: "100%" }}>
                         <Image source={{ uri: dataToPass.img }} style={[styles.imgCard, { height: 450 }]} />
                         {activation() === true ? <ButtonNav active={true} style={{ backgroundColor: '#b880'}} title='JÁ ADICIONADA' openScreen={() => { playSound(2), addAoDeck(dataToPass) }} /> : <ButtonNav style={{ backgroundColor: '#b88019' }} title='ADICIONAR AO DECK' openScreen={() => { playSound(2), addAoDeck(dataToPass) }} />}
                         <ButtonNav style={{ backgroundColor: '#b88019' }} title="VENDER  R$" algo={dataToPass.preco} openScreen={() => { playSound(1), vender(dataToPass) }} />
                     </View>}
+
 
             </CustomModal>
         </ImageBackground>
