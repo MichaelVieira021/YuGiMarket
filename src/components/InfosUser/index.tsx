@@ -40,10 +40,8 @@ export const InfosUser = () => {
 
     const obterNumeroCartas = async () => {
         getTodasCartas().then((response) => {
-            console.log(response.data.data, "testando")
             setTodasCartas(response.data.data)
         }).catch((Error) => {
-            console.log("Tudo errado")
         })
     }
 
