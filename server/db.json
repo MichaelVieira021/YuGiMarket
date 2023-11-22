@@ -3002,6 +3002,157 @@
         }
       ],
       "id": 8
+    },
+    {
+      "nome": "edu",
+      "email": "edu",
+      "senha": "123",
+      "cash": 855.6000000000001,
+      "cartas": [
+        {
+          "carta": {
+            "id": 63730624,
+            "name": "Double Tool C&D",
+            "type": "Spell Card",
+            "desc": "Equip only to a \"Power Tool Dragon\" or Level 4 or higher Machine-Type \"Morphtronic\" monster you control. While equipped: ● During your turn: It gains 1000 ATK. If it attacks, any effects of the attack target that activate or apply on the field are negated during that Battle Phase. ● During your opponent's turn: Your opponent cannot select a monster other than the equipped monster as an attack target. An opponent's monster that battles the equipped monster is destroyed at the end of the Damage Step.",
+            "preco": "0.22",
+            "img": "https://images.ygoprodeck.com/images/cards/63730624.jpg"
+          }
+        },
+        {
+          "carta": {
+            "id": 69792699,
+            "name": "Penguin Sword",
+            "type": "Spell Card",
+            "desc": "Equip only to a \"Penguin\" monster. It gains 800 ATK. When the equipped monster inflicts battle damage to your opponent: You can return 1 card your opponent controls to the hand. If a face-up card your opponent controls leaves the field by a \"Penguin\" card's effect and returns to the hand or is banished: Negate the activated effects and effects on the field of cards with that original name, until the end of the next turn. You can only use this effect of \"Penguin Sword\" once per turn.",
+            "preco": "0.06",
+            "img": "https://images.ygoprodeck.com/images/cards/69792699.jpg"
+          }
+        },
+        {
+          "carta": {
+            "id": 40830387,
+            "name": "Ancient Gear Fist",
+            "type": "Spell Card",
+            "desc": "Equip only to an \"Ancient Gear\" monster. At the end of the Damage Step, if the equipped monster battled a monster and is still on the field: Destroy the monster it battled.",
+            "preco": "0.43",
+            "img": "https://images.ygoprodeck.com/images/cards/40830387.jpg"
+          }
+        },
+        {
+          "carta": {
+            "id": 64801562,
+            "name": "Heart of Clear Water",
+            "type": "Spell Card",
+            "desc": "If the equipped monster's ATK is 1300 or higher, this card is destroyed. The monster equipped with this card is not destroyed as a result of battle or by the effect of a card that targets the monster. (Damage calculation is applied normally.)",
+            "preco": "0.20",
+            "img": "https://images.ygoprodeck.com/images/cards/64801562.jpg"
+          }
+        },
+        {
+          "carta": {
+            "id": 33578406,
+            "name": "Original Bamboo Sword",
+            "type": "Spell Card",
+            "desc": "The equipped monster gains 0 ATK. When the equipped monster inflicts battle damage by a direct attack: You can destroy all monsters your opponent controls. You can send this equipped card to the GY; equip 1 \"Bamboo Sword\" Equip Spell from your Deck to 1 face-up monster on the field, except \"Original Bamboo Sword\".",
+            "preco": "0.06",
+            "img": "https://images.ygoprodeck.com/images/cards/33578406.jpg"
+          }
+        },
+        {
+          "carta": {
+            "id": 15052462,
+            "name": "Violet Crystal",
+            "type": "Spell Card",
+            "desc": "(This card is not treated as a \"Crystal\" card.)\r\nEquip only to a Zombie monster. It gains 300 ATK/DEF.",
+            "preco": "0.02",
+            "img": "https://images.ygoprodeck.com/images/cards/15052462.jpg"
+          }
+        },
+        {
+          "carta": {
+            "id": 90861137,
+            "name": "\"Infernoble Arms - Joyeuse\"",
+            "type": "Spell Card",
+            "desc": "While this card is equipped to a monster: You can target 1 FIRE Warrior monster in your GY; add it to your hand, then destroy this card. If this card is sent to the GY because the equipped monster is sent to the GY: You can Special Summon 1 FIRE Warrior monster from your hand. You can only use 1 \"\"Infernoble Arms - Joyeuse\"\" effect per turn, and only once that turn.",
+            "preco": "0.21",
+            "img": "https://images.ygoprodeck.com/images/cards/90861137.jpg"
+          }
+        },
+        {
+          "carta": {
+            "id": 94807487,
+            "name": "Rising Sun Slash",
+            "type": "Spell Card",
+            "desc": "Equip only to a \"Utopia\" monster. It cannot be destroyed by card effects. Each time an attack is negated, place 1 Rising Sun Counter on this card. The equipped monster gains 500 ATK for each Rising Sun Counter on this card. If the equipped monster you control would detach its Xyz Material to activate its effect, you can treat this card as 1 of the Xyz Materials.",
+            "preco": "0.04",
+            "img": "https://images.ygoprodeck.com/images/cards/94807487.jpg"
+          }
+        },
+        {
+          "carta": {
+            "id": 97617181,
+            "name": "Galaxy Zero",
+            "type": "Spell Card",
+            "desc": "Target 1 \"Photon\" or \"Galaxy\" monster in your Graveyard; Special Summon it in face-up Attack Position and equip it with this card. It cannot attack or activate its effects. If it would be destroyed during the Battle Phase, you can destroy this card instead. When this card leaves the field: The equipped monster's ATK becomes 0. You can only activate 1 \"Galaxy Zero\" per turn.",
+            "preco": "0.18",
+            "img": "https://images.ygoprodeck.com/images/cards/97617181.jpg"
+          }
+        },
+        {
+          "carta": {
+            "id": 46910446,
+            "name": "Chthonian Alliance",
+            "type": "Spell Card",
+            "desc": "The equipped monster gains 800 ATK for each other face-up monster on the field that has the same name it does.",
+            "preco": "0.09",
+            "img": "https://images.ygoprodeck.com/images/cards/46910446.jpg"
+          }
+        },
+        {
+          "carta": {
+            "id": 93346024,
+            "name": "The Dragon Dwelling in the Cave",
+            "type": "Normal Monster",
+            "desc": "A huge dragon dwelling in a cave. It is horrible when it gets angry, although it is usually quiet. It is said to preserve certain treasures.",
+            "preco": "0.06",
+            "img": "https://images.ygoprodeck.com/images/cards/93346024.jpg"
+          }
+        },
+        {
+          "carta": {
+            "id": 95920682,
+            "name": "Heroic Gift",
+            "type": "Trap Card",
+            "desc": "If your opponent's Life Points are 2000 or less: Make their Life Points 8000, and if you do, draw 2 cards. You can only activate 1 \"Heroic Gift\" per turn.",
+            "preco": "0.05",
+            "img": "https://images.ygoprodeck.com/images/cards/95920682.jpg"
+          }
+        },
+        {
+          "carta": {
+            "id": 64389297,
+            "name": "Magical Labyrinth",
+            "type": "Spell Card",
+            "desc": "Equip only to \"Labyrinth Wall\". You can Tribute the equipped monster; Special Summon \"Wall Shadow\" from your Deck.",
+            "preco": "0.81",
+            "img": "https://images.ygoprodeck.com/images/cards/64389297.jpg"
+          }
+        }
+      ],
+      "deck": [
+        {
+          "carta": {
+            "id": 90861137,
+            "name": "\"Infernoble Arms - Joyeuse\"",
+            "type": "Spell Card",
+            "desc": "While this card is equipped to a monster: You can target 1 FIRE Warrior monster in your GY; add it to your hand, then destroy this card. If this card is sent to the GY because the equipped monster is sent to the GY: You can Special Summon 1 FIRE Warrior monster from your hand. You can only use 1 \"\"Infernoble Arms - Joyeuse\"\" effect per turn, and only once that turn.",
+            "preco": "0.21",
+            "img": "https://images.ygoprodeck.com/images/cards/90861137.jpg"
+          }
+        }
+      ],
+      "id": 9
     }
   ]
 }
