@@ -23,7 +23,6 @@ export const styles = StyleSheet.create({
     buttonText: {
         color: '#FFF',
         fontSize: 22,
-        // fontFamily: 'Yugi-Normal'
 
     },
 })

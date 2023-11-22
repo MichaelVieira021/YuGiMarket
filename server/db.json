@@ -8,6 +8,15 @@
       "cash": 1000,
       "cartas": [],
       "deck": []
+    },
+    {
+      "nome": "Dudu",
+      "email": "dudu@gmail.com",
+      "senha": "123456",
+      "cash": 1000,
+      "cartas": [],
+      "deck": [],
+      "id": 2
     }
   ]
 }

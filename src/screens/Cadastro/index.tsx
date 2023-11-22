@@ -17,22 +17,23 @@ export const Cadastro = () => {
 
         const response = await getUsuario(email)
 
-        
         if (!email.match(/^\w+@gmail.com$/)) {
             alert("@gmail.com obrigatório");
             return;
         }
-       
-        else if(nome.length >= 4){
+
+        if(nome.length <4){
             alert("Preencha o nome e minimo de 4 caracteres")
+            return
         }
-        else if (senha !== confirmarSenha) {
+        if (senha !== confirmarSenha) {
           alert('As senhas não coincidem')
           return
         }
-        
-        else if(senha.length <6){
+
+        if(senha.length <6){
             alert("Minimo 6 caracteres")
+            return
             
         } else{
   
