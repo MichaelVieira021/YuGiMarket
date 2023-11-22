@@ -9,74 +9,79 @@ import { CustomModal } from "../../components/ModalCarta";
 import { ButtonNav } from "../../components/ButtonNav";
 import { patchUsuarioCards, patchUsuarioCash, patchUsuarioDeck } from "../../services/ApiConta";
 import { Audio } from 'expo-av';
- 
 
-export const Cards = () => { 
-    
-    const {usuario, infos} = useContext (LoginContext)
-    const [cartasUsuario, setCartasUsuario] = useState ([])
+
+export const Cards = () => {
+
+    const { usuario, infos } = useContext(LoginContext)
+    const [cartasUsuario, setCartasUsuario] = useState([])
     const [modalVisible, setModalVisible] = useState(false);
     const [dataToPass, setDataToPass] = useState<any>(null);
 
-    
-    useEffect(()=>{
-        infos()
-    },[])
 
-    useEffect(()=>{
-    },[usuario])
-
-    useEffect(()=>{
+    useEffect(() => {
         infos()
-        console.log(usuario.cartas[0],"tudo errado");
+    }, [])
+
+    useEffect(() => {
+    }, [usuario])
+
+    useEffect(() => {
+        infos()
+        console.log(usuario.cartas[0], "tudo errado");
         setCartasUsuario(usuario.cartas)
         console.log(usuario.cartas)
-    },[cartasUsuario])
+    }, [cartasUsuario])
 
-    async function playSound(son:number) {
-        if(son == 1){ 
-            const { sound } = await Audio.Sound.createAsync( require('../../assets/sons/venderCarta.wav'));
+    async function playSound(son: number) {
+        if (son == 1) {
+            const { sound } = await Audio.Sound.createAsync(require('../../assets/sons/venderCarta.wav'));
             await sound.playAsync();
-        }else if (son == 2){ 
-            const { sound } = await Audio.Sound.createAsync( require('../../assets/sons/addInDeck.wav'));  
+        } else if (son == 2) {
+            const { sound } = await Audio.Sound.createAsync(require('../../assets/sons/addInDeck.wav'));
             await sound.playAsync();
-        }else if (son == 3){
-            const { sound } = await Audio.Sound.createAsync( require('../../assets/sons/abrirCarta.wav'));  
+        } else if (son == 3) {
+            const { sound } = await Audio.Sound.createAsync(require('../../assets/sons/abrirCarta.wav'));
             await sound.playAsync();
         }
     }
-    
-    
+
+
     const closeModal = () => {
         setDataToPass(null);
         setModalVisible(false);
     };
-    
+
     const openModal = (data: any) => {
         setDataToPass(data.carta);
         setModalVisible(true);
     };
 
     const addAoDeck = async (carta: any) => {
+        if(usuario.deck.length < 40) {
         const deckDoUsuario = await usuario.deck;
-        const atualizado = [...deckDoUsuario, {carta}]
+        const atualizado = [...deckDoUsuario, { carta }]
         await patchUsuarioDeck(usuario.id, atualizado)
         await infos()
         closeModal()
+        } else{
+            alert ("DECK CHEIO")
+        }
+
     }
 
     const vender = async (cartaDel: any) => {
-        const deckDoUsuario = await usuario.deck;    
+        const deckDoUsuario = await usuario.deck;
         const novoDeck = deckDoUsuario.filter(carta => carta.carta.id != cartaDel.id);
         await patchUsuarioDeck(usuario.id, novoDeck)
-        
+
         const cartasDoUsuario = await usuario.cartas;
         const novasCartas = cartasDoUsuario.filter(carta => carta.carta.id != cartaDel.id);
         await patchUsuarioCards(usuario.id, novasCartas)
 
-        const novoCash:number = (Number(await usuario.cash) + Number(cartaDel.preco))
+        const novoCash: number = (Number(await usuario.cash) + Number(cartaDel.preco))
         console.log(novoCash);
-        
+
         await patchUsuarioCash(usuario.id, novoCash)
         await infos()
         closeModal()
@@ -93,35 +98,55 @@ export const Cards = () => {
     // if (showWelcome) {
     //         return <Loading />; // Render Welcome if showWelcome is true
     //     }
-        
-    const Card =({carta}:any) =>(
-        <TouchableOpacity onPress={() => {playSound(3),openModal({ carta })}} style={styles.cardContainer}>
-            <Image source={{uri: carta.img}} style={styles.imgCard}/>
+
+    const Card = ({ carta }: any) => (
+        <TouchableOpacity onPress={() => { playSound(3), openModal({ carta }) }} style={styles.cardContainer}>
+            <Image source={{ uri: carta.img }} style={styles.imgCard} />
         </TouchableOpacity>
-        
+
     )
+
+
+    const activation = () => {
+        for (const cards of usuario.deck) {
+            if (cards.carta.id === dataToPass.id) {
+                return true
+            }
+        }
+        return false
+    }
 
     return (
         <ImageBackground source={dragao} style={styles.container}>
             <Text style={styles.title}>CARDS</Text>
             <FlatList
-            data={usuario.cartas.slice().reverse()}
-            // keyExtractor={(item)=>item.id}
-            renderItem={({item}) => <Card  carta={item.carta}/>}
-            showsVerticalScrollIndicator={false}
-            // inverted={true}
-            numColumns={3}
-            
+                data={usuario.cartas.slice().reverse()}
+                // keyExtractor={(item)=>item.id}
+                renderItem={({ item }) => <Card carta={item.carta} />}
+                showsVerticalScrollIndicator={false}
+                // inverted={true}
+                numColumns={3}
+
             />
             <CustomModal visible={modalVisible} onClose={closeModal}>
-                {dataToPass && 
+
+                {/* {dataToPass && 
                 <View style={{alignItems: "center", height:460, width: "100%"}}>
                     <Image source={{uri: dataToPass.img}} style={[styles.imgCard, {height:450}]}/>
-                    {/* <Text style={{color: "white"}}>Tipo: {dataToPass.type}</Text> */}
+                   
                     <ButtonNav  style={styles.ButtonNav} title='ADICIONAR AO DECK' openScreen={()=>{playSound(2),addAoDeck(dataToPass)}}/>
                     <ButtonNav  style={styles.ButtonNav} title="VENDER  R$ " algo={dataToPass.preco} openScreen={()=>{playSound(1),vender(dataToPass)}}/>
                 </View>}
-                
+                 */}
+
+                {dataToPass &&
+                    <View style={{ alignItems: "center", height: 460, width: "100%" }}>
+                        <Image source={{ uri: dataToPass.img }} style={[styles.imgCard, { height: 450 }]} />
+                        {activation() === true ? <ButtonNav active={true} style={{ backgroundColor: '#b880'}} title='JÁ ADICIONADA' openScreen={() => { playSound(2), addAoDeck(dataToPass) }} /> : <ButtonNav style={{ backgroundColor: '#b88019' }} title='ADICIONAR AO DECK' openScreen={() => { playSound(2), addAoDeck(dataToPass) }} />}
+                        <ButtonNav style={{ backgroundColor: '#b88019' }} title="VENDER  R$" algo={dataToPass.preco} openScreen={() => { playSound(1), vender(dataToPass) }} />
+                    </View>}
+
+
             </CustomModal>
         </ImageBackground>
     )
