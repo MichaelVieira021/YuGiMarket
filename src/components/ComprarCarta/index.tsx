@@ -1,7 +1,4 @@
-import { Text, TouchableOpacity, View } from "react-native"
-import { styles } from './styles'
-import { Ionicons, MaterialIcons, MaterialCommunityIcons } from '@expo/vector-icons';
-import { useContext, useEffect} from "react";
+import { useContext, useEffect } from "react";
 import { LoginContext } from "../../contexts/LoginContext";
 import { patchUsuarioCards } from "../../services/ApiConta";
 
@@ -17,14 +14,13 @@ interface Usuario {
 export const InfosUser = () => {
 
     const { usuario, infos } = useContext(LoginContext);
-    // const [usuarioInfos, setUsuarioInfos] = useState<Usuario>();
 
-    useEffect(()=> {
+    useEffect(() => {
         infos()
-    },[])
+    }, [])
 
-    const trapAdd = async (tipo:string) => {
-     
+    const trapAdd = async (tipo: string) => {
+
         const indiceAleatorio = Math.floor(Math.random() * tipo.length);
         const cartaAleatoria = tipo[indiceAleatorio];
         console.log(cartaAleatoria);
@@ -37,8 +33,8 @@ export const InfosUser = () => {
         }
 
         const cartasDoUsuario = await usuario.cartas;
-        const atualizado = [...cartasDoUsuario, {carta}]
-        await patchUsuarioCards(usuario.id, atualizado);  
+        const atualizado = [...cartasDoUsuario, { carta }]
+        await patchUsuarioCards(usuario.id, atualizado);
         await infos()
     }
 

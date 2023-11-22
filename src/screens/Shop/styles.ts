@@ -18,8 +18,6 @@ export const styles = StyleSheet.create({
         width: 68, 
         height: 99,
         marginRight: 21,
-        // backgroundColor: "red",
-
         shadowColor: "red",
         shadowOffset: {
             width: 0,
@@ -34,9 +32,6 @@ export const styles = StyleSheet.create({
         width: 68, 
         height: 99,
         marginRight: 21,
-        // backgroundColor: "red",
-
-        // shadowColor: "#ffff00",
         shadowColor: "orange",
         shadowOffset: {
             width: 0,
@@ -51,8 +46,6 @@ export const styles = StyleSheet.create({
         width: 68, 
         height: 99,
         marginRight: 21,
-        // backgroundColor: "red",
-
         shadowColor: "blue",
         shadowOffset: {
             width: 0,
@@ -73,7 +66,6 @@ export const styles = StyleSheet.create({
         alignItems: "center",
         justifyContent: "center",
         height: 25,
-        // padding: 2,
         borderRadius: 10,
         borderWidth: 1,
         shadowColor: "black",
@@ -89,7 +81,6 @@ export const styles = StyleSheet.create({
     },
 
     textQtdCard: {
-        // marginTop: 4,
         fontFamily: 'Yugi-Normal',
         fontSize: 16,
         fontWeight: "600",
@@ -124,9 +115,8 @@ export const styles = StyleSheet.create({
             width: 0,
             height: 0
         },
-
+        position: "absolute",
         shadowOpacity: 25,
-        shadowRadius: 5
-        
+        shadowRadius: 5,   
     },
 })

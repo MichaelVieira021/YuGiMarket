@@ -6,7 +6,7 @@ interface teste {
     openScreen: () => void
     title: string
     algo?: any
-    style?: StyleProp<ViewStyle>; // Optional function that takes a `PressableStateCallbackType` object and returns a `StyleProp<ViewStyle>` object
+    style?: StyleProp<ViewStyle>;
     active?: boolean;
 }
 
