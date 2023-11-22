@@ -1,10 +1,9 @@
 import { createStackNavigator } from '@react-navigation/stack';
-import { Sregister } from '../../screens/Sregister';
+import { Cadastro } from '../../screens/Cadastro';
 import { Login } from '../../screens/Login';
 import {BottonTabRoutes} from '../BottonTabRoutes'
-import { useContext, useEffect, useState } from 'react';
+import { useContext, useEffect } from 'react';
 import { LoginContext } from '../../contexts/LoginContext';
-import AsyncStorage from '@react-native-async-storage/async-storage';
 import { useNavigation } from '@react-navigation/native';
 
 
@@ -40,7 +39,7 @@ export function StackNavigator() {
     >
 
       <Stack.Screen name="Login" component={Login} />
-      <Stack.Screen name="Registro" component={Sregister} />
+      <Stack.Screen name="Registro" component={Cadastro} />
       <Stack.Screen name="Todos" component={BottonTabRoutes} />
 
     </Stack.Navigator>

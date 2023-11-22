@@ -1,7 +1,7 @@
 import React from "react";
 import { Routes } from "./src/routes";
 import { useFonts } from 'expo-font';
-import { Sregister } from "./src/screens/Sregister";
+import { Sregister } from "./src/screens/Cadastro";
 import { Login } from "./src/screens/Login";
 import { Welcome } from "./src/screens/Welcome";
 

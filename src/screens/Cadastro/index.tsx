@@ -6,7 +6,7 @@ import { useNavigation } from "@react-navigation/native"
 import { ButtonNav } from "../../components/ButtonNav"
 import { getUsuario, postNovoUsuario } from "../../services/ApiConta";
 
-export const Sregister = () => {
+export const Cadastro = () => {
     const navigation = useNavigation<any>();
     const [nome, setNome] = useState('');
     const [email, setEmail] = useState('');
@@ -16,14 +16,27 @@ export const Sregister = () => {
     const handleCadastro = async () => {
 
         const response = await getUsuario(email)
-  
-        if (senha !== confirmarSenha) {
+
+        
+        if (!email.match(/^\w+@gmail.com$/)) {
+            alert("@gmail.com obrigatório");
+            return;
+        }
+       
+        else if(nome.length >= 4){
+            alert("Preencha o nome e minimo de 4 caracteres")
+        }
+        else if (senha !== confirmarSenha) {
           alert('As senhas não coincidem')
           return
         }
- 
+        
+        else if(senha.length <6){
+            alert("Minimo 6 caracteres")
+            
+        } else{
   
-        if(response.data.length == 0) {
+        if(response.data.length == 0 ) {
             try {
                 await postNovoUsuario(
                     nome,
@@ -45,7 +58,7 @@ export const Sregister = () => {
           alert('Email já cadastrado')
         }
     }
-
+}
     return (
         <ImageBackground source={fundoCadastro} style={styles.backgroundImage}>
             <View style={styles.container}>
