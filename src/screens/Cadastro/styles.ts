@@ -6,55 +6,47 @@ export const styles = StyleSheet.create({
         flex: 1,
         alignItems: 'center',
         justifyContent: 'center',
-        position:"relative"
-    
     },
 
     container:{
         justifyContent: "space-between",
-        width: '66%',
+        width: '67%',
         height: 300,
         alignItems: 'center',
         marginTop: 10,
-        resizeMode: 'contain',
-
     },
 
     containerInput:{
         width: '100%',
-        height: '100%',
-
+        height: '50%',
     },
 
     inputView: {
-        margin: 13,
-        padding: 12,
+        marginBotton: 13,
+        marginTop: 13,
+        padding: 10,
         width: '100%',
         backgroundColor: '#f3da89ce',
         shadowColor: '#fff',
         shadowRadius: 5,
-        elevation:10,
         borderRadius: 8,
-        
+        flexDirection: "row"
     },
 
     input :{
-        fontSize:20,
-        height:25,
-        fontFamily: 'Yugi-Normal'
-        
+        fontSize:18,
+        marginLeft: 6,
+        alignItems: "center",
+        width: "100%"
     },
 
     buttonCadastro:{
-        alignItems: 'center'
-        
+        alignItems: 'center',
     },
 
       buttonCadastroText: {
         color: 'white',
-        fontSize: 21,
+        fontSize: 20,
         fontFamily: 'Yugi-Normal',
-        fontWeight: 'bold'
-  
     },
 })

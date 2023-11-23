@@ -11,22 +11,13 @@ import { Audio } from 'expo-av';
 import { CartasContext } from "../../contexts/CartasContext"
 
 export const Shop = () => {
-    const { usuario, infos, usuarioStorage } = useContext(LoginContext)
+    const { usuario, atualizar} = useContext(LoginContext)
     const { todasCartas, todasTipoTrap, todasTipoSpell, todasTipoDragon, obterCartas} = useContext(CartasContext)
 
     useEffect(() => {
         obterCartas()
-        infos()
-        // usuarioStorage()
+        atualizar()
     }, [])
-
-    useEffect(() => {
-        infos()
-    }, [todasTipoTrap, todasTipoSpell, todasTipoDragon])
-
-    useEffect(() => {
-        usuarioStorage()
-    }, [usuario])
 
     async function playSound(son: number) {
         if (son == 1) {
@@ -43,7 +34,7 @@ export const Shop = () => {
             if (card.carta.id === carta.id) {
                 const novoCash = ((Number(await usuario.cash) - 0.50) + Number(carta.card_prices[0].cardmarket_price));
                 await patchUsuarioCash(usuario.id, novoCash);
-                await infos();
+                await atualizar();
                 return true;
             }
         }
@@ -65,7 +56,7 @@ export const Shop = () => {
             };
             await patchUsuarioCards(usuario.id, [...await usuario.cartas, { carta }]);
         }
-        await infos();
+        await atualizar();
     };
 
     return (
@@ -91,7 +82,7 @@ export const Shop = () => {
                 </View>
 
                 <View style={{width: 100, height: 100, marginBottom: 20, marginTop: "3%"}}>
-                    <TouchableOpacity onPress={() => { playSound(2), addCarta(todasTipoDragon) }} style={[styles.cardEquipDragon, styles.cardMeio, { marginRight: 0 }]}>
+                    <TouchableOpacity onPress={() => { playSound(2), addCarta(todasTipoDragon) }} style={[styles.cardEquipDragon, { marginRight: 0 }]}>
                         <Image source={cardDragon} style={styles.imgCardDragon} />
                     </TouchableOpacity>
                 </View>

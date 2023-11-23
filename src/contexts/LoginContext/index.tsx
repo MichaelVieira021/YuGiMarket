@@ -1,45 +1,46 @@
-import React, { createContext, useEffect, useState } from "react";
-import { getLoginUsuario, getUsuario } from "../../services/ApiConta";
+import React, { createContext, useState } from "react";
+import { cartaType, getLoginUsuario, getUsuario } from "../../services/ApiConta";
 import AsyncStorage from '@react-native-async-storage/async-storage';
 import { useNavigation } from "@react-navigation/native";
+import { CustomModal } from "../../components/ModalCarta";
+import { Text, View } from "react-native";
+import { FontAwesome } from '@expo/vector-icons';
 
 interface ContextProps {
     children: React.ReactNode
-}
-
-interface PropsContextoLogin {
-    id: number;
-    email: string;
-    nome: string;
 }
 
 interface Usuario {
     id: number;
     nome: string;
     email: string;
-    cartas: [];
-    deck: [];
+    cartas: cartaType[];
+    deck: cartaType[];
     cash: number;
 }
 
 export const LoginContext = createContext<any>({})
 
 export function LoginContextProvider({ children }: ContextProps) {
+    const [usuario, setUsuario] = useState<Usuario | null>();
     const [logado, setLogado] = useState("false");
     const navigate = useNavigation<any>();
-    const [usuario, setUsuario] = useState<Usuario | {}>({});
-    const [usuarioInfos, setUsuarioInfos] = useState<Usuario | null>();
+    const [modalVisible, setModalVisible] = useState(false);
 
-    useEffect(() => {
-        console.log(usuario)
-    }, [usuario])
+    const closeModal = () => {
+        setModalVisible(false);
+    };
+
+    const openModal = () => {
+        setModalVisible(true);
+    };
 
     function verificarLogin(email: string, senha: string) {
         getLoginUsuario(email, senha).then((response) => {
 
             if (response.data.length === 1) {
                 setUsuario((prevState) => {
-                    const novoUsuario = {
+                    const novoUsuario:Usuario = {
                         id: response.data[0].id,
                         nome: response.data[0].nome,
                         email: response.data[0].email,
@@ -47,7 +48,6 @@ export function LoginContextProvider({ children }: ContextProps) {
                         deck: response.data[0].deck,
                         cash: response.data[0].cash,
                     };
-
                     AsyncStorage.setItem('usuario', JSON.stringify(novoUsuario));
                     AsyncStorage.setItem('logado', "true");
 
@@ -55,12 +55,9 @@ export function LoginContextProvider({ children }: ContextProps) {
                 });
 
                 setLogado("true")
-
-                usuarioStorage()
                 navigate.navigate("Todos")
-
             } else {
-                console.log("Tudo errado")
+                openModal()
             }
 
         }).catch((error) => {
@@ -71,14 +68,13 @@ export function LoginContextProvider({ children }: ContextProps) {
     function deslogar() {
         AsyncStorage.removeItem("usuario")
         AsyncStorage.setItem('logado', "false")
-        setUsuarioInfos(null)
-        setUsuario({})
+        setUsuario(null)
         navigate.navigate("Login")
     }
 
-    useEffect(() => { }, [logado])
     async function verificarLogado() {
         const verificado = await AsyncStorage.getItem("logado");
+
         if (verificado === "true" || verificado === "false") {
             setLogado(verificado)
         } else {
@@ -86,76 +82,35 @@ export function LoginContextProvider({ children }: ContextProps) {
         }
     }
 
-    useEffect(() => { }, [usuarioInfos])
-    async function usuarioStorage() {
-        try {
-            const usuarioInfosStorage = await AsyncStorage.getItem("usuario");
+    async function atualizar() {
+        const usuarioLogado = await AsyncStorage.getItem("usuario");
 
-            if (usuarioInfosStorage) {
-                const usuarioObjeto = JSON.parse(usuarioInfosStorage);
-                console.log(usuarioObjeto);
-                setUsuarioInfos(await usuarioObjeto);
-                console.log(usuarioInfos);
-
-                return usuarioObjeto;
-            } else {
-                console.log("Nenhum usuário encontrado no AsyncStorage");
-                return null;
-            }
-
-        } catch (error) {
-            console.error("Erro ao obter usuário do AsyncStorage:", error);
-            return null;
-        }
-    }
-
-    async function infos() {
-
-        try {
-            const usuarioInfos = await AsyncStorage.getItem("usuario");
-
-            if (usuarioInfos) {
-                const usuarioObjeto = JSON.parse(usuarioInfos);
-                setUsuarioInfos(await usuarioObjeto);
-                return await atualizar(usuarioObjeto.email)
-
-            } else {
-                console.log("Nenhum usuário encontrado no AsyncStorage");
-                return null;
-            }
-
-        } catch (error) {
-            console.error("Erro ao obter usuário do AsyncStorage:", error);
-            return null;
-        }
-    }
-
-    async function atualizar(email: string) {
-        getUsuario(email).then((response) => {
-            if (response.data.length === 1) {
-
-                setUsuario((prevState) => {
-                    const novoUsuario = {
-                        id: response.data[0].id,
-                        nome: response.data[0].nome,
-                        email: response.data[0].email,
-                        cartas: response.data[0].cartas,
-                        deck: response.data[0].deck,
-                        cash: response.data[0].cash,
-                    };
-                    console.log(response, "oioioioi")
-
-                    AsyncStorage.setItem('usuario', JSON.stringify(novoUsuario));
-
-                    return novoUsuario;
-                });
-            } else {
-                console.log("Tudo errado1")
-            }
-
-        }).catch((error) => {
-            console.log("Tudo errado2", error)
-        })
+        if(usuarioLogado){
+            const usuarioLogadoObjeto = JSON.parse(usuarioLogado);
+            getUsuario(usuarioLogadoObjeto.email).then((response) => {
+                if (response.data.length === 1) {
+    
+                    setUsuario((prevState) => {
+                        const novoUsuario = {
+                            id: response.data[0].id,
+                            nome: response.data[0].nome,
+                            email: response.data[0].email,
+                            cartas: response.data[0].cartas,
+                            deck: response.data[0].deck,
+                            cash: response.data[0].cash,
+                        };
+                        // console.log(response, "oioioioi")
+    
+                        AsyncStorage.setItem('usuario', JSON.stringify(novoUsuario));
+                        return novoUsuario;
+                    });
+                } else {
+                    console.log("Tudo errado1")
+                }
+            }).catch((error) => {
+                console.log("Tudo errado2", error)
+            })
+        }  
     }
 
     return (
@@ -164,12 +119,16 @@ export function LoginContextProvider({ children }: ContextProps) {
             usuario,
             verificarLogado,
             deslogar,
-            usuarioStorage,
-            usuarioInfos,
             logado,
             atualizar,
-            infos
-        }}>
-            {children}</LoginContext.Provider>
+        }}>{children}
+            <CustomModal visible={modalVisible} onClose={closeModal} estilo={{backgroundColor: "rgba(0, 0, 0, 0.8)", margin: 50}}>
+                <View style={{ alignItems: "center", height: 120, width: "100%", alignSelf: "center"}}>
+                    <FontAwesome name="warning" size={44} color="yellow" />
+                    <Text style={{fontSize: 24, color: "white", marginTop: 10}}>E-mail ou senha incorretos!</Text>
+                </View>
+            </CustomModal>
+        
+        </LoginContext.Provider>
     )
 }

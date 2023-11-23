@@ -18,14 +18,11 @@ export const styles = StyleSheet.create({
         width: 68, 
         height: 99,
         marginRight: 21,
-        // backgroundColor: "red",
-
         shadowColor: "red",
         shadowOffset: {
             width: 0,
             height: 0
         },
-
         shadowOpacity: 25,
         shadowRadius: 10
     },
@@ -34,15 +31,11 @@ export const styles = StyleSheet.create({
         width: 68, 
         height: 99,
         marginRight: 21,
-        // backgroundColor: "red",
-
-        // shadowColor: "#ffff00",
         shadowColor: "orange",
         shadowOffset: {
             width: 0,
             height: 0
         },
-
         shadowOpacity: 25,
         shadowRadius: 10
     },
@@ -51,14 +44,11 @@ export const styles = StyleSheet.create({
         width: 68, 
         height: 99,
         marginRight: 21,
-        // backgroundColor: "red",
-
         shadowColor: "blue",
         shadowOffset: {
             width: 0,
             height: 0
         },
-
         shadowOpacity: 25,
         shadowRadius: 10
     },
@@ -73,23 +63,19 @@ export const styles = StyleSheet.create({
         alignItems: "center",
         justifyContent: "center",
         height: 25,
-        // padding: 2,
         borderRadius: 10,
         borderWidth: 1,
         shadowColor: "black",
         marginTop: 8,
-
         shadowOffset: {
             width: -2,
             height: 4
         },
-
         shadowOpacity: 2,
         shadowRadius: 16
     },
 
     textQtdCard: {
-        // marginTop: 4,
         fontFamily: 'Yugi-Normal',
         fontSize: 16,
         fontWeight: "600",
@@ -99,13 +85,6 @@ export const styles = StyleSheet.create({
         width: "100%",
         height: "100%",
         resizeMode: "contain",
-
-    },
-    cardMeio: {
-        // width: 100, 
-        // height: 100, 
-        // marginBottom: -100
-        
     },
 
     cardEquipDragon: {
@@ -122,9 +101,7 @@ export const styles = StyleSheet.create({
             width: 0,
             height: 0
         },
-
         shadowOpacity: 25,
         shadowRadius: 5
-        
     },
 })

@@ -1,7 +1,5 @@
-import React, { createContext, useContext, useEffect, useState } from "react";
+import React, { createContext, useEffect, useState } from "react";
 import { getPorRace, getPorTipo, getTodasCartas } from "../../services/ApiYugioh";
-import { LoginContext } from "../LoginContext";
-
 interface ContextProps {
 	children: React.ReactNode
 }
@@ -9,29 +7,13 @@ interface ContextProps {
 export const CartasContext = createContext<any>({})
 
 export function CartasContextProvider({children}: ContextProps){
-    const { usuario, infos, usuarioStorage } = useContext(LoginContext)
     const [todasCartas, setTodasCartas] = useState([])
     const [todasTipoTrap, setTodasTipoTrap] = useState([])
     const [todasTipoSpell, setTodasTipoSpell] = useState([])
     const [todasTipoDragon, setTodasTipoDragon] = useState([])
 
-    useEffect(() => {
-        obterCartas()
-        // infos()
-        // usuarioStorage()
-    }, [])
-
-    // useEffect(() => {
-    //     infos()
-    // }, [todasTipoTrap, todasTipoSpell, todasTipoDragon])
-
-    // useEffect(() => {
-    //     usuarioStorage()
-    // }, [usuario])
-
     const obterCartas = async () => {
         getTodasCartas().then((response) => {
-            console.log(response.data.data)
             setTodasCartas(response.data.data)
         }).catch((Error) => {
             console.log("Tudo errado")
@@ -42,7 +24,7 @@ export function CartasContextProvider({children}: ContextProps){
         await buscarTipo("dragon", setTodasTipoDragon, "race")
     }
 
-    const buscarTipo = async (pesquisa: string, state: any, tipo: any) => {
+    const buscarTipo = async (pesquisa: string, state: any, tipo: string) => {
         if(tipo == "type"){
             getPorTipo(pesquisa).then((response) => {
                 state(response.data.data)

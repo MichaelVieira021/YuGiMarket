@@ -1,24 +1,22 @@
-import React, { useEffect, useState } from 'react';
 import { View, Modal, Text, TouchableOpacity, ViewStyle, StyleProp} from 'react-native';
 import { styles } from './styles';
 import { Audio } from 'expo-av';
+
 interface ModalProps {
   visible: boolean;
   onClose: () => void;
-  children: any
-  estilo?: StyleProp<ViewStyle>
+  children: React.ReactNode;
+  estilo?: StyleProp<ViewStyle>;
 }
 
-export const CustomModal: React.FC<ModalProps> = ({ visible, onClose, estilo, children }:any) => {
+export const CustomModal: React.FC<ModalProps> = ({ visible, onClose, estilo, children }) => {
   
   async function playSound() {
     const { sound } = await Audio.Sound.createAsync( require('../../assets/sons/fecharModalCarta.mp3'));
     await sound.playAsync();
   }
-
-  useEffect(()=>{},[])
   
-    return (
+  return (
     <Modal
       animationType="slide"
       transparent={true}
