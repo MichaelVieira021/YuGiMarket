@@ -31,7 +31,6 @@ export function LoginContextProvider({children}: ContextProps){
     const [usuarioInfos, setUsuarioInfos] = useState<Usuario | null>();
     
     useEffect(()=>{
-        console.log(usuario)
     },[usuario])
 
     function verificarLogin(email: string, senha: string){
@@ -55,17 +54,13 @@ export function LoginContextProvider({children}: ContextProps){
                 });
 
                 setLogado("true")
-                // alert("Usuario logado");
                 usuarioStorage()
                 navigate.navigate("Todos")
 
             }else{
-                console.log("Tudo errado")
-                // deslogar()
             }
 
         }).catch((error)=> {
-            console.log("Tudo errado", error)
         })
     }
 
@@ -83,36 +78,7 @@ export function LoginContextProvider({children}: ContextProps){
         if(verificado === "true" || verificado === "false"){
             setLogado(verificado)
         }else{
-            console.log("deu errado ?")
         }
-
-        // const verificado = await AsyncStorage.getItem("logado");
-    //   if(verificado === "true" || verificado === "false"){
-          // setLogado((prevState) => { return verificado})
-        //   if(verificado === "true"){
-        //     setInitial((prevState) => (prevState !== "Todos" ? "Todos" : prevState))
-        //   }
-        //   // alert(initial)
-        // }else{
-        //   console.log("deu errado ?")
-
-        // try {
-        //     const verificado = await AsyncStorage.getItem("logado");
-        
-        //     if (verificado) {
-        //       const verificadoSt = JSON.parse(verificado);
-        //       console.log(verificadoSt);
-        //       setLogado(verificadoSt)
-        //       console.log(logado)
-        //       return console.log(logado);
-        //     } else {
-        //       console.log("verificado?");
-        //       return null;
-        //     }
-        // } catch (error) {
-        //     console.error("Erro ao verificar", error);
-        //     return null;
-        // }
     }
     
     useEffect(()=>{},[usuarioInfos])
@@ -122,9 +88,7 @@ export function LoginContextProvider({children}: ContextProps){
         
             if (usuarioInfosStorage) {
               const usuarioObjeto = JSON.parse(usuarioInfosStorage);
-              console.log(usuarioObjeto);
               setUsuarioInfos(await usuarioObjeto);
-              console.log(usuarioInfos);
  
               return usuarioObjeto;
             } else {
@@ -172,18 +136,15 @@ export function LoginContextProvider({children}: ContextProps){
                         deck: response.data[0].deck,
                         cash: response.data[0].cash,
                     };
-                    console.log(response,"oioioioi")
                   
                     AsyncStorage.setItem('usuario', JSON.stringify(novoUsuario));
                     
                     return novoUsuario;
                 });
             }else{
-                console.log("Tudo errado1")
             }
 
         }).catch((error)=> {
-            console.log("Tudo errado2", error)
         })
     }
 
