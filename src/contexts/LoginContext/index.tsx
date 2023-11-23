@@ -103,7 +103,6 @@ export function LoginContextProvider({children}: ContextProps){
     }
 
     async function infos(){
-        // atualizar(usuario.email)
         try {
             const usuarioInfos = await AsyncStorage.getItem("usuario");
         
