@@ -6,9 +6,7 @@ import { useContext, useEffect } from 'react';
 import { LoginContext } from '../../contexts/LoginContext';
 import { useNavigation } from '@react-navigation/native';
 
-
 const Stack = createStackNavigator ();
-
 
 export function StackNavigator() {
   
@@ -21,7 +19,6 @@ export function StackNavigator() {
   
     useEffect(() => {
       if(logado == "true"){
-        console.log("oi", logado)
         navigate.navigate("Todos")
       }else{
         navigate.navigate("Login")

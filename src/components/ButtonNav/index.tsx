@@ -1,7 +1,6 @@
 import { styles } from "./styles";
-import { View, Text, TouchableOpacity, PressableStateCallbackType, StyleProp, ViewStyle } from "react-native"
-
-interface teste {
+import { View, Text, TouchableOpacity, StyleProp, ViewStyle } from "react-native"
+interface ButtonProps {
     openScreen: () => void
     title: string
     algo?: any
@@ -9,7 +8,7 @@ interface teste {
     active?: boolean;
 }
 
-export const ButtonNav = ({ openScreen, title, style, algo, active }: teste) => {
+export const ButtonNav = ({ openScreen, title, style, algo, active }: ButtonProps) => {
     return (
         <View style={styles.inputViewButton}>
             <TouchableOpacity disabled={active} onPress={openScreen} style={[styles.button, style]}>
