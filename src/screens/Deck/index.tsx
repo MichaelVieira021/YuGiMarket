@@ -26,11 +26,11 @@ export const Deck = () => {
     useEffect(() => {
         infos()
         setDeckUsuario(usuario.deck)
-    }, [])
-
-    const Card = ({ carta }: any) => (
-        <TouchableOpacity onPress={() => openModal({ carta })} style={styles.cardContainer}>
-            <Image source={{ uri: carta.img }} style={styles.imgCard} />
+    },[])
+        
+    const Card =({carta}:any) =>(
+        <TouchableOpacity onPress={() => openModal({carta})} style={styles.cardContainer}>
+            <Image source={{uri: carta.img}} style={styles.imgCard}/>
         </TouchableOpacity>
     )
 
@@ -56,11 +56,11 @@ export const Deck = () => {
         <ImageBackground source={dragao} style={styles.container}>
             <Text style={styles.title}>DECK</Text>
             <FlatList
-                data={usuario.deck.slice().reverse()}
-                renderItem={({ item }) => <Card carta={item.carta} />}
-                showsVerticalScrollIndicator={false}
-                numColumns={3}
-
+            data={usuario.deck.slice().reverse()}
+            renderItem={({item}) => <Card  carta={item.carta}/>}
+            showsVerticalScrollIndicator={false}
+            numColumns={3}
+            
             />
             <CustomModal visible={modalVisible} onClose={closeModal}>
                 {dataToPass &&

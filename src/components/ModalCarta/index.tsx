@@ -1,13 +1,15 @@
 import React, { useEffect, useState } from 'react';
-import { View, Modal, Text, TouchableOpacity} from 'react-native';
+import { View, Modal, Text, TouchableOpacity, ViewStyle, StyleProp} from 'react-native';
 import { styles } from './styles';
 import { Audio } from 'expo-av';
 interface ModalProps {
   visible: boolean;
   onClose: () => void;
+  children: any
+  estilo?: StyleProp<ViewStyle>
 }
 
-export const CustomModal: React.FC<ModalProps> = ({ visible, onClose, children }:any) => {
+export const CustomModal: React.FC<ModalProps> = ({ visible, onClose, estilo, children }:any) => {
   
   async function playSound() {
     const { sound } = await Audio.Sound.createAsync( require('../../assets/sons/fecharModalCarta.mp3'));
@@ -24,7 +26,7 @@ export const CustomModal: React.FC<ModalProps> = ({ visible, onClose, children }
       onRequestClose={onClose}
     >
       <View style={styles.modalContainer}>
-        <View style={styles.modalContent}>
+        <View style={[styles.modalContent, estilo]}>
           <TouchableOpacity style={styles.closeButton} onPress={()=>{playSound(),onClose()}}>
             <Text style={styles.x}>X</Text>
           </TouchableOpacity>

@@ -1,9 +1,6 @@
 import React from "react";
 import { Routes } from "./src/routes";
 import { useFonts } from 'expo-font';
-import { Sregister } from "./src/screens/Sregister";
-import { Login } from "./src/screens/Login";
-import { Welcome } from "./src/screens/Welcome";
 
 const App = () => {
 
@@ -17,9 +14,6 @@ const App = () => {
     
     return (
         <Routes />
-        // <Sregister/>
-        // <Login/>
-        // <Welcome/>
     )
 };
 

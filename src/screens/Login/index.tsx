@@ -8,12 +8,12 @@ import { LoginContext } from '../../contexts/LoginContext'
 
 
 export const Login = () => {
-    const { verificarLogin } = useContext(LoginContext);
+    const { verificarLogin} = useContext(LoginContext);
     const [email, setEmail] = useState("");
     const [senha, setSenha] = useState("");
     const navigation = useNavigation<any>();
 
-    function openRegister() {
+    function openRegister(){
         navigation.navigate("Registro");
     }
 
@@ -42,15 +42,12 @@ export const Login = () => {
                             onChangeText={(texto) => setSenha(texto)}
                         />
                     </View>
-                    <TouchableOpacity onPress={() => openRegister()} style={styles.buttonCadastro}>
-                        <Text style={styles.buttonCadastroText}>Não tem cadastro? Cadastre-se!</Text>
-                    </TouchableOpacity>
+                    <TouchableOpacity onPress={()=>openRegister()} style={styles.buttonCadastro}>
+                 <Text style={styles.buttonCadastroText}>Não tem cadastro? Cadastre-se!</Text>
+              </TouchableOpacity>
                 </View>
 
-                <TouchableOpacity onPress={() => verificarLogin(email, senha)} style={styles.containerEnigma}>
-                </TouchableOpacity>
-
-
+                <TouchableOpacity onPress={()=>verificarLogin(email, senha)} style={styles.containerEnigma}></TouchableOpacity>
             </View>
         </ImageBackground>
     )

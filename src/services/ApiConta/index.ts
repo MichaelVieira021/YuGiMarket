@@ -36,11 +36,19 @@ export function postNovoUsuario(nome: string, email: string, senha: string, cash
     return ApiConta.post("usuarios", { nome, email, senha, cash, cartas, deck })
 }
 
+<<<<<<< HEAD
 export function patchUsuarioCards(id: number, cartas: []) {
     return ApiConta.patch(`usuarios/${id}`, { cartas });
 }
 
 export function patchUsuarioDeck(id: number, deck: []) {
+=======
+export function patchUsuarioCards(id: number, cartas:any[]) {
+    return ApiConta.patch(`usuarios/${id}`, { cartas });
+}
+
+export function patchUsuarioDeck(id: number, deck:any[]) {
+>>>>>>> 1fc7c1d326965e7b8e8ecf7b1c26ea8464e4ea2a
     return ApiConta.patch(`usuarios/${id}`, { deck });
 }
 

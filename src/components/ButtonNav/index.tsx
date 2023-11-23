@@ -1,7 +1,6 @@
 import { styles } from "./styles";
 import { View, Text, TouchableOpacity, PressableStateCallbackType, StyleProp, ViewStyle } from "react-native"
 
-
 interface teste {
     openScreen: () => void
     title: string
@@ -9,7 +8,6 @@ interface teste {
     style?: StyleProp<ViewStyle>;
     active?: boolean;
 }
-
 
 export const ButtonNav = ({ openScreen, title, style, algo, active }: teste) => {
     return (

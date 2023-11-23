@@ -27,5 +27,19 @@ export const styles = StyleSheet.create({
         fontSize: 18,
         marginLeft: 4,
         color: '#a5a5a5',
-    }
+    },
+
+    infoModal: {
+        flexDirection: "row", 
+        alignItems: "flex-end", 
+        width: "100%", 
+        justifyContent: "flex-start",
+        marginBottom: 5
+    },
+
+    textModal: {
+        fontSize: 20,
+        marginLeft: 4,
+        color: '#a5a5a5',
+    },
 })
