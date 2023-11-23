@@ -6,6 +6,7 @@ import { LoginContext } from "../../contexts/LoginContext";
 import { CustomModal } from "../../components/ModalCarta";
 import { ButtonNav } from "../../components/ButtonNav";
 import { patchUsuarioDeck } from "../../services/ApiConta";
+import { Audio } from 'expo-av';
 
 export const Deck = () => {
     
@@ -31,9 +32,20 @@ export const Deck = () => {
         closeModal()
     }
     
-    const Card =({carta}:any) =>(
-        <TouchableOpacity onPress={() => openModal({carta})} style={styles.cardContainer}>
-            <Image source={{uri: carta.img}} style={styles.imgCard}/>
+    async function playSound(son: number) {
+        if (son == 1) {
+            const { sound } = await Audio.Sound.createAsync(require('../../assets/sons/removeDeck.wav'));
+            await sound.playAsync();
+       
+    }  else if (son == 2) {
+        const { sound } = await Audio.Sound.createAsync(require('../../assets/sons/abrirCarta.wav'));
+        await sound.playAsync();
+    }
+    }
+
+    const Card = ({ carta }: any) => (
+        <TouchableOpacity onPress={() => { playSound(2), openModal({ carta }) }} style={styles.cardContainer}>
+            <Image source={{ uri: carta.img }} style={styles.imgCard} />
         </TouchableOpacity>
     )
 
@@ -51,7 +63,7 @@ export const Deck = () => {
                 {dataToPass &&
                 <View style={{ alignItems: "center", height: 460, width: "100%" }}>
                     <Image source={{ uri: dataToPass.img }} style={[styles.imgCard, { height: 450 }]} />
-                    <ButtonNav style={{ backgroundColor: '#b88019' }} title="REMOVER DO DECK" openScreen={() => { removerDeck(dataToPass) }} />
+                    <ButtonNav style={{ backgroundColor: '#b88019' }} title="REMOVER DO DECK" openScreen={() => { playSound(1),  removerDeck(dataToPass) }} />
                 </View>}
             </CustomModal>
 
