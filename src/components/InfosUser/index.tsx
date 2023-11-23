@@ -5,23 +5,13 @@ import { useContext, useEffect, useState} from "react";
 import { LoginContext } from "../../contexts/LoginContext";
 import { CustomModal } from "../ModalCarta";
 import { ButtonNav } from "../ButtonNav";
-import { getTodasCartas } from "../../services/ApiYugioh";
-
-interface Usuario {
-    id: number;
-    nome: string;
-    email: string;
-    cartas: [];
-    deck: [];
-    cash: number;
-}
+import { CartasContext } from "../../contexts/CartasContext";
 
 export const InfosUser = () => {
 
     const { usuarioStorage, usuarioInfos, deslogar, usuario, infos } = useContext(LoginContext);
-    // const [usuarioInfos, setUsuarioInfos] = useState<Usuario>();
     const [modalVisible, setModalVisible] = useState(false);
-    const [todasCartas, setTodasCartas] = useState<any>([])
+    const { todasCartas } = useContext(CartasContext)
 
     useEffect(()=> {
         infos()
@@ -29,41 +19,29 @@ export const InfosUser = () => {
     },[])
 
     useEffect(()=>{},[usuarioInfos,usuario])
-
+    
     const closeModal = () => {
-        // setDataToPass(null);
         setModalVisible(false);
     };
     
-    const openModal = (data: any) => {
-        // setDataToPass(data.carta);
-        obterNumeroCartas()
+    const openModal = () => {
         setModalVisible(true);
     };
-
-    const obterNumeroCartas = async () => {
-        getTodasCartas().then((response) => {
-            console.log(response.data.data, "testando")
-            setTodasCartas(response.data.data)
-        }).catch((Error) => {
-            console.log("Tudo errado")
-        })
-    }
 
     return (
         <View style={styles.container}>
 
-            <TouchableOpacity onPress={()=> openModal(usuario)} style={[ styles.userContainer ,{justifyContent: "flex-start", marginLeft: 5}]}>
+            <TouchableOpacity onPress={()=> openModal()} style={[ styles.userContainer ,{justifyContent: "flex-start", marginLeft: 5}]}>
             <Ionicons name="ios-person-circle" size={22} color="#b88019" />
                 <Text style={styles.text}>{usuarioInfos?.nome}</Text>
             </TouchableOpacity>
 
-            <TouchableOpacity onPress={()=> openModal(usuario)} style={[ styles.userContainer ,{width: "10%"}]}>
+            <TouchableOpacity onPress={()=> openModal()} style={[ styles.userContainer ,{width: "10%"}]}>
                 <MaterialCommunityIcons name="cards" size={22} color="#b88019" />
                 <Text style={[styles.text,{fontSize: 16}]}>{usuarioInfos?.cartas.length}</Text>
             </TouchableOpacity>
 
-            <TouchableOpacity onPress={()=> openModal(usuario)} style={styles.userContainer}>
+            <TouchableOpacity onPress={()=> openModal()} style={styles.userContainer}>
                 <MaterialIcons name="attach-money" size={22} color="#b88019" />
                 {usuarioInfos && usuarioInfos.cash != undefined && usuarioInfos.cash != null && (
                 <Text style={[styles.text,{marginRight: 10, fontSize: 16, marginLeft: 0}]}>{usuarioInfos?.cash.toFixed(2)}</Text>)}
@@ -75,26 +53,26 @@ export const InfosUser = () => {
                     
                     <View style={{alignItems: "flex-start", width: "100%"}}>
 
-                        <TouchableOpacity onPress={()=> openModal(usuario)} style={styles.infoModal}>
+                        <View style={styles.infoModal}>
                             <Ionicons name="ios-person-circle" size={22} color="#b88019" />
                             <Text style={styles.textModal}>{usuarioInfos?.nome}</Text>
-                        </TouchableOpacity>
+                        </View>
 
-                        <TouchableOpacity onPress={()=> openModal(usuario)} style={styles.infoModal}>
+                        <View style={styles.infoModal}>
                         <MaterialIcons name="email" size={22} color="#b88019" />
                             <Text style={styles.textModal}>{usuarioInfos?.email}</Text>
-                        </TouchableOpacity>
+                        </View>
 
-                        <TouchableOpacity style={styles.infoModal}>
+                        <View style={styles.infoModal}>
                             <MaterialCommunityIcons name="cards" size={22} color="#b88019" />
                             <Text style={[styles.textModal]}>{usuarioInfos?.cartas.length} / {todasCartas.length}</Text>
-                        </TouchableOpacity>
+                        </View>
 
-                        <TouchableOpacity style={styles.infoModal}>
+                        <View style={styles.infoModal}>
                             <MaterialIcons name="attach-money" size={22} color="#b88019" />
                             {usuarioInfos && usuarioInfos.cash != undefined && usuarioInfos.cash != null && (
                             <Text style={[styles.textModal]}>{usuarioInfos?.cash.toFixed(2)}</Text>)}
-                        </TouchableOpacity>
+                        </View>
                     
                     </View>
                     

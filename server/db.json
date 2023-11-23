@@ -8,6 +8,1806 @@
       "cash": 1000,
       "cartas": [],
       "deck": []
+    },
+    {
+      "nome": "Alex",
+      "email": "Alex@gmail.com",
+      "senha": "123456",
+      "cash": 925.1899999999998,
+      "cartas": [
+        {
+          "carta": {
+            "id": 43228023,
+            "name": "Blue-Eyes Alternative Ultimate Dragon",
+            "type": "Fusion Monster",
+            "desc": "\"Blue-Eyes White Dragon\" + \"Blue-Eyes White Dragon\" + \"Blue-Eyes White Dragon\"\r\nYour opponent cannot target or destroy this card with card effects. Once per turn: You can target 1 card your opponent controls; destroy it. If this card was Fusion Summoned using a monster whose original name is \"Blue-Eyes Alternative White Dragon\" as material, you can target up to 3 cards your opponent controls instead. This card cannot attack the turn this effect is activated.",
+            "preco": "6.50",
+            "img": "https://images.ygoprodeck.com/images/cards/43228023.jpg"
+          }
+        },
+        {
+          "carta": {
+            "id": 3170832,
+            "name": "Takuhee",
+            "type": "Normal Monster",
+            "desc": "This bird is known far and wide as a harbinger of doom.",
+            "preco": "2.05",
+            "img": "https://images.ygoprodeck.com/images/cards/3170832.jpg"
+          }
+        },
+        {
+          "carta": {
+            "id": 92092092,
+            "name": "Space Dragster",
+            "type": "Trap Card",
+            "desc": "Special Summon this card as an Effect Monster (Machine-Type/Tuner/FIRE/Level 1/ATK 0/DEF 1800). (This card is also still a Trap Card.) If Summoned this way, other Tuners you control cannot be destroyed by battle or your opponent's card effects while this card is in the Monster Zone.",
+            "preco": "0.04",
+            "img": "https://images.ygoprodeck.com/images/cards/92092092.jpg"
+          }
+        },
+        {
+          "carta": {
+            "id": 7452945,
+            "name": "Noble Arms of Destiny",
+            "type": "Spell Card",
+            "desc": "You can only control 1 \"Noble Arms of Destiny\". Equip only to a Warrior-Type monster. Once per turn, the equipped monster cannot be destroyed by battle or by card effects. If this face-up card on the field is destroyed and sent to the Graveyard: You can target 1 Warrior-Type \"Noble Knight\" monster you control; equip this card to that target. You can only use this effect of \"Noble Arms of Destiny\" once per turn.",
+            "preco": "0.43",
+            "img": "https://images.ygoprodeck.com/images/cards/7452945.jpg"
+          }
+        },
+        {
+          "carta": {
+            "id": 69512157,
+            "name": "Vector Pendulum, the Dracoverlord",
+            "type": "Pendulum Normal Monster",
+            "desc": "[ Pendulum Effect ] \nNegate all card effects in your opponent's Pendulum Zones.\n[ Monster Effect ] \n''This Overlord overran an entire world with his army of Dracofiends, using his Dragon Alchemy to convert all life into his terrible minions. The source of this power is unidentified, and probably extra-dimensional.''",
+            "preco": "0.36",
+            "img": "https://images.ygoprodeck.com/images/cards/69512157.jpg"
+          }
+        },
+        {
+          "carta": {
+            "id": 38552107,
+            "name": "Horn of Light",
+            "type": "Spell Card",
+            "desc": "Increase the DEF of a monster equipped with this card by 800 points. When this card is sent from the field to the Graveyard, if you pay 500 Life Points, this card returns to the top of your Deck.",
+            "preco": "0.15",
+            "img": "https://images.ygoprodeck.com/images/cards/38552107.jpg"
+          }
+        },
+        {
+          "carta": {
+            "id": 68392533,
+            "name": "Telekinetic Charging Cell",
+            "type": "Spell Card",
+            "desc": "Equip only to a Psychic-Type monster. You do not have to pay Life Points to activate its effect(s). When the equipped monster is destroyed and this card is sent to the Graveyard, you can pay 1000 Life Points to return this card to your hand.",
+            "preco": "0.34",
+            "img": "https://images.ygoprodeck.com/images/cards/68392533.jpg"
+          }
+        },
+        {
+          "carta": {
+            "id": 95638658,
+            "name": "Shooting Star Bow - Ceal",
+            "type": "Spell Card",
+            "desc": "The equipped monster loses 1000 ATK, but it can attack your opponent directly.",
+            "preco": "0.61",
+            "img": "https://images.ygoprodeck.com/images/cards/95638658.jpg"
+          }
+        },
+        {
+          "carta": {
+            "id": 98319530,
+            "name": "\"Infernoble Arms - Almace\"",
+            "type": "Spell Card",
+            "desc": "While this card is equipped to a monster: You can equip 1 \"Infernoble Arms\" Equip Spell from your Deck or GY, except \"\"Infernoble Arms - Almace\"\", to 1 appropriate monster you control, then destroy this card. If this card is sent to the GY because the equipped monster is sent to the GY: You can target 1 of your FIRE Warrior monsters that is banished or in your GY; add it to your hand. You can only use 1 \"\"Infernoble Arms - Almace\"\" effect per turn, and only once that turn.",
+            "preco": "0.00",
+            "img": "https://images.ygoprodeck.com/images/cards/98319530.jpg"
+          }
+        },
+        {
+          "carta": {
+            "id": 2370081,
+            "name": "Steel Shell",
+            "type": "Spell Card",
+            "desc": "A WATER monster equipped with this card increases its ATK by 400 points and decreases its DEF by 200 points.",
+            "preco": "8.41",
+            "img": "https://images.ygoprodeck.com/images/cards/2370081.jpg"
+          }
+        },
+        {
+          "carta": {
+            "id": 1200843,
+            "name": "Mirror of Yata",
+            "type": "Spell Card",
+            "desc": "Equip only to a Spirit monster. The equipped monster does not have to have its effect that returns it to the hand activated. If it would be destroyed by battle, destroy this card instead.",
+            "preco": "0.12",
+            "img": "https://images.ygoprodeck.com/images/cards/1200843.jpg"
+          }
+        },
+        {
+          "carta": {
+            "id": 90592429,
+            "name": "Vylon Filament",
+            "type": "Spell Card",
+            "desc": "Equip only to a \"Vylon\" monster. If the equipped monster attacks, your opponent cannot activate any Spell/Trap Cards until the end of the Damage Step. If this face-up card on the field is sent to the Graveyard: You can add 1 \"Vylon\" Spell Card from your Deck to your hand.",
+            "preco": "0.04",
+            "img": "https://images.ygoprodeck.com/images/cards/90592429.jpg"
+          }
+        },
+        {
+          "carta": {
+            "id": 91580102,
+            "name": "Reptilianne Rage",
+            "type": "Spell Card",
+            "desc": "The equipped monster becomes Reptile-Type. It gains 800 ATK. If this card is destroyed and sent to the Graveyard: Target 1 face-up monster your opponent controls; it loses 800 ATK.",
+            "preco": "0.10",
+            "img": "https://images.ygoprodeck.com/images/cards/91580102.jpg"
+          }
+        },
+        {
+          "carta": {
+            "id": 40678060,
+            "name": "Angelica's Angelic Ring",
+            "type": "Spell Card",
+            "desc": "Equip only to a monster you control equipped with an Equip Card. You can only control 1 \"Angelica's Angelic Ring\". Each turn, negate the effect of your opponent's first Spell Card or effect that resolves. Once per turn, while this card is equipped to a monster: You can gain 500 LP, then destroy this card, and if you do, your opponent cannot target the monster this card was equipped to with card effects, while it is face-up in the Monster Zone.",
+            "preco": "0.12",
+            "img": "https://images.ygoprodeck.com/images/cards/40678060.jpg"
+          }
+        },
+        {
+          "carta": {
+            "id": 71453557,
+            "name": "Autonomous Action Unit",
+            "type": "Spell Card",
+            "desc": "Pay 1500 Life Points, then target 1 monster in your opponent's Graveyard; Special Summon that target to your side of the field in face-up Attack Position, and equip it with this card. When this card leaves the field, destroy the equipped monster.",
+            "preco": "0.22",
+            "img": "https://images.ygoprodeck.com/images/cards/71453557.jpg"
+          }
+        },
+        {
+          "carta": {
+            "id": 17589298,
+            "name": "Sword of Dark Rites",
+            "type": "Spell Card",
+            "desc": "Equip only to a DARK monster. It gains 400 ATK. When the equipped monster is Tributed and this card is sent to the Graveyard, return this card to your hand.",
+            "preco": "0.25",
+            "img": "https://images.ygoprodeck.com/images/cards/17589298.jpg"
+          }
+        },
+        {
+          "carta": {
+            "id": 57736667,
+            "name": "Mikanko Dance - Mayowashidori",
+            "type": "Spell Card",
+            "desc": "The equipped monster cannot be destroyed by card effects. You can only use each of the following effects of \"Mikanko Dance - Mayowashidori\" once per turn. At the end of the Damage Step, if your \"Mikanko\" monster battled: You can target 1 card on the field; return it to the hand. If this card is in your GY: You can target 1 \"Mikanko\" monster in your GY; Special Summon it, and if you do, equip it with this card, but banish it when it leaves the field.",
+            "preco": "0.10",
+            "img": "https://images.ygoprodeck.com/images/cards/57736667.jpg"
+          }
+        },
+        {
+          "carta": {
+            "id": 303660,
+            "name": "Amplifier",
+            "type": "Spell Card",
+            "desc": "Equip only to \"Jinzo\". While this card is equipped, the equipped monster's effect does not negate the effects of its controller's Trap Cards. When this card is removed from the field, destroy the equipped monster. This card's activation and effect cannot be negated.",
+            "preco": "0.05",
+            "img": "https://images.ygoprodeck.com/images/cards/303660.jpg"
+          }
+        },
+        {
+          "carta": {
+            "id": 4857085,
+            "name": "Omega Goggles",
+            "type": "Spell Card",
+            "desc": "Equip only to a monster you control. Once per turn, you can look at 1 random card in your opponent's hand. The equipped monster cannot attack the turn you activate this effect.",
+            "preco": "0.12",
+            "img": "https://images.ygoprodeck.com/images/cards/4857085.jpg"
+          }
+        },
+        {
+          "carta": {
+            "id": 74115234,
+            "name": "Orb of Yasaka",
+            "type": "Spell Card",
+            "desc": "Equip only to a Spirit monster. When it destroys an opponent's monster by battle and sends it to the Graveyard, gain Life Points equal to that monster's original ATK. When the equipped monster you control is returned to the hand and this card is sent to the Graveyard, return this card to your hand.",
+            "preco": "0.08",
+            "img": "https://images.ygoprodeck.com/images/cards/74115234.jpg"
+          }
+        },
+        {
+          "carta": {
+            "id": 46009906,
+            "name": "Beast Fangs",
+            "type": "Spell Card",
+            "desc": "A Beast-Type monster equipped with this card increases its ATK and DEF by 300 points.",
+            "preco": "0.46",
+            "img": "https://images.ygoprodeck.com/images/cards/46009906.jpg"
+          }
+        },
+        {
+          "carta": {
+            "id": 60879050,
+            "name": "Train Connection",
+            "type": "Spell Card",
+            "desc": "Must be equipped to an EARTH Machine-Type monster, by banishing 2 Level 10 or higher Machine-Type monsters from your Graveyard, and cannot be equipped by other ways. The equipped monster's ATK becomes double its original ATK, also if it attacks a Defense Position monster, inflict piercing battle damage to your opponent. Other monsters you control cannot attack.",
+            "preco": "0.10",
+            "img": "https://images.ygoprodeck.com/images/cards/60879050.jpg"
+          }
+        },
+        {
+          "carta": {
+            "id": 67775894,
+            "name": "Wonder Wand",
+            "type": "Spell Card",
+            "desc": "Equip only to a Spellcaster monster. It gains 500 ATK. If you control the equipped monster and this card: You can send both to the GY; draw 2 cards.",
+            "preco": "0.16",
+            "img": "https://images.ygoprodeck.com/images/cards/67775894.jpg"
+          }
+        },
+        {
+          "carta": {
+            "id": 98552723,
+            "name": "Restoration of the Monarchs",
+            "type": "Spell Card",
+            "desc": "Activate this card by targeting 1 monster in your GY with 2400 ATK/1000 DEF, or 2800 ATK/1000 DEF; Special Summon it in Defense Position, but negate its effects, also equip it with this card. When this card leaves the field, destroy that monster. The equipped monster can be treated as 2 Tributes for a Tribute Summon. You can only activate 1 \"Restoration of the Monarchs\" per turn.",
+            "preco": "0.11",
+            "img": "https://images.ygoprodeck.com/images/cards/98552723.jpg"
+          }
+        },
+        {
+          "carta": {
+            "id": 79965360,
+            "name": "Amazoness Heirloom",
+            "type": "Spell Card",
+            "desc": "Equip only to an \"Amazoness\" monster. Once per turn, that monster cannot be destroyed by battle. After damage calculation, if the equipped monster attacks a monster: Destroy the attacked monster.",
+            "preco": "0.14",
+            "img": "https://images.ygoprodeck.com/images/cards/79965360.jpg"
+          }
+        },
+        {
+          "carta": {
+            "id": 10204849,
+            "name": "Fleuret de Fleur",
+            "type": "Spell Card",
+            "desc": "Activate this card by targeting 1 Level 2 or lower monster in your GY; Special Summon it, but negate its effects, also equip it with this card. When this card, equipped by this effect, leaves the field, destroy that monster. The equipped monster gains 700 ATK. If this card is sent from the Spell & Trap Zone to the GY: You can equip this card to 1 Synchro Monster you control. You can only use this effect of \"Fleuret de Fleur\" once per turn. You can only activate 1 \"Fleuret de Fleur\" per turn.",
+            "preco": "0.18",
+            "img": "https://images.ygoprodeck.com/images/cards/10204849.jpg"
+          }
+        },
+        {
+          "carta": {
+            "id": 28957126,
+            "name": "Evil Eye of Gorgoneio",
+            "type": "Spell Card",
+            "desc": "Equip only to an \"Evil Eye\" monster. You can only activate 1 \"Evil Eye of Gorgoneio\" per turn. This card's name becomes \"Evil Eye of Selene\" while in the Spell & Trap Zone. While your LP are lower than your opponent's, the equipped monster gains ATK equal to the difference. You can banish this card from your GY and discard 1 \"Evil Eye\" card; add 1 \"Evil Eye\" Spell/Trap from your Deck to your hand, except \"Evil Eye of Gorgoneio\". You can only use this effect of \"Evil Eye of Gorgoneio\" once per turn.",
+            "preco": "0.05",
+            "img": "https://images.ygoprodeck.com/images/cards/28957126.jpg"
+          }
+        },
+        {
+          "carta": {
+            "id": 81954378,
+            "name": "Reaper Scythe - Dreadscythe",
+            "type": "Spell Card",
+            "desc": "Equip only to \"Guardian Dreadscythe\". It gains 500 ATK for each monster in the Graveyards.",
+            "preco": "0.02",
+            "img": "https://images.ygoprodeck.com/images/cards/81954378.jpg"
+          }
+        },
+        {
+          "carta": {
+            "id": 20686759,
+            "name": "Morphtronic Rusty Engine",
+            "type": "Spell Card",
+            "desc": "Equip only to a \"Morphtronic\" monster. If the equipped monster is destroyed, inflict damage to each player equal to its original ATK.",
+            "preco": "0.05",
+            "img": "https://images.ygoprodeck.com/images/cards/20686759.jpg"
+          }
+        },
+        {
+          "carta": {
+            "id": 15052462,
+            "name": "Violet Crystal",
+            "type": "Spell Card",
+            "desc": "(This card is not treated as a \"Crystal\" card.)\r\nEquip only to a Zombie monster. It gains 300 ATK/DEF.",
+            "preco": "0.02",
+            "img": "https://images.ygoprodeck.com/images/cards/15052462.jpg"
+          }
+        },
+        {
+          "carta": {
+            "id": 81193865,
+            "name": "Super Strident Blaze",
+            "type": "Spell Card",
+            "desc": "Equip only to a Machine Fusion Monster. Your opponent cannot activate cards or effects during your Battle Phase. At the end of the Damage Step, if the equipped monster attacked an opponent's monster: You can banish 1 \"Cyber Dragon\" monster from your GY; the equipped monster can attack an opponent's monster again in a row. Your other monsters cannot attack the turn you activate this effect.",
+            "preco": "0.11",
+            "img": "https://images.ygoprodeck.com/images/cards/81193865.jpg"
+          }
+        },
+        {
+          "carta": {
+            "id": 84428023,
+            "name": "Wattjustment",
+            "type": "Spell Card",
+            "desc": "Equip only to a Level 3 or lower Thunder-Type monster. It gains 800 ATK, also its effects are negated. Each time it inflicts battle damage to your opponent: Draw 1 card.",
+            "preco": "0.28",
+            "img": "https://images.ygoprodeck.com/images/cards/84428023.jpg"
+          }
+        },
+        {
+          "carta": {
+            "id": 75702749,
+            "name": "Phantasm Spiral Grip",
+            "type": "Spell Card",
+            "desc": "Equip only to a Normal Monster. It gains 500 ATK. When the equipped monster destroys an opponent's monster by battle: You can Special Summon 1 \"Phantasm Spiral Dragon\" from your hand, Deck, or Graveyard, and equip it with this card, then inflict 1000 damage to your opponent. You can only use this effect of \"Phantasm Spiral Grip\" once per turn.",
+            "preco": "0.07",
+            "img": "https://images.ygoprodeck.com/images/cards/75702749.jpg"
+          }
+        },
+        {
+          "carta": {
+            "id": 77007920,
+            "name": "Laser Cannon Armor",
+            "type": "Spell Card",
+            "desc": "Equip only to an Insect monster. It gains 300 ATK/DEF.",
+            "preco": "0.09",
+            "img": "https://images.ygoprodeck.com/images/cards/77007920.jpg"
+          }
+        },
+        {
+          "carta": {
+            "id": 53363708,
+            "name": "Supermagic Sword of Raptinus",
+            "type": "Spell Card",
+            "desc": "At the start of the Battle Phase: You can change the equipped monster's battle position, and if you do, immediately after this effect resolves, Normal Summon 1 monster. You can only use this effect of \"Supermagic Sword of Raptinus\" once per turn. Apply this effect depending on the equipped monster's battle position.\r\n● Attack Position: Your opponent cannot target the equipped monster with card effects.\r\n● Defense Position: The equipped monster cannot be destroyed by battle.",
+            "preco": "0.89",
+            "img": "https://images.ygoprodeck.com/images/cards/53363708.jpg"
+          }
+        },
+        {
+          "carta": {
+            "id": 82432018,
+            "name": "Mask of Brutality",
+            "type": "Spell Card",
+            "desc": "The equipped monster gains 1000 ATK and loses 1000 DEF. During each of your Standby Phases, pay 1000 LP or destroy this card.",
+            "preco": "0.07",
+            "img": "https://images.ygoprodeck.com/images/cards/82432018.jpg"
+          }
+        },
+        {
+          "carta": {
+            "id": 94793422,
+            "name": "Rod of the Mind's Eye",
+            "type": "Spell Card",
+            "desc": "If a monster equipped with this card inflicts Battle Damage to your opponent, the damage becomes 1000 points.",
+            "preco": "0.35",
+            "img": "https://images.ygoprodeck.com/images/cards/94793422.jpg"
+          }
+        },
+        {
+          "carta": {
+            "id": 68427465,
+            "name": "Wicked-Breaking Flamberge - Baou",
+            "type": "Spell Card",
+            "desc": "Send 1 card from your hand to the GY, then target 1 monster on the field; equip this card to that target. It gains 500 ATK. Negate the effects of opponent's monsters destroyed by battle with the equipped monster.",
+            "preco": "0.07",
+            "img": "https://images.ygoprodeck.com/images/cards/68427465.jpg"
+          }
+        },
+        {
+          "carta": {
+            "id": 7625614,
+            "name": "Raregold Armor",
+            "type": "Spell Card",
+            "desc": "As long as you control the monster equipped with this card, your opponent cannot attack other monsters other than the equipped monster.",
+            "preco": "0.33",
+            "img": "https://images.ygoprodeck.com/images/cards/7625614.jpg"
+          }
+        },
+        {
+          "carta": {
+            "id": 30502181,
+            "name": "Lightsworn Sabre",
+            "type": "Spell Card",
+            "desc": "Equip only to a \"Lightsworn\" monster. It gains 700 ATK. When this card is sent from your Deck to the Graveyard: You can target 1 \"Lightsworn\" monster you control; equip this card to that target.",
+            "preco": "0.52",
+            "img": "https://images.ygoprodeck.com/images/cards/30502181.jpg"
+          }
+        },
+        {
+          "carta": {
+            "id": 60004971,
+            "name": "Dragunity Divine Lance",
+            "type": "Spell Card",
+            "desc": "Equip only to a \"Dragunity\" monster. It gains ATK equal to its Level x 100, also it is unaffected by Trap effects. During your Main Phase: You can equip 1 Dragon-Type \"Dragunity\" Tuner monster from your Deck to the monster equipped with this card. You can only use this effect of \"Dragunity Divine Lance\" once per turn.",
+            "preco": "0.24",
+            "img": "https://images.ygoprodeck.com/images/cards/60004971.jpg"
+          }
+        },
+        {
+          "carta": {
+            "id": 97687912,
+            "name": "Fairy Meteor Crush",
+            "type": "Spell Card",
+            "desc": "If the equipped monster attacks a Defense Position monster, inflict piercing battle damage to your opponent.",
+            "preco": "0.09",
+            "img": "https://images.ygoprodeck.com/images/cards/97687912.jpg"
+          }
+        },
+        {
+          "carta": {
+            "id": 83584898,
+            "name": "Darkworld Shackles",
+            "type": "Spell Card",
+            "desc": "The equipped monster cannot attack, also its ATK and DEF become 100. During each of your Standby Phases: Inflict 500 damage to the controller of the equipped monster.",
+            "preco": "0.26",
+            "img": "https://images.ygoprodeck.com/images/cards/83584898.jpg"
+          }
+        },
+        {
+          "carta": {
+            "id": 64804316,
+            "name": "Ghostrick Siren",
+            "type": "Effect Monster",
+            "desc": "Cannot be Normal Summoned, unless you control a \"Ghostrick\" monster. Once per turn, during your Main Phase: You can change this card to face-down Defense Position. If this card is Normal Summoned or flipped face-up: Send the top 2 cards of your Deck to the GY, then if either card was a \"Ghostrick\" card, you can apply 1 of these effects.\r\n● Add 1 \"Ghostrick\" Spell/Trap from your Deck to your hand.\r\n● Change 1 Effect Monster your opponent controls to face-down Defense Position.",
+            "preco": "0.10",
+            "img": "https://images.ygoprodeck.com/images/cards/64804316.jpg"
+          }
+        },
+        {
+          "carta": {
+            "id": 89792713,
+            "name": "Nordic Relic Laevateinn",
+            "type": "Trap Card",
+            "desc": "Target 1 face-up monster on the field that destroyed a monster by battle this turn; destroy it. Cards and effects cannot be activated in response to this card's activation.",
+            "preco": "0.06",
+            "img": "https://images.ygoprodeck.com/images/cards/89792713.jpg"
+          }
+        },
+        {
+          "carta": {
+            "id": 49010598,
+            "name": "Divine Wrath",
+            "type": "Trap Card",
+            "desc": "When a monster effect is activated: Discard 1 card; negate the activation, and if you do, destroy that monster.",
+            "preco": "0.16",
+            "img": "https://images.ygoprodeck.com/images/cards/49010598.jpg"
+          }
+        },
+        {
+          "carta": {
+            "id": 72932673,
+            "name": "Abyss-scale of the Mizuchi",
+            "type": "Spell Card",
+            "desc": "Equip only to a \"Mermail\" monster. It gains 800 ATK. When a Spell effect that was activated on your opponent's side of the field resolves, negate that effect, then send this card to the Graveyard.",
+            "preco": "0.15",
+            "img": "https://images.ygoprodeck.com/images/cards/72932673.jpg"
+          }
+        },
+        {
+          "carta": {
+            "id": 98439949,
+            "name": "Infinitrack Crab Crane",
+            "type": "Effect Monster",
+            "desc": "You can Tribute 1 EARTH Machine monster; Special Summon this card from your hand in Defense Position. You can banish 1 Machine monster from your GY; add 1 \"Outrigger Extension\" from your Deck to your hand. You can only use each effect of \"Infinitrack Crab Crane\" once per turn.",
+            "preco": "0.10",
+            "img": "https://images.ygoprodeck.com/images/cards/98439949.jpg"
+          }
+        },
+        {
+          "carta": {
+            "id": 70423794,
+            "name": "Morphtronic Cord",
+            "type": "Spell Card",
+            "desc": "Equip only to a \"Morphtronic\" monster. Each time the equipped monster's battle position is changed, destroy 1 Spell or Trap Card on the field.",
+            "preco": "0.11",
+            "img": "https://images.ygoprodeck.com/images/cards/70423794.jpg"
+          }
+        },
+        {
+          "carta": {
+            "id": 94535485,
+            "name": "Hand-Holding Genie",
+            "type": "Effect Monster",
+            "desc": "Monsters your opponent controls cannot target monsters for attacks, except this one. This card gains DEF equal to the combined original DEF of all other face-up Defense Position monsters you control.",
+            "preco": "0.13",
+            "img": "https://images.ygoprodeck.com/images/cards/94535485.jpg"
+          }
+        },
+        {
+          "carta": {
+            "id": 71181155,
+            "name": "Phantom Beast Cross-Wing",
+            "type": "Effect Monster",
+            "desc": "While this card is in the Graveyard, \"Gazelle the King of Mythical Beasts\" and all \"Phantom Beast\" monsters on the field gain 300 ATK.",
+            "preco": "0.08",
+            "img": "https://images.ygoprodeck.com/images/cards/71181155.jpg"
+          }
+        },
+        {
+          "carta": {
+            "id": 21011044,
+            "name": "Shaddoll Schism",
+            "type": "Trap Card",
+            "desc": "During the Main Phase, you can: Fusion Summon 1 \"Shaddoll\" Fusion Monster from your Extra Deck, by banishing Fusion Materials listed on it from your field or GY, but it cannot attack directly. Then, you can send to the GY 1 monster your opponent controls with the same Attribute as that Fusion Summoned monster. You can only use this effect of \"Shaddoll Schism\" once per turn.",
+            "preco": "0.56",
+            "img": "https://images.ygoprodeck.com/images/cards/21011044.jpg"
+          }
+        },
+        {
+          "carta": {
+            "id": 85060248,
+            "name": "Mind Protector",
+            "type": "Effect Monster",
+            "desc": "This card's controller must pay 500 Life Points during each of their Standby Phases. If they cannot, destroy this card. Monsters with 2000 or less ATK cannot declare an attack, except for Psychic-Type monsters.",
+            "preco": "0.16",
+            "img": "https://images.ygoprodeck.com/images/cards/85060248.jpg"
+          }
+        },
+        {
+          "carta": {
+            "id": 74640994,
+            "name": "Subterror Final Battle",
+            "type": "Trap Card",
+            "desc": "Activate 1 of these effects, also, after that, Set this card face-down instead of sending it to the GY.\r\n● Change 1 Set \"Subterror\" monster on the field to face-up Attack or Defense Position.\r\n● Change 1 face-up \"Subterror\" monster on the field to face-down Defense Position.\r\n● ATK/DEF of 1 \"Subterror\" monster on the field become equal to its combined original ATK/DEF until the end of this turn.\r\n● This turn, activated effects of \"Subterror\" cards cannot be negated.",
+            "preco": "0.18",
+            "img": "https://images.ygoprodeck.com/images/cards/74640994.jpg"
+          }
+        },
+        {
+          "carta": {
+            "id": 87288189,
+            "name": "Caius the Mega Monarch",
+            "type": "Effect Monster",
+            "desc": "You can Tribute Summon this card by Tributing 1 Tribute Summoned monster. If this card is Tribute Summoned: Target 1 card on the field; banish it, and if you do, inflict 1000 damage to your opponent, then, if it is a DARK Monster Card, banish all cards with that name from the hand, Main Deck, Extra Deck, and GY of the player who controlled it. If this card was Tribute Summoned by Tributing a DARK monster, add this additional effect.\n● You can target 2 cards, instead.",
+            "preco": "0.26",
+            "img": "https://images.ygoprodeck.com/images/cards/87288189.jpg"
+          }
+        },
+        {
+          "carta": {
+            "id": 21672573,
+            "name": "Emperor Sem",
+            "type": "Effect Monster",
+            "desc": "Each time you Tribute Summon a monster, each player can select 1 card from their Graveyard and return it to the top of their Deck.",
+            "preco": "0.09",
+            "img": "https://images.ygoprodeck.com/images/cards/21672573.jpg"
+          }
+        },
+        {
+          "carta": {
+            "id": 45159319,
+            "name": "Moai Interceptor Cannons",
+            "type": "Effect Monster",
+            "desc": "Once per turn, you can flip this card into face-down Defense Position.",
+            "preco": "0.11",
+            "img": "https://images.ygoprodeck.com/images/cards/45159319.jpg"
+          }
+        },
+        {
+          "carta": {
+            "id": 46033517,
+            "name": "Machina Ruinforce",
+            "type": "Effect Monster",
+            "desc": "Cannot be Normal Summoned/Set. Must be Special Summoned (from your GY) by banishing Machine monsters from your GY whose total Levels equal 12 or more. When your opponent activates a card or effect during the Battle Phase (Quick Effect): You can pay half your LP; negate that activation, and if you do, halve your opponent's LP. If this card is destroyed by battle or card effect: You can Special Summon up to 3 of your banished \"Machina\" monsters, whose total Levels equal 12 or less. You can only use each effect of \"Machina Ruinforce\" once per turn.",
+            "preco": "0.11",
+            "img": "https://images.ygoprodeck.com/images/cards/46033517.jpg"
+          }
+        },
+        {
+          "carta": {
+            "id": 76833149,
+            "name": "Melffy Mommy",
+            "type": "XYZ Monster",
+            "desc": "2+ Level 2 Beast monsters\r\nOnce per turn (Quick Effect): You can attach 1 Beast monster from your hand or face-up field to this card as material. This card gains effects based on the number of materials attached to it.\r\n● 3+: Cannot be destroyed by battle.\r\n● 4+: You take no damage from battles involving this card.\r\n● 5+: When an attack is declared involving this card and an Attack Position monster: You can inflict damage to your opponent equal to that Attack Position monster's ATK.",
+            "preco": "0.10",
+            "img": "https://images.ygoprodeck.com/images/cards/76833149.jpg"
+          }
+        },
+        {
+          "carta": {
+            "id": 2801664,
+            "name": "Ancient Warriors - Valiant Zhang De",
+            "type": "Effect Monster",
+            "desc": "Gains 300 ATK for each monster your opponent controls, during your turn only. You can only use each of the following effects of \"Ancient Warriors - Valiant Zhang De\" once per turn.\r\n● If you control 2 or more \"Ancient Warriors\" monsters: You can Special Summon this card from your hand.\r\n● If your opponent controls more monsters than you do: You can activate this effect; this card can make up to 2 attacks on monsters during each Battle Phase this turn.",
+            "preco": "0.19",
+            "img": "https://images.ygoprodeck.com/images/cards/2801664.jpg"
+          }
+        },
+        {
+          "carta": {
+            "id": 15989522,
+            "name": "Gaia the Magical Knight of Dragons",
+            "type": "Fusion Monster",
+            "desc": "1 \"Gaia The Fierce Knight\" monster + 1 Level 5 Dragon monster\r\nThis card's name becomes \"Gaia the Dragon Champion\" while on the field. You can only use each of the following effects of \"Gaia the Magical Knight of Dragons\" once per turn. During the Main Phase (Quick Effect): You can target 1 other card on the field; this card loses exactly 2600 ATK, and if it does, destroy that card. When this card destroys an opponent's monster by battle: You can make this card gain 2600 ATK.",
+            "preco": "0.45",
+            "img": "https://images.ygoprodeck.com/images/cards/15989522.jpg"
+          }
+        },
+        {
+          "carta": {
+            "id": 10584050,
+            "name": "Springans Blast!",
+            "type": "Trap Card",
+            "desc": "If you control a \"Springans\" monster: Choose 1 opponent's Main Monster Zone; if a monster is face-up in that zone, during this turn, it cannot attack directly, also its effects are negated. If no monster is in that zone, it cannot be used this turn. If you control a Fusion Monster that lists \"Fallen of Albaz\" as material, you can choose 2 zones instead. You can only activate 1 \"Springans Blast!\" per turn.",
+            "preco": "0.09",
+            "img": "https://images.ygoprodeck.com/images/cards/10584050.jpg"
+          }
+        },
+        {
+          "carta": {
+            "id": 3070049,
+            "name": "Snow Dragon",
+            "type": "Effect Monster",
+            "desc": "When this card is destroyed by battle or by a card effect and sent to the Graveyard: Place 1 Ice Counter on each face-up monster on the field.",
+            "preco": "0.08",
+            "img": "https://images.ygoprodeck.com/images/cards/3070049.jpg"
+          }
+        },
+        {
+          "carta": {
+            "id": 94303232,
+            "name": "Prevention Star",
+            "type": "Spell Card",
+            "desc": "Equip only to a monster you control, if it was changed from face-up Attack Position to face-up Defense Position this turn. Select 1 monster your opponent controls. That monster cannot attack or change its battle position. When the equipped monster is destroyed and this card is sent to the Graveyard, remove from play the selected monster.",
+            "preco": "0.09",
+            "img": "https://images.ygoprodeck.com/images/cards/94303232.jpg"
+          }
+        },
+        {
+          "carta": {
+            "id": 65952776,
+            "name": "Dunnell, the Noble Arms of Light",
+            "type": "Spell Card",
+            "desc": "Equip only to a monster you control. You can only control 1 \"Dunnell, the Noble Arms of Light\". The equipped monster gains 500 ATK for each monster you control with a different name that mentions \"Adventurer Token\". If this card is sent to the GY: You can target 1 \"Adventurer Token\" you control; equip this card to that target. You can only use this effect of \"Dunnell, the Noble Arms of Light\" once per turn.",
+            "preco": "0.04",
+            "img": "https://images.ygoprodeck.com/images/cards/65952776.jpg"
+          }
+        },
+        {
+          "carta": {
+            "id": 87609391,
+            "name": "Raptor's Ultimate Mace",
+            "type": "Spell Card",
+            "desc": "Equip only to a \"Raidraptor\" monster. It gains 1000 ATK. When the equipped monster is targeted for an attack by a monster whose ATK is higher than the equipped monster: You can add 1 \"Rank-Up-Magic\" Spell Card from your Deck to your hand, and if you do, you take no battle damage from that battle.",
+            "preco": "0.11",
+            "img": "https://images.ygoprodeck.com/images/cards/87609391.jpg"
+          }
+        },
+        {
+          "carta": {
+            "id": 3078576,
+            "name": "Yata-Garasu",
+            "type": "Spirit Monster",
+            "desc": "This card cannot be Special Summoned. This card returns to its owner's hand during the End Phase of the turn it is Normal Summoned or flipped face-up. When this card inflicts Battle Damage to your opponent, they skip their next Draw Phase.",
+            "preco": "0.46",
+            "img": "https://images.ygoprodeck.com/images/cards/3078576.jpg"
+          }
+        },
+        {
+          "carta": {
+            "id": 58882608,
+            "name": "Breath of the Tistina",
+            "type": "Spell Card",
+            "desc": "During your Main Phase, you can Normal Summon 1 \"Tistina\" monster, in addition to your Normal Summon/Set. (You can only gain this effect once per turn.) You can target 1 face-up monster you control, or if you control a LIGHT \"Tistina\" monster, you can target 1 face-up monster on the field instead; change that monster to face-down Defense Position, then add 1 \"Tistina\" card from your Deck to your hand, except \"Breath of the Tistina\". You can only use this effect of \"Breath of the Tistina\" once per turn.",
+            "preco": "0.12",
+            "img": "https://images.ygoprodeck.com/images/cards/58882608.jpg"
+          }
+        },
+        {
+          "carta": {
+            "id": 79339613,
+            "name": "Soul Energy MAX!!!",
+            "type": "Trap Card",
+            "desc": "If you control \"Obelisk the Tormentor\" whose original Attribute is DIVINE in your Monster Zone: Tribute 2 other face-up monsters; destroy as many monsters your opponent controls as possible, and if you do, inflict 4000 damage to your opponent. During the Main or Battle Phase: You can banish this card from your GY; add 1 \"Obelisk the Tormentor\" from your Deck or GY to your hand, then immediately after this effect resolves, you can Normal Summon 1 \"Obelisk the Tormentor\". You can only use each effect of \"Soul Energy MAX!!!\" once per turn.",
+            "preco": "0.26",
+            "img": "https://images.ygoprodeck.com/images/cards/79339613.jpg"
+          }
+        },
+        {
+          "carta": {
+            "id": 75560629,
+            "name": "Flint",
+            "type": "Spell Card",
+            "desc": "The equipped monster loses 300 ATK and cannot change its battle position or declare an attack. If this card is destroyed because the equipped monster is destroyed: Target 1 monster on the field; equip this card to that monster.",
+            "preco": "0.12",
+            "img": "https://images.ygoprodeck.com/images/cards/75560629.jpg"
+          }
+        },
+        {
+          "carta": {
+            "id": 49575521,
+            "name": "Dragonmaid Nudyarl",
+            "type": "Effect Monster",
+            "desc": "Cannot be destroyed by card effects while you control a Fusion Monster. You can only use each of the following effects of \"Dragonmaid Nudyarl\" once per turn.\r\n● You can discard this card, then target 1 monster in either GY; shuffle it into the Deck.\r\n● At the end of the Battle Phase: You can return this card to the hand, and if you do, Special Summon 1 Level 2 \"Dragonmaid\" monster from your hand.",
+            "preco": "1.56",
+            "img": "https://images.ygoprodeck.com/images/cards/49575521.jpg"
+          }
+        },
+        {
+          "carta": {
+            "id": 16958382,
+            "name": "Malefic Paradigm Dragon",
+            "type": "Effect Monster",
+            "desc": "Cannot be Normal Summoned/Set. Must be Special Summoned (from your hand) by banishing 1 \"Malefic\" monster from your Extra Deck while \"Malefic Paradigm Dragon\" is not on the field. If \"Malefic World\" is not on the field, destroy this card. Once per turn: You can send 1 \"Malefic\" card from your Deck to the GY; return 1 of your banished Level 8 Synchro Monsters to the Extra Deck, then you can Special Summon that monster from the Extra Deck, also you can only attack with \"Malefic\" monsters for the rest of this turn.",
+            "preco": "0.14",
+            "img": "https://images.ygoprodeck.com/images/cards/16958382.jpg"
+          }
+        },
+        {
+          "carta": {
+            "id": 79875526,
+            "name": "Attachment Cybern",
+            "type": "Effect Monster",
+            "desc": "You can target 1 Dragon or Machine \"Cyber\" monster you control; equip this card from your hand or field to it. While this card is an Equip Card, the equipped monster gains 600 ATK. If this card is sent to the GY while equipped to a monster: You can target 1 other Dragon or Machine \"Cyber\" monster in your GY; Special Summon it. You can only use this effect of \"Attachment Cybern\" once per turn.",
+            "preco": "0.12",
+            "img": "https://images.ygoprodeck.com/images/cards/79875526.jpg"
+          }
+        },
+        {
+          "carta": {
+            "id": 76436988,
+            "name": "Gillagillancer",
+            "type": "Effect Monster",
+            "desc": "If your opponent controls a monster and you control no monsters, you can Special Summon this card (from your hand). During each End Phase: You take 500 damage. This card must be face-up on the field to activate and to resolve this effect.",
+            "preco": "0.11",
+            "img": "https://images.ygoprodeck.com/images/cards/76436988.jpg"
+          }
+        },
+        {
+          "carta": {
+            "id": 72446038,
+            "name": "Synthesis Spell",
+            "type": "Spell Card",
+            "desc": "This card is used to Ritual Summon \"Lycanthrope\". You must also Tribute monsters whose total Levels equal 6 or more from the field or your hand.",
+            "preco": "0.11",
+            "img": "https://images.ygoprodeck.com/images/cards/72446038.jpg"
+          }
+        },
+        {
+          "carta": {
+            "id": 32240937,
+            "name": "Ultimate Obedient Fiend",
+            "type": "Effect Monster",
+            "desc": "This card can only attack if this card is the only card on your side of the field and if you also have no cards in your hand. The effects of Effect Monsters that this card destroys are negated.",
+            "preco": "0.27",
+            "img": "https://images.ygoprodeck.com/images/cards/32240937.jpg"
+          }
+        },
+        {
+          "carta": {
+            "id": 54178659,
+            "name": "The Weather Painter Rainbow",
+            "type": "Link Monster",
+            "desc": "3 \"The Weather\" monsters\r\nWhen your opponent would Special Summon a monster(s) (Quick Effect): You can send this Link Summoned card to the GY; negate the Summon, and if you do, destroy that monster(s). Once per turn, during the Standby Phase of the turn after this card was banished from the field to activate a \"The Weather\" card's effect: You can Special Summon this banished card. \"The Weather\" Effect Monsters this card points to gain the following effect.\r\n● When a card or effect is activated (Quick Effect): You can banish this card; negate the activation, and if you do, destroy that card.",
+            "preco": "0.30",
+            "img": "https://images.ygoprodeck.com/images/cards/54178659.jpg"
+          }
+        },
+        {
+          "carta": {
+            "id": 86559484,
+            "name": "Xyz-Raypierce",
+            "type": "Effect Monster",
+            "desc": "You can banish 1 Dragon-Type monster and 1 Wyrm-Type monster from your Graveyard; Special Summon 1 \"Xyz-Raypierce\" from your hand or Deck. If this card is sent from the field to the Graveyard: You can inflict 500 damage to your opponent. You can only use each effect of \"Xyz-Raypierce\" once per turn.",
+            "preco": "0.09",
+            "img": "https://images.ygoprodeck.com/images/cards/86559484.jpg"
+          }
+        },
+        {
+          "carta": {
+            "id": 31226177,
+            "name": "Imduk the World Chalice Dragon",
+            "type": "Link Monster",
+            "desc": "1 Normal Monster, except a Token\r\nDuring your Main Phase, you can Normal Summon 1 \"World Chalice\" monster in addition to your Normal Summon/Set. (You can only gain this effect once per turn.) At the start of the Damage Step, if this card battles an opponent's monster this card points to: You can destroy that opponent's monster. If this card is sent from the field to the GY: You can Special Summon 1 \"World Chalice\" monster from your hand.",
+            "preco": "0.27",
+            "img": "https://images.ygoprodeck.com/images/cards/31226177.jpg"
+          }
+        },
+        {
+          "carta": {
+            "id": 69109764,
+            "name": "Hibernation Dragon",
+            "type": "Effect Monster",
+            "desc": "If this card is Normal or Special Summoned: You can target 1 Level 4 or lower Dragon monster in your GY; add it to your hand. While you control no Link Monsters, except the turn this card was sent to the GY: You can banish this card from your GY, then target 1 DARK Dragon Link Monster in your GY; Special Summon it. You can only use each effect of \"Hibernation Dragon\" once per turn.",
+            "preco": "0.73",
+            "img": "https://images.ygoprodeck.com/images/cards/69109764.jpg"
+          }
+        },
+        {
+          "carta": {
+            "id": 50412166,
+            "name": "Charm of Shabti",
+            "type": "Effect Monster",
+            "desc": "During either player's turn: You can discard this card; until the End Phase, \"Gravekeeper's\" monsters you control cannot be destroyed by battle.",
+            "preco": "0.45",
+            "img": "https://images.ygoprodeck.com/images/cards/50412166.jpg"
+          }
+        },
+        {
+          "carta": {
+            "id": 37557626,
+            "name": "Gishki Reliever",
+            "type": "Effect Monster",
+            "desc": "When this card is Normal or Flip Summoned: You can target 1 other monster you control; return that target to the hand. You must control another face-up \"Gishki\" monster to activate and to resolve this effect.",
+            "preco": "0.18",
+            "img": "https://images.ygoprodeck.com/images/cards/37557626.jpg"
+          }
+        },
+        {
+          "carta": {
+            "id": 75728539,
+            "name": "Sharv Sarga",
+            "type": "Trap Card",
+            "desc": "If \"Visas Starfrost\" is on the field: Target 1 Effect Monster on the field; shuffle that target into the Deck, and if you do, during the End Phase of this turn, its owner can add 1 monster from their Deck to their hand with a different Type and a Level lower than the Level/Rank/Link Rating of that monster. If a \"Veda\" monster(s) is Special Summoned, while this card is in your GY (except during the Damage Step): You can add this card to your hand. You can only use each effect of \"Sharv Sarga\" once per turn.",
+            "preco": "0.09",
+            "img": "https://images.ygoprodeck.com/images/cards/75728539.jpg"
+          }
+        },
+        {
+          "carta": {
+            "id": 26420373,
+            "name": "Speedroid Passinglider",
+            "type": "Pendulum Effect Monster",
+            "desc": "[ Pendulum Effect ] \nOnce per turn: You can send 1 \"Speedroid\" Tuner from your hand or face-up from your field to the GY; increase or reduce (min. 1) this card's Pendulum Scale by the original Level of the sent monster until the end of this turn.\n[ Monster Effect ] \nIf there are no monsters on the field, you can Special Summon this card (from your hand). You can only Special Summon \"Speedroid Passinglider\" once per turn this way. When this card is Tribute Summoned: You can target 1 Level 4 or lower \"Speedroid\" monster in your GY; Special Summon it. Your opponent's monsters cannot target \"Speedroid\" monsters for attacks, except this one.",
+            "preco": "0.04",
+            "img": "https://images.ygoprodeck.com/images/cards/26420373.jpg"
+          }
+        },
+        {
+          "carta": {
+            "id": 47596607,
+            "name": "Skyscraper 2 - Hero City",
+            "type": "Spell Card",
+            "desc": "Once per turn, during your Main Phase, if you control this card: You can target 1 \"Elemental HERO\" monster in your Graveyard that was destroyed by battle; Special Summon that target.",
+            "preco": "0.09",
+            "img": "https://images.ygoprodeck.com/images/cards/47596607.jpg"
+          }
+        },
+        {
+          "carta": {
+            "id": 21947653,
+            "name": "Evil HERO Lightning Golem",
+            "type": "Fusion Monster",
+            "desc": "\"Elemental HERO Sparkman\" + \"Elemental HERO Clayman\"\nMust be Special Summoned with \"Dark Fusion\" and cannot be Special Summoned by other ways. Once per turn: You can target 1 monster on the field; destroy that target.",
+            "preco": "0.08",
+            "img": "https://images.ygoprodeck.com/images/cards/21947653.jpg"
+          }
+        },
+        {
+          "carta": {
+            "id": 35262428,
+            "name": "Wiseman's Chalice",
+            "type": "Spell Card",
+            "desc": "If you control no monsters, select 1 monster in your opponent's Graveyard. Special Summon it. During the End Phase of this turn, give control of that Special Summoned monster to your opponent. The monster cannot be Tributed, or used as a Synchro Material Monster, while it is face-up on the field.",
+            "preco": "0.48",
+            "img": "https://images.ygoprodeck.com/images/cards/35262428.jpg"
+          }
+        },
+        {
+          "carta": {
+            "id": 43925870,
+            "name": "Windmill Genex",
+            "type": "Synchro Monster",
+            "desc": "\"Genex Controller\" + 1 or more non-Tuner WIND monsters\nThis card gains 300 ATK for each face-down Spell and Trap Card on the field. You can send 1 card from your hand to the Graveyard to select and destroy 1 face-down Spell or Trap Card.",
+            "preco": "0.75",
+            "img": "https://images.ygoprodeck.com/images/cards/43925870.jpg"
+          }
+        },
+        {
+          "carta": {
+            "id": 99115354,
+            "name": "Hyper Psychic Riser",
+            "type": "Synchro Monster",
+            "desc": "1 Tuner + 1+ non-Tuner monsters\r\nMonsters with less ATK than this card cannot attack, also neither player can activate the effects of face-up monsters on the field with more ATK than this card. If this card in your possession is destroyed by your opponent's card and sent to your GY: You can target 1 Tuner and 1 non-Tuner monster in your GY with the same Type and Attribute as each other; add them to your hand. You can only use this effect of \"Hyper Psychic Riser\" once per turn.",
+            "preco": "0.08",
+            "img": "https://images.ygoprodeck.com/images/cards/99115354.jpg"
+          }
+        },
+        {
+          "carta": {
+            "id": 45778932,
+            "name": "Rising Air Current",
+            "type": "Spell Card",
+            "desc": "All WIND monsters gain 500 ATK and lose 400 DEF.",
+            "preco": "0.11",
+            "img": "https://images.ygoprodeck.com/images/cards/45778932.jpg"
+          }
+        },
+        {
+          "carta": {
+            "id": 78765160,
+            "name": "Shiranui Style Samsara",
+            "type": "Trap Card",
+            "desc": "This card's name becomes \"Shiranui Style Synthesis\" while it is in the Spell & Trap Zone. Once per turn: You can activate 1 of these effects.\r\n● Banish 1 face-up Zombie-Type monster you control; you take no damage this turn (even if this card leaves the field).\r\n● Target 2 of your banished Zombie-Type monsters with 0 DEF; shuffle them both into the Deck, then draw 1 card.",
+            "preco": "0.10",
+            "img": "https://images.ygoprodeck.com/images/cards/78765160.jpg"
+          }
+        },
+        {
+          "carta": {
+            "id": 42776855,
+            "name": "Follow Wing",
+            "type": "Trap Card",
+            "desc": "Activate this card by targeting 1 Synchro Monster you control; it cannot be destroyed by battle or your opponent's card effects. At the start of the Damage Step, if it battles an opponent's Level 5 or higher monster: You can destroy that opponent's monster, and if you do, the targeted Synchro Monster gains ATK equal to the original ATK of the destroyed monster, until the end of this turn. When that monster leaves the field, destroy this card.",
+            "preco": "0.06",
+            "img": "https://images.ygoprodeck.com/images/cards/42776855.jpg"
+          }
+        },
+        {
+          "carta": {
+            "id": 32268901,
+            "name": "Salamandra",
+            "type": "Spell Card",
+            "desc": "Equip only to a FIRE monster. It gains 700 ATK.",
+            "preco": "0.08",
+            "img": "https://images.ygoprodeck.com/images/cards/32268901.jpg"
+          }
+        },
+        {
+          "carta": {
+            "id": 56597272,
+            "name": "Cloudian - Sheep Cloud",
+            "type": "Effect Monster",
+            "desc": "When this card is destroyed by battle and sent to the Graveyard, Special Summon 2 \"Cloudian Tokens\" (Fairy-Type/WATER/Level 1/ATK 0/DEF 0) in Defense Position. These tokens cannot be Tributed for a Tribute Summon, unless it is for a \"Cloudian\" monster.",
+            "preco": "0.12",
+            "img": "https://images.ygoprodeck.com/images/cards/56597272.jpg"
+          }
+        },
+        {
+          "carta": {
+            "id": 300101003,
+            "name": "Call of the Haunted (Skill Card)",
+            "type": "Skill Card",
+            "desc": "[At the start of the Duel, place this card in your center Spell & Trap Zone. You cannot activate this Skill during your first turn of the Duel. You draw 1 less card at the beginning of the Duel.] \r\n\r\nActivate this card by targeting 1 monster in your GY; Special Summon that target in Attack Position. When this card leaves the field, destroy that monster. When that monster is destroyed, destroy this card.",
+            "preco": "0.00",
+            "img": "https://images.ygoprodeck.com/images/cards/300101003.jpg"
+          }
+        },
+        {
+          "carta": {
+            "id": 78642798,
+            "name": "Golden-Eyes Idol",
+            "type": "Effect Monster",
+            "desc": "Once per turn (Quick Effect): You can activate this effect; look at your opponent's hand, also this card's name becomes \"Thousand-Eyes Idol\" until the End Phase. If this card is banished, or sent to the GY by card effect: You can target 1 Effect Monster your opponent controls; equip that Effect Monster to 1 \"Eyes Restrict\" or \"Relinquished\" monster you control that cannot be Normal Summoned. While equipped by this effect, that monster gains ATK equal to the ATK of the equipped monster. You can only use this effect of \"Golden-Eyes Idol\" once per turn.",
+            "preco": "0.07",
+            "img": "https://images.ygoprodeck.com/images/cards/78642798.jpg"
+          }
+        },
+        {
+          "carta": {
+            "id": 69599136,
+            "name": "Floodgate Trap Hole",
+            "type": "Trap Card",
+            "desc": "When your opponent Summons a monster(s): Change that monster(s) to face-down Defense Position. Monsters changed to face-down Defense Position by this effect cannot change their battle positions.",
+            "preco": "0.09",
+            "img": "https://images.ygoprodeck.com/images/cards/69599136.jpg"
+          }
+        },
+        {
+          "carta": {
+            "id": 28990150,
+            "name": "Photon Cerberus",
+            "type": "Effect Monster",
+            "desc": "During the turn this card was Normal Summoned, neither player can activate Trap Cards while this card is face-up on the field.",
+            "preco": "0.07",
+            "img": "https://images.ygoprodeck.com/images/cards/28990150.jpg"
+          }
+        },
+        {
+          "carta": {
+            "id": 28546905,
+            "name": "Illusionist Faceless Mage",
+            "type": "Normal Monster",
+            "desc": "Manipulates enemy attacks with the power of illusion.",
+            "preco": "0.11",
+            "img": "https://images.ygoprodeck.com/images/cards/28546905.jpg"
+          }
+        },
+        {
+          "carta": {
+            "id": 44223284,
+            "name": "Abyssal Kingshark",
+            "type": "Effect Monster",
+            "desc": "Once per turn, if this card would be destroyed by an effect that does not target it, it is not destroyed.",
+            "preco": "0.28",
+            "img": "https://images.ygoprodeck.com/images/cards/44223284.jpg"
+          }
+        },
+        {
+          "carta": {
+            "id": 739444,
+            "name": "Vorticular Drumgon",
+            "type": "Link Monster",
+            "desc": "3 DARK Dragon monsters\r\nIf this card is Special Summoned: You can draw 1 card. You can only use this effect of \"Vorticular Drumgon\" once per turn. If this effect resolves, the unused Monster Zones this card points to cannot be used for the rest of this turn.",
+            "preco": "0.03",
+            "img": "https://images.ygoprodeck.com/images/cards/739444.jpg"
+          }
+        },
+        {
+          "carta": {
+            "id": 94716515,
+            "name": "Eradicating Aerosol",
+            "type": "Spell Card",
+            "desc": "Destroy all Insect monsters on the field.",
+            "preco": "0.13",
+            "img": "https://images.ygoprodeck.com/images/cards/94716515.jpg"
+          }
+        },
+        {
+          "carta": {
+            "id": 71645242,
+            "name": "Black Garden",
+            "type": "Spell Card",
+            "desc": "If a monster(s) is Normal or Special Summoned face-up, except by the effect of \"Black Garden\": Halve its ATK, then, the controller of that monster Special Summons 1 \"Rose Token\" (Plant/DARK/Level 2/ATK 800/DEF 800) to their opponent's field in Attack Position. (This ATK loss remains even if this card leaves the field.) You can target 1 monster in your GY with ATK equal to the total ATK of all Plant monsters on the field; destroy this card and as many Plant monsters on the field as possible, then, if you destroyed all of them, Special Summon that targeted monster.",
+            "preco": "0.24",
+            "img": "https://images.ygoprodeck.com/images/cards/71645242.jpg"
+          }
+        },
+        {
+          "carta": {
+            "id": 73778008,
+            "name": "Rage of the Deep Sea",
+            "type": "Effect Monster",
+            "desc": "This card gains 500 ATK and DEF for each Fish, Sea Serpent, or Aqua-Type monster in your Graveyard.",
+            "preco": "0.15",
+            "img": "https://images.ygoprodeck.com/images/cards/73778008.jpg"
+          }
+        },
+        {
+          "carta": {
+            "id": 68280530,
+            "name": "Royal Knight",
+            "type": "Effect Monster",
+            "desc": "When this card destroys a monster by battle and sends it to the Graveyard, gain Life Points equal to the DEF of the destroyed monster.",
+            "preco": "0.08",
+            "img": "https://images.ygoprodeck.com/images/cards/68280530.jpg"
+          }
+        },
+        {
+          "carta": {
+            "id": 12146024,
+            "name": "Bolt Escargot",
+            "type": "Normal Monster",
+            "desc": "After rendering an opponent immobile by spitting a sticky goo, this monster closes in for the attack.",
+            "preco": "0.00",
+            "img": "https://images.ygoprodeck.com/images/cards/12146024.jpg"
+          }
+        },
+        {
+          "carta": {
+            "id": 11125718,
+            "name": "Lancer Dragonute",
+            "type": "Effect Monster",
+            "desc": "If this card attacks a Defense Position monster, inflict piercing battle damage to your opponent.",
+            "preco": "0.32",
+            "img": "https://images.ygoprodeck.com/images/cards/11125718.jpg"
+          }
+        },
+        {
+          "carta": {
+            "id": 23935886,
+            "name": "Draco Masters of the Tenyi",
+            "type": "Link Monster",
+            "desc": "2+ monsters, including a Link Monster\r\nCannot be destroyed by battle with an Effect Monster. If you control no other Effect Monsters: You can destroy Effect Monsters your opponent controls, up to the number of non-Effect Monsters you control and/or in your GY. You can only use this effect of \"Draco Masters of the Tenyi\" once per turn.",
+            "preco": "0.34",
+            "img": "https://images.ygoprodeck.com/images/cards/23935886.jpg"
+          }
+        },
+        {
+          "carta": {
+            "id": 86325573,
+            "name": "Battlin' Boxer Big Bandage",
+            "type": "Effect Monster",
+            "desc": "Once per turn, this card cannot be destroyed by battle. Once per turn: You can target 1 \"Battlin' Boxer\" monster in your Graveyard, or 1 of your banished \"Battlin' Boxer\" monsters, that has a Level; all \"Battlin' Boxer\" monsters you currently control become that monster's current Level.",
+            "preco": "0.08",
+            "img": "https://images.ygoprodeck.com/images/cards/86325573.jpg"
+          }
+        },
+        {
+          "carta": {
+            "id": 43580269,
+            "name": "Emes the Infinity",
+            "type": "Effect Monster",
+            "desc": "Each time this card destroys an opponent's monster and sends it to the Graveyard as a result of battle, increase the ATK of this card by 700 points.",
+            "preco": "1.02",
+            "img": "https://images.ygoprodeck.com/images/cards/43580269.jpg"
+          }
+        },
+        {
+          "carta": {
+            "id": 99599062,
+            "name": "Earthbound Fusion",
+            "type": "Spell Card",
+            "desc": "Fusion Summon 1 DARK Fusion Monster from your Extra Deck, using monsters from your hand or field as material. You can only activate this card during the Main Phase, unless a card is in a Field Zone. During your Main Phase, if a card is in a Field Zone: You can banish this card from your GY; Special Summon 1 \"Earthbound\" monster from your hand or GY, also you cannot Special Summon monsters from the Extra Deck for the rest of this turn, except Fusion and Synchro Monsters. You can only use this effect of \"Earthbound Fusion\" once per turn.",
+            "preco": "0.00",
+            "img": "https://images.ygoprodeck.com/images/cards/99599062.jpg"
+          }
+        },
+        {
+          "carta": {
+            "id": 57617178,
+            "name": "Sonic Bird",
+            "type": "Effect Monster",
+            "desc": "When this card is Normal or Flip Summoned: You can add 1 Ritual Spell from your Deck to your hand.",
+            "preco": "0.11",
+            "img": "https://images.ygoprodeck.com/images/cards/57617178.jpg"
+          }
+        },
+        {
+          "carta": {
+            "id": 32787239,
+            "name": "Performapal Trumpanda",
+            "type": "Pendulum Effect Monster",
+            "desc": "[ Pendulum Effect ] \nOnce per turn: You can increase this card's Pendulum Scale by 1 (max. 12).\n[ Monster Effect ] \nWhen your Pendulum Monster is targeted for an attack: You can negate the attack. You can only use this effect of \"Performapal Trumpanda\" once per turn.",
+            "preco": "0.03",
+            "img": "https://images.ygoprodeck.com/images/cards/32787239.jpg"
+          }
+        },
+        {
+          "carta": {
+            "id": 3891471,
+            "name": "Psychic Tuning",
+            "type": "Trap Card",
+            "desc": "Select 1 Psychic-Type monster in your Graveyard and Special Summon it in Attack Position. It is treated as a Tuner monster. When this card is removed from the field, destroy that monster. When that monster is removed from the field, destroy this card. When this card is sent to the Graveyard, take damage equal to that monster's Level x 400.",
+            "preco": "0.14",
+            "img": "https://images.ygoprodeck.com/images/cards/3891471.jpg"
+          }
+        },
+        {
+          "carta": {
+            "id": 15635751,
+            "name": "Camelot, Realm of Noble Knights and Noble Arms",
+            "type": "Spell Card",
+            "desc": "Once per turn, if a \"Noble Knight\" card(s) you control would be destroyed by battle or card effect, you can destroy 1 Equip Card you control instead. During your Main Phase: You can banish this card (until the next Standby Phase), and if you do, place 1 \"Noble Knights of the Round Table\" from your hand, Deck, or GY, face-up in your Field Zone, then you can Special Summon 1 \"Artorigus\" monster, or add to your hand 1 \"Noble Arms\" card, from your Deck or GY. You can only use this effect of \"Camelot, Realm of Noble Knights and Noble Arms\" once per turn.",
+            "preco": "0.25",
+            "img": "https://images.ygoprodeck.com/images/cards/15635751.jpg"
+          }
+        },
+        {
+          "carta": {
+            "id": 99885917,
+            "name": "Marincess Pascalus",
+            "type": "Effect Monster",
+            "desc": "If this card is Normal or Special Summoned: You can Special Summon 1 \"Marincess\" monster from your hand in Defense Position, except \"Marincess Pascalus\". During your Main Phase, except the turn this card was sent to the GY: You can banish this card from your GY, then target 1 \"Marincess\" Spell/Trap in your GY; add it to your hand. You can only use each effect of \"Marincess Pascalus\" once per turn.",
+            "preco": "0.09",
+            "img": "https://images.ygoprodeck.com/images/cards/99885917.jpg"
+          }
+        },
+        {
+          "carta": {
+            "id": 2619149,
+            "name": "Gladiator Beast Samnite",
+            "type": "Effect Monster",
+            "desc": "If this card was Special Summoned by the effect of a \"Gladiator Beast\" monster, when this card destroys an opponent's monster by battle and sends it to the Graveyard, you can add 1 \"Gladiator Beast\" card from your Deck to your hand. At the end of the Battle Phase, if this card attacked or was attacked, you can return it to the Deck to Special Summon 1 \"Gladiator Beast\" monster from your Deck, except \"Gladiator Beast Samnite\".",
+            "preco": "0.60",
+            "img": "https://images.ygoprodeck.com/images/cards/2619149.jpg"
+          }
+        },
+        {
+          "carta": {
+            "id": 77336644,
+            "name": "Red Dragon Archfiend/Assault Mode",
+            "type": "Effect Monster",
+            "desc": "This card cannot be Normal Summoned or Set. This card cannot be Special Summoned except with \"Assault Mode Activate\". If this card attacks, destroy all other monsters after damage calculation. When this card on the field is destroyed, you can Special Summon 1 \"Red Dragon Archfiend\" from your Graveyard.",
+            "preco": "0.12",
+            "img": "https://images.ygoprodeck.com/images/cards/77336644.jpg"
+          }
+        },
+        {
+          "carta": {
+            "id": 88643579,
+            "name": "Dark End Dragon",
+            "type": "Synchro Monster",
+            "desc": "1 Tuner + 1 or more non-Tuner DARK monsters\nOnce per turn: You can target 1 monster your opponent controls; this card loses 500 ATK and DEF, and you send that target to the Graveyard.",
+            "preco": "14.08",
+            "img": "https://images.ygoprodeck.com/images/cards/88643579.jpg"
+          }
+        },
+        {
+          "carta": {
+            "id": 57662975,
+            "name": "Darkstorm Dragon",
+            "type": "Gemini Monster",
+            "desc": "This card is treated as a Normal Monster while face-up on the field or in the Graveyard. While this card is a Normal Monster on the field, you can Normal Summon it to have it become an Effect Monster with this effect.\n● Once per turn: You can send 1 face-up Spell/Trap Card you control to the Graveyard; destroy all Spell and Trap Cards on the field.",
+            "preco": "0.08",
+            "img": "https://images.ygoprodeck.com/images/cards/57662975.jpg"
+          }
+        },
+        {
+          "carta": {
+            "id": 41209827,
+            "name": "Starving Venom Fusion Dragon",
+            "type": "Fusion Monster",
+            "desc": "2 DARK monsters on the field, except Tokens\nIf this card is Fusion Summoned: You can make this card gain ATK equal to 1 opponent's Special Summoned monster, until the end of this turn. Once per turn: You can target 1 Level 5 or higher monster your opponent controls; until the End Phase, this card's name becomes that monster's original name, and replace this effect with that monster's original effects. If this Fusion Summoned card is destroyed: You can destroy all your opponent's Special Summoned monsters.",
+            "preco": "0.93",
+            "img": "https://images.ygoprodeck.com/images/cards/41209827.jpg"
+          }
+        },
+        {
+          "carta": {
+            "id": 79266769,
+            "name": "Darkness Metal, the Dragon of Dark Steel",
+            "type": "Link Monster",
+            "desc": "2+ Effect Monsters with the same Type and Attribute\r\nYou can target 1 of your monsters that is banished or in your GY; Special Summon it to your zone this card points to, in Defense Position, but its effects are negated, also you cannot Special Summon Link Monsters for the rest of this turn, and the Summoned monster is placed on the bottom of the Deck when it leaves the field. You can only use this effect of \"Darkness Metal, the Dragon of Dark Steel\" once per turn.",
+            "preco": "2.80",
+            "img": "https://images.ygoprodeck.com/images/cards/79266769.jpg"
+          }
+        },
+        {
+          "carta": {
+            "id": 2129638,
+            "name": "Blue-Eyes Twin Burst Dragon",
+            "type": "Fusion Monster",
+            "desc": "\"Blue-Eyes White Dragon\" + \"Blue-Eyes White Dragon\"\r\nMust be either Fusion Summoned, or Special Summoned by sending the above monsters you control to the GY (in which case you do not use \"Polymerization\"). Cannot be destroyed by battle. This card can make up to 2 attacks on monsters during each Battle Phase. At the end of the Damage Step, when this card attacks an opponent's monster, but the opponent's monster was not destroyed by the battle: You can banish that opponent's monster.",
+            "preco": "3.59",
+            "img": "https://images.ygoprodeck.com/images/cards/2129638.jpg"
+          }
+        },
+        {
+          "carta": {
+            "id": 63436931,
+            "name": "Crimson Dragon",
+            "type": "Synchro Monster",
+            "desc": "1 Tuner + 1+ non-Tuner monsters\r\nIf this card is Special Summoned: You can add 1 Spell/Trap that mentions \"Crimson Dragon\" from your Deck to your hand. (Quick Effect): You can target 1 Level 7 or higher Synchro Monster on the field, except \"Crimson Dragon\"; return this card to the Extra Deck, and if you do, Special Summon 1 Dragon Synchro Monster from your Extra Deck with the same Level as the targeted monster. (This is treated as a Synchro Summon.) You can only use each effect of \"Crimson Dragon\" once per turn.",
+            "preco": "0.00",
+            "img": "https://images.ygoprodeck.com/images/cards/63436931.jpg"
+          }
+        },
+        {
+          "carta": {
+            "id": 39343610,
+            "name": "Darkblaze Dragon",
+            "type": "Effect Monster",
+            "desc": "If this card is Special Summoned from the Graveyard: Its ATK and DEF become double its original ATK and DEF. If this card destroys a monster by battle and sends it to the Graveyard: Inflict damage to your opponent equal to that monster's original ATK.",
+            "preco": "0.07",
+            "img": "https://images.ygoprodeck.com/images/cards/39343610.jpg"
+          }
+        },
+        {
+          "carta": {
+            "id": 82044280,
+            "name": "Clear Wing Synchro Dragon",
+            "type": "Synchro Monster",
+            "desc": "1 Tuner + 1+ non-Tuner monsters\r\nOnce per turn, when another Level 5 or higher monster activates its effect on the field (Quick Effect): You can negate the activation, and if you do, destroy it. Once per turn, when a monster effect is activated that targets 1 Level 5 or higher monster on the field (and no other cards) (Quick Effect): You can negate the activation, and if you do, destroy it. If this card's effect destroys a monster, this card gains ATK equal to the destroyed monster's original ATK until the end of this turn.",
+            "preco": "0.43",
+            "img": "https://images.ygoprodeck.com/images/cards/82044280.jpg"
+          }
+        },
+        {
+          "carta": {
+            "id": 11091375,
+            "name": "Luster Dragon",
+            "type": "Normal Monster",
+            "desc": "A very beautiful dragon covered with sapphire. It does not like fights, but has incredibly high attack power.",
+            "preco": "0.07",
+            "img": "https://images.ygoprodeck.com/images/cards/11091375.jpg"
+          }
+        },
+        {
+          "carta": {
+            "id": 52824910,
+            "name": "Kaiser Glider",
+            "type": "Effect Monster",
+            "desc": "Cannot be destroyed by battle with a monster that has the same ATK. If this card is destroyed and sent to the Graveyard: Target 1 monster on the field; return that target to the hand.",
+            "preco": "0.05",
+            "img": "https://images.ygoprodeck.com/images/cards/52824910.jpg"
+          }
+        },
+        {
+          "carta": {
+            "id": 64332231,
+            "name": "Hieratic Sun Dragon Overlord of Heliopolis",
+            "type": "XYZ Monster",
+            "desc": "2 Level 8 monsters\nOnce per turn: You can detach 1 Xyz Material from this card; Tribute any number of monsters from your hand and/or your side of the field (minimum 1), then destroy an equal number of cards on the field.",
+            "preco": "0.68",
+            "img": "https://images.ygoprodeck.com/images/cards/64332231.jpg"
+          }
+        },
+        {
+          "carta": {
+            "id": 63180841,
+            "name": "Shooting Star Dragon T.G. EX",
+            "type": "Synchro Monster",
+            "desc": "1 Tuner Synchro Monster + 1+ non-Tuner Synchro Monsters\r\nWhen a monster effect is activated that targets a monster(s) you control (Quick Effect): You can banish 1 Tuner from your GY; negate the activation, and if you do, destroy that card. You can only use each of the following effects of \"Shooting Star Dragon T.G. EX\" once per turn.\r\n● When an opponent's monster declares an attack: You can negate the attack.\r\n● During your opponent's turn, if this card is in your GY (Quick Effect): You can Tribute 2 Synchro Monsters; Special Summon this card.",
+            "preco": "0.47",
+            "img": "https://images.ygoprodeck.com/images/cards/63180841.jpg"
+          }
+        },
+        {
+          "carta": {
+            "id": 41373230,
+            "name": "Titaniklad the Ash Dragon",
+            "type": "Fusion Monster",
+            "desc": "\"Fallen of Albaz\" + 1 monster with 2500 or more ATK\r\nGains ATK equal to the combined original Levels of the monsters used for its Fusion Summon x 100. After this card is Fusion Summoned, for the rest of this turn, it is unaffected by the activated effects of any other monsters Special Summoned from the Extra Deck. During the End Phase, if this card is in the GY because it was sent there this turn: You can add to your hand, or Special Summon, 1 \"Fallen of Albaz\" or \"Dogmatika\" monster from your Deck. You can only use this effect of \"Titaniklad the Ash Dragon\" once per turn.",
+            "preco": "0.13",
+            "img": "https://images.ygoprodeck.com/images/cards/41373230.jpg"
+          }
+        },
+        {
+          "carta": {
+            "id": 67300516,
+            "name": "Red-Eyes Wyvern",
+            "type": "Effect Monster",
+            "desc": "During your End Phase, if you did not Normal Summon/Set a monster this turn: You can banish this card from your Graveyard; Special Summon 1 \"Red-Eyes\" monster from your Graveyard, except \"Red-Eyes B. Chick\".",
+            "preco": "0.26",
+            "img": "https://images.ygoprodeck.com/images/cards/67300516.jpg"
+          }
+        },
+        {
+          "carta": {
+            "id": 21250202,
+            "name": "Odd-Eyes Persona Dragon",
+            "type": "Pendulum Effect Monster",
+            "desc": "[ Pendulum Effect ] \nOnce per turn, during the End Phase, if your opponent activated a card or effect this turn that targeted 1 \"Odd-Eyes\" Pendulum Monster you controlled (and no other cards) while this card was in your Pendulum Zone: Special Summon this card, and if you do, place 1 face-up \"Odd-Eyes\" Pendulum Monster from your Extra Deck in your Pendulum Zone, except \"Odd-Eyes Persona Dragon\".\n[ Monster Effect ] \nOnce per turn (Quick Effect): You can target 1 face-up monster on the field that was Special Summoned from the Extra Deck; it has its effects negated, until the end of this turn.",
+            "preco": "0.09",
+            "img": "https://images.ygoprodeck.com/images/cards/21250202.jpg"
+          }
+        },
+        {
+          "carta": {
+            "id": 55589254,
+            "name": "Frost and Flame Dragon",
+            "type": "Effect Monster",
+            "desc": "Cannot be Normal Summoned/Set. Must be Special Summoned (from your hand) by banishing 1 FIRE and 2 WATER monsters from your Graveyard, and cannot be Special Summoned by other ways. Once per turn: You can discard 1 card to target 1 monster on the field; destroy that target.",
+            "preco": "0.06",
+            "img": "https://images.ygoprodeck.com/images/cards/55589254.jpg"
+          }
+        },
+        {
+          "carta": {
+            "id": 95372220,
+            "name": "Flash Charge Dragon",
+            "type": "Link Monster",
+            "desc": "2+ Dragon monsters\r\nYou cannot Summon/Set monsters to a zone this card points to. Once per turn, if a monster(s) is Normal or Special Summoned, to a zone(s) this card points to (except during the Damage Step): You can destroy 1 monster this card points to, and if you do, inflict 500 damage to your opponent. When a card or effect is activated that targets this face-up card (Quick Effect): You can Tribute 1 monster; negate the activation. ",
+            "preco": "1.77",
+            "img": "https://images.ygoprodeck.com/images/cards/95372220.jpg"
+          }
+        },
+        {
+          "carta": {
+            "id": 51543904,
+            "name": "Number 99: Utopic Dragon",
+            "type": "XYZ Monster",
+            "desc": "3 Level 10 monsters\nYou can also Xyz Summon this card by discarding 1 \"Rank-Up-Magic\" Spell Card and using a \"Utopia\" monster you control as the Xyz Material. (Xyz Materials attached to that monster also become Xyz Materials on this card.) Once per turn: You can target 1 \"Number\" monster in your Graveyard; Special Summon it in Defense Position, but its effects are negated. During either player's turn, when a monster effect is activated that targets this face-up card: You can detach 1 Xyz Material from this card; negate the activation, and if you do, destroy that card.",
+            "preco": "9.46",
+            "img": "https://images.ygoprodeck.com/images/cards/51543904.jpg"
+          }
+        },
+        {
+          "carta": {
+            "id": 71408082,
+            "name": "Paladin of Dark Dragon",
+            "type": "Ritual Effect Monster",
+            "desc": "You can Ritual Summon this card with \"Dark Dragon Ritual\". At the start of the Damage Step, if this card attacks a Defense Position monster: Destroy that monster. You can Tribute this card; Special Summon 1 \"Red-Eyes\" monster from your hand or Deck, except \"Red-Eyes B. Chick\". You can only use this effect of \"Paladin of Dark Dragon\" once per turn.",
+            "preco": "0.57",
+            "img": "https://images.ygoprodeck.com/images/cards/71408082.jpg"
+          }
+        },
+        {
+          "carta": {
+            "id": 72880377,
+            "name": "Dark Hole Dragon",
+            "type": "Effect Monster",
+            "desc": "Cannot be destroyed by card effects. You can only use each of the following effects of \"Dark Hole Dragon\" once per turn. If a monster(s) on the field is destroyed by a card effect that does not target it (except during the Damage Step): You can Special Summon this card from the GY (if it was there when the monster was destroyed) or hand (even if not). If this card is Special Summoned: You can activate this effect; during the End Phase of this turn, add 1 \"Dark Hole\" from your Deck to your hand.",
+            "preco": "0.00",
+            "img": "https://images.ygoprodeck.com/images/cards/72880377.jpg"
+          }
+        },
+        {
+          "carta": {
+            "id": 29455728,
+            "name": "Twin Photon Lizard",
+            "type": "Fusion Monster",
+            "desc": "2 \"Photon\" monsters\nYou can Tribute this card; Special Summon, from your Graveyard, both of the Fusion Material Monsters used for the Fusion Summon of this card.",
+            "preco": "0.04",
+            "img": "https://images.ygoprodeck.com/images/cards/29455728.jpg"
+          }
+        },
+        {
+          "carta": {
+            "id": 37440988,
+            "name": "Rainbow Overdragon",
+            "type": "Fusion Monster",
+            "desc": "7 \"Crystal Beast\" monsters\r\n(This card is always treated as an \"Ultimate Crystal\" card.)\r\nMust be either Fusion Summoned, or Special Summoned by Tributing 1 Level 10 \"Ultimate Crystal\" monster (in which case you do not use \"Polymerization\"). Once per turn: You can banish 1 \"Crystal Beast\" monster from your GY; this card gains ATK equal to the banished monster's, until the end of this turn. (Quick Effect): You can Tribute this Fusion Summoned card; shuffle all cards on the field into the Deck.",
+            "preco": "0.11",
+            "img": "https://images.ygoprodeck.com/images/cards/37440988.jpg"
+          }
+        },
+        {
+          "carta": {
+            "id": 33750025,
+            "name": "Samsara Dragon",
+            "type": "Effect Monster",
+            "desc": "This card can be treated as 2 Tributes for the Tribute Summon of a Dragon monster. You can banish this card from your GY, then target 1 Level 5 or higher Dragon monster in your GY; add it to your hand, then immediately after this effect resolves, you can Tribute Summon it. You can only use this effect of \"Samsara Dragon\" once per turn.",
+            "preco": "0.16",
+            "img": "https://images.ygoprodeck.com/images/cards/33750025.jpg"
+          }
+        },
+        {
+          "carta": {
+            "id": 96561011,
+            "name": "Red-Eyes Darkness Dragon",
+            "type": "Effect Monster",
+            "desc": "Cannot be Normal Summoned/Set. Must be Special Summoned (from your hand) by Tributing 1 \"Red-Eyes B. Dragon\" and cannot be Special Summoned by other ways. This card gains 300 ATK for each Dragon-Type monster in your Graveyard.",
+            "preco": "0.64",
+            "img": "https://images.ygoprodeck.com/images/cards/96561011.jpg"
+          }
+        },
+        {
+          "carta": {
+            "id": 20277376,
+            "name": "Divine Dragon Apocralyph",
+            "type": "Effect Monster",
+            "desc": "Once per turn: You can discard 1 card, then target 1 Dragon-Type monster in your Graveyard; add that target to your hand.",
+            "preco": "0.05",
+            "img": "https://images.ygoprodeck.com/images/cards/20277376.jpg"
+          }
+        },
+        {
+          "carta": {
+            "id": 62242678,
+            "name": "Hot Red Dragon Archfiend King Calamity",
+            "type": "Synchro Monster",
+            "desc": "2 Tuners + 1 non-Tuner DARK Dragon Synchro Monster\r\nWhen this card is Synchro Summoned: You can activate this effect; for the rest of this turn, your opponent cannot activate cards, also cards your opponent controls cannot activate their effects. Your opponent cannot activate cards or effects in response to this effect's activation. If this card destroys a monster by battle: Inflict damage to your opponent equal to that monster's original ATK. If this card in its owner's possession is destroyed by an opponent's card: You can target 1 Level 8 or lower DARK Dragon Synchro Monster in your GY; Special Summon it.",
+            "preco": "0.26",
+            "img": "https://images.ygoprodeck.com/images/cards/62242678.jpg"
+          }
+        },
+        {
+          "carta": {
+            "id": 28400508,
+            "name": "Number 97: Draglubion",
+            "type": "XYZ Monster",
+            "desc": "2 Level 8 monsters\r\nYour opponent cannot target this card with card effects. You can detach 1 material from this card; take 2 Dragon \"Number\" monsters with different names from your Extra Deck and/or GY, except \"Number 97: Draglubion\", Special Summon 1 of them and attach the other to it as material, also for the rest of this turn you cannot Special Summon other monsters, or declare an attack, except with that Special Summoned monster. You can only use this effect of \"Number 97: Draglubion\" once per turn.",
+            "preco": "0.82",
+            "img": "https://images.ygoprodeck.com/images/cards/28400508.jpg"
+          }
+        },
+        {
+          "carta": {
+            "id": 22804410,
+            "name": "Deep-Eyes White Dragon",
+            "type": "Effect Monster",
+            "desc": "When a face-up \"Blue-Eyes\" monster(s) you control is destroyed by battle or an opponent's card effect, and you have a Dragon-Type monster in your Graveyard: You can Special Summon this card from your hand, and if you do, inflict 600 damage to your opponent for each Dragon-Type monster with different names in your Graveyard. If this card is Normal or Special Summoned: Target 1 Dragon-Type monster in your Graveyard; this card's ATK becomes equal to that monster's. If this card on the field is destroyed by a card effect: Destroy all monsters your opponent controls.",
+            "preco": "1.03",
+            "img": "https://images.ygoprodeck.com/images/cards/22804410.jpg"
+          }
+        },
+        {
+          "carta": {
+            "id": 77392987,
+            "name": "T.G. Rocket Salamander",
+            "type": "Effect Monster",
+            "desc": "You can Tribute 1 \"T.G.\" monster; Special Summon 1 \"T.G.\" monster from your Deck with a different original name than that Tributed monster's. If you control a Machine \"T.G.\" monster: You can target 1 Level 4 or lower \"T.G.\" monster in your GY; Special Summon it in Defense Position, but negate its effects. You can only use each effect of \"T.G. Rocket Salamander\" once per turn.",
+            "preco": "0.00",
+            "img": "https://images.ygoprodeck.com/images/cards/77392987.jpg"
+          }
+        },
+        {
+          "carta": {
+            "id": 6330307,
+            "name": "DZW - Chimera Clad",
+            "type": "Effect Monster",
+            "desc": "You can target 1 \"Number C39\" monster you control; equip this monster from your hand or your side of the field to that target. The equipped monster cannot be destroyed by battle. At the end of the Damage Step, when the equipped monster attacks an opponent's monster, but the opponent's monster was not destroyed by the battle: You can make the opponent's monster's ATK 0 (even after this card leaves the field or the monster becomes unaffected by card effects), and if you do, the equipped monster can make a second attack on the same monster in a row.",
+            "preco": "0.19",
+            "img": "https://images.ygoprodeck.com/images/cards/6330307.jpg"
+          }
+        },
+        {
+          "carta": {
+            "id": 16428514,
+            "name": "Subterror Guru",
+            "type": "Flip Effect Monster",
+            "desc": "FLIP: You can add 1 \"Subterror\" card from your Deck to your hand, except \"Subterror Guru\". You can target 1 other face-up monster on the field; change that monster, also this card, to face-down Defense Position. This is a Quick Effect if you control another \"Subterror\" card. You can only use each effect of \"Subterror Guru\" once per turn.",
+            "preco": "0.13",
+            "img": "https://images.ygoprodeck.com/images/cards/16428514.jpg"
+          }
+        },
+        {
+          "carta": {
+            "id": 68159562,
+            "name": "Madolche Promenade",
+            "type": "Trap Card",
+            "desc": "Target 1 face-up card your opponent controls and 1 \"Madolche\" monster you control or in your GY; negate the effects of that opponent's card until the end of this turn, and if you do, return your monster to the hand. You can banish this card from your GY, then target 1 \"Madolche\" Xyz Monster you control; attach 1 \"Madolche\" monster from your hand, Deck, or GY, to it as material. You can only use 1 \"Madolche Promenade\" effect per turn, and only once that turn.",
+            "preco": "2.06",
+            "img": "https://images.ygoprodeck.com/images/cards/68159562.jpg"
+          }
+        },
+        {
+          "carta": {
+            "id": 76076738,
+            "name": "Dragon Nails",
+            "type": "Spell Card",
+            "desc": "Equip only to a DARK monster. It gains 600 ATK, also it cannot be destroyed by your opponent's card effects. If this card is sent to the GY because the equipped monster was destroyed by battle and sent to the GY: You can Special Summon that monster, and if you do, equip this card to it, but banish this card when it leaves the field. You can only use this effect of \"Dragon Nails\" once per turn.",
+            "preco": "0.18",
+            "img": "https://images.ygoprodeck.com/images/cards/76076738.jpg"
+          }
+        },
+        {
+          "carta": {
+            "id": 83467607,
+            "name": "Nature's Reflection",
+            "type": "Trap Card",
+            "desc": "During this turn, any effect activated by your opponent that would inflict damage becomes an effect that inflicts damage to their Life Points.",
+            "preco": "0.10",
+            "img": "https://images.ygoprodeck.com/images/cards/83467607.jpg"
+          }
+        },
+        {
+          "carta": {
+            "id": 71950093,
+            "name": "Shovel Crusher",
+            "type": "Normal Monster",
+            "desc": "Armed with a pair of shovels, this monster will destroy anything that stands in its way.",
+            "preco": "0.35",
+            "img": "https://images.ygoprodeck.com/images/cards/71950093.jpg"
+          }
+        },
+        {
+          "carta": {
+            "id": 92362073,
+            "name": "Galaxy Satellite Dragon",
+            "type": "Link Monster",
+            "desc": "2 Dragon monsters\r\nDuring the Battle Phase (Quick Effect): You can banish this card from your field or GY, then target 1 \"Number\" Xyz Monster you control whose original Attribute/Type are LIGHT/Dragon; until the end of the Battle Phase, its ATK becomes equal to the value of the \"Number\" in its name x 100, also any battle damage your opponent takes is halved. During your opponent's End Phase: You can choose 1 card from your Deck and place it on top of your Deck. You can only use each effect of \"Galaxy Satellite Dragon\" once per turn.",
+            "preco": "0.29",
+            "img": "https://images.ygoprodeck.com/images/cards/92362073.jpg"
+          }
+        },
+        {
+          "carta": {
+            "id": 43892408,
+            "name": "Dark Magician Girl the Dragon Knight",
+            "type": "Fusion Monster",
+            "desc": "\"Dark Magician Girl\" + 1 Dragon monster\r\nMust be Fusion Summoned with the above Fusion Materials or with \"The Eye of Timaeus\". Once per turn (Quick Effect): You can send 1 card from your hand to the GY, then target 1 face-up card on the field; destroy that target.",
+            "preco": "0.94",
+            "img": "https://images.ygoprodeck.com/images/cards/43892408.jpg"
+          }
+        },
+        {
+          "carta": {
+            "id": 16960120,
+            "name": "Kitchen Dragonmaid",
+            "type": "Effect Monster",
+            "desc": "If this card is Normal or Special Summoned: You can add 1 \"Dragonmaid\" monster from your Deck to your hand, except \"Kitchen Dragonmaid\", then send 1 \"Dragonmaid\" monster from your hand to the GY. At the start of the Battle Phase: You can return this card to the hand, and if you do, Special Summon 1 Level 8 \"Dragonmaid\" monster from your hand or GY. You can only use each effect of \"Kitchen Dragonmaid\" once per turn.",
+            "preco": "4.58",
+            "img": "https://images.ygoprodeck.com/images/cards/16960120.jpg"
+          }
+        },
+        {
+          "carta": {
+            "id": 32355828,
+            "name": "Skelgon",
+            "type": "Fusion Monster",
+            "desc": "\"The Snake Hair\" + \"Blackland Fire Dragon\"",
+            "preco": "8.31",
+            "img": "https://images.ygoprodeck.com/images/cards/32355828.jpg"
+          }
+        },
+        {
+          "carta": {
+            "id": 3574681,
+            "name": "Golden Rule",
+            "type": "Spell Card",
+            "desc": "(This card is always treated as a \"Crystal\" card.)\r\nPlace 2 \"Crystal Beast\" monsters from your Deck face-up in your Spell & Trap Zone as Continuous Spells, then Special Summon 1 \"Crystal Beast\" monster from your hand or GY with a different name than those cards, and if you do, equip it with this card. When this card leaves the field, destroy that monster. You can only activate 1 \"Golden Rule\" per turn.",
+            "preco": "1.06",
+            "img": "https://images.ygoprodeck.com/images/cards/3574681.jpg"
+          }
+        },
+        {
+          "carta": {
+            "id": 80978111,
+            "name": "Flying \"C\"",
+            "type": "Effect Monster",
+            "desc": "When your opponent Normal or Special Summons a monster(s), except during the Damage Step: You can Special Summon this card from your hand to the opponent's field in Defense Position. The controller of this card cannot Xyz Summon.",
+            "preco": "0.16",
+            "img": "https://images.ygoprodeck.com/images/cards/80978111.jpg"
+          }
+        },
+        {
+          "carta": {
+            "id": 98414735,
+            "name": "Paleozoic Canadia",
+            "type": "Trap Card",
+            "desc": "Target 1 face-up monster your opponent controls; change it to face-down Defense Position. Once per Chain, when a Trap Card is activated while this card is in your GY: You can Special Summon this card as a Normal Monster (Aqua/WATER/Level 2/ATK 1200/DEF 0). (This card is NOT treated as a Trap.) If Summoned this way, this card is unaffected by monster effects, also banish it when it leaves the field.",
+            "preco": "0.10",
+            "img": "https://images.ygoprodeck.com/images/cards/98414735.jpg"
+          }
+        }
+      ],
+      "deck": [
+        {
+          "carta": {
+            "id": 43228023,
+            "name": "Blue-Eyes Alternative Ultimate Dragon",
+            "type": "Fusion Monster",
+            "desc": "\"Blue-Eyes White Dragon\" + \"Blue-Eyes White Dragon\" + \"Blue-Eyes White Dragon\"\r\nYour opponent cannot target or destroy this card with card effects. Once per turn: You can target 1 card your opponent controls; destroy it. If this card was Fusion Summoned using a monster whose original name is \"Blue-Eyes Alternative White Dragon\" as material, you can target up to 3 cards your opponent controls instead. This card cannot attack the turn this effect is activated.",
+            "preco": "6.50",
+            "img": "https://images.ygoprodeck.com/images/cards/43228023.jpg"
+          }
+        }
+      ],
+      "id": 2
+    },
+    {
+      "nome": "alec",
+      "email": "alec@gmail.com",
+      "senha": "123456",
+      "cash": 1000,
+      "cartas": [],
+      "deck": [],
+      "id": 3
+    },
+    {
+      "nome": "Lucas",
+      "email": "Lucas@gmail.com",
+      "senha": "123456",
+      "cash": 998.5699999999999,
+      "cartas": [
+        {
+          "carta": {
+            "id": 1151281,
+            "name": "Subterror Behemoth Phospheroglacier",
+            "type": "Flip Effect Monster",
+            "desc": "FLIP: You can send 1 card from your Deck to the Graveyard. You can only use this effect of \"Subterror Behemoth Phospheroglacier\" once per turn.\r\nWhen a face-up monster you control is flipped face-down, if you control no face-up monsters: You can Special Summon this card from your hand in Defense Position. Once per turn: You can change this card to face-down Defense Position.",
+            "preco": "0.11",
+            "img": "https://images.ygoprodeck.com/images/cards/1151281.jpg"
+          }
+        },
+        {
+          "carta": {
+            "id": 59784896,
+            "name": "Dark Zebra",
+            "type": "Effect Monster",
+            "desc": "If this is the only Monster Card in your control during your Standby Phase, it is changed to Defense Position. You cannot change the position of this card during the same turn.",
+            "preco": "0.16",
+            "img": "https://images.ygoprodeck.com/images/cards/59784896.jpg"
+          }
+        },
+        {
+          "carta": {
+            "id": 92422871,
+            "name": "Cyberse Desavewurm",
+            "type": "Fusion Monster",
+            "desc": "1 Cyberse Ritual, Fusion, Synchro, Xyz, or Link Monster + 1 Cyberse monster\r\nDuring your Main Phase: You can Special Summon 1 Cyberse monster from your hand, then you can make this card's Level become the same as that monster. When your opponent activates a Spell/Trap Card or effect, while you control a Link-4 or higher Cyberse monster (Quick Effect): You can banish this card from your field or GY; negate that activation. You can only use each effect of \"Cyberse Desavewurm\" once per turn.",
+            "preco": "0.18",
+            "img": "https://images.ygoprodeck.com/images/cards/92422871.jpg"
+          }
+        },
+        {
+          "carta": {
+            "id": 50418970,
+            "name": "Spirit Burner",
+            "type": "Spell Card",
+            "desc": "Once per turn, you can change the battle position of the equipped monster to Defense Position. When the equipped monster is returned from the field to the hand and this card is sent to the Graveyard, inflict 600 damage to your opponent. If this card is in the Graveyard, you can add it to your hand instead of conducting a normal draw during your Draw Phase.",
+            "preco": "0.11",
+            "img": "https://images.ygoprodeck.com/images/cards/50418970.jpg"
+          }
+        },
+        {
+          "carta": {
+            "id": 73341839,
+            "name": "Miniborrel Dragon",
+            "type": "Link Monster",
+            "desc": "2 \"Rokket\" monsters\r\nIf you control a \"Borrel\" Link Monster while this card is in your GY: You can Tribute 1 Link-3 or lower monster; Special Summon this card, but it cannot be used as material for the Link Summon of a monster with the same Link Rating as the Tributed monster. You can only use this effect of \"Miniborrel Dragon\" once per turn.",
+            "preco": "0.09",
+            "img": "https://images.ygoprodeck.com/images/cards/73341839.jpg"
+          }
+        },
+        {
+          "carta": {
+            "id": 27561302,
+            "name": "The Weather Rainy Canvas",
+            "type": "Spell Card",
+            "desc": "\"The Weather\" Effect Monsters in your Main Monster Zones of this card's column and its adjacent columns gain this effect.\r\n● You can banish this card, then target 1 Spell/Trap your opponent controls (Quick Effect); return it to the hand.\r\nYou can only control 1 \"The Weather Rainy Canvas\".",
+            "preco": "0.53",
+            "img": "https://images.ygoprodeck.com/images/cards/27561302.jpg"
+          }
+        },
+        {
+          "carta": {
+            "id": 37198732,
+            "name": "Level Lifter",
+            "type": "Spell Card",
+            "desc": "Send 1 monster from your hand to the Graveyard, then target up to 2 face-up monsters you control; until the end of this turn, their Levels become the original Level of the monster sent to the Graveyard to activate this card.",
+            "preco": "0.03",
+            "img": "https://images.ygoprodeck.com/images/cards/37198732.jpg"
+          }
+        },
+        {
+          "carta": {
+            "id": 12525049,
+            "name": "Symphonic Warrior Guitaar",
+            "type": "Pendulum Effect Monster",
+            "desc": "[ Pendulum Effect ] \nYou can discard 1 card; Special Summon 1 \"Symphonic Warrior\" monster from your Deck, except \"Symphonic Warrior Guitaar\". You can only use this effect of \"Symphonic Warrior Guitaar\" once per turn.\n[ Monster Effect ] \nWhen this card is Normal Summoned: You can target 1 \"Symphonic Warrior\" monster in your Graveyard; Special Summon it.",
+            "preco": "0.17",
+            "img": "https://images.ygoprodeck.com/images/cards/12525049.jpg"
+          }
+        },
+        {
+          "carta": {
+            "id": 60158866,
+            "name": "Seventh Eternity",
+            "type": "Trap Card",
+            "desc": "Target 1 \"Number\" Xyz Monster you control that has a number between \"101\" and \"107\" in its name, or 1 Xyz Monster you control that has any such monsters as material, then activate 1 of these effects;\r\n● Negate the effects of 1 monster your opponent controls with ATK less than or equal to the targeted monster's ATK, until the end of this turn.\r\n● Detach all materials from the targeted monster, then you can Special Summon 1 \"Number\" Xyz Monster from your GY.\r\nYou can only use this effect of \"Seventh Eternity\" once per turn.",
+            "preco": "0.09",
+            "img": "https://images.ygoprodeck.com/images/cards/60158866.jpg"
+          }
+        },
+        {
+          "carta": {
+            "id": 80316585,
+            "name": "Cyber Harpie Lady",
+            "type": "Effect Monster",
+            "desc": "(This card's name is always treated as \"Harpie Lady\".)",
+            "preco": "0.20",
+            "img": "https://images.ygoprodeck.com/images/cards/80316585.jpg"
+          }
+        },
+        {
+          "carta": {
+            "id": 22493811,
+            "name": "Multiplication of Ants",
+            "type": "Spell Card",
+            "desc": "Tribute 1 Insect-Type Monster on your side of the field. Special Summon 2 \"Army Ant Tokens\" (Insect-Type/EARTH/Level 4/ATK 500/DEF 1200) on your side of the field. The tokens cannot be used as a Tribute for a Tribute Summon.",
+            "preco": "0.11",
+            "img": "https://images.ygoprodeck.com/images/cards/22493811.jpg"
+          }
+        },
+        {
+          "carta": {
+            "id": 36326160,
+            "name": "Live☆Twin Ki-sikil",
+            "type": "Effect Monster",
+            "desc": "Each time an opponent's monster declares an attack, you gain 500 LP. If this card is Normal or Special Summoned and you control no other monsters: You can Special Summon 1 \"Lil-la\" monster from your hand or Deck. You can only use this effect of \"Live☆Twin Ki-sikil\" once per turn.",
+            "preco": "0.25",
+            "img": "https://images.ygoprodeck.com/images/cards/36326160.jpg"
+          }
+        },
+        {
+          "carta": {
+            "id": 12152769,
+            "name": "Scrounging Goblin",
+            "type": "Effect Monster",
+            "desc": "If this card inflicts battle damage to your opponent: They can hand you 1 card from their hand to negate this effect, otherwise you add 1 \"Goblin\" card from your Deck to your hand, except \"Goblin Fan\".",
+            "preco": "0.19",
+            "img": "https://images.ygoprodeck.com/images/cards/12152769.jpg"
+          }
+        },
+        {
+          "carta": {
+            "id": 97466438,
+            "name": "Zany Zebra",
+            "type": "Pendulum Effect Monster",
+            "desc": "[ Pendulum Effect ] \nOnce per turn, during your Main Phase, if this card was activated this turn: You can choose 1 unused Main Monster Zone or Spell & Trap Zone; while this card is in the Pendulum Zone, that chosen Zone cannot be used.\n[ Monster Effect ] \nIf this card is Normal or Special Summoned: You can choose 1 unused Main Monster Zone or Spell & Trap Zone; while this card is face-up in the Monster Zone, that Zone cannot be used.",
+            "preco": "0.06",
+            "img": "https://images.ygoprodeck.com/images/cards/97466438.jpg"
+          }
+        },
+        {
+          "carta": {
+            "id": 39111158,
+            "name": "Tri-Horned Dragon",
+            "type": "Normal Monster",
+            "desc": "An unworthy dragon with three sharp horns sprouting from its head.",
+            "preco": "3.67",
+            "img": "https://images.ygoprodeck.com/images/cards/39111158.jpg"
+          }
+        },
+        {
+          "carta": {
+            "id": 37721209,
+            "name": "Levia-Dragon - Daedalus",
+            "type": "Effect Monster",
+            "desc": "You can send 1 face-up \"Umi\" you control to the GY; destroy all other cards on the field.",
+            "preco": "0.11",
+            "img": "https://images.ygoprodeck.com/images/cards/37721209.jpg"
+          }
+        }
+      ],
+      "deck": [],
+      "id": 4
     }
   ]
 }

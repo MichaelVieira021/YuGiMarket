@@ -2,7 +2,7 @@ import React from 'react';
 import { NavigationContainer } from '@react-navigation/native';
 import { StackNavigator } from './StackNavigator';
 import { LoginContextProvider } from '../contexts/LoginContext';
-import { StorageContextProvider } from '../contexts/StorageContext';
+import { CartasContextProvider } from '../contexts/CartasContext';
 
 
 export const Routes = () => {
@@ -10,9 +10,9 @@ export const Routes = () => {
 
     <NavigationContainer>
       <LoginContextProvider>
-        <StorageContextProvider>
+        <CartasContextProvider>
           <StackNavigator/>
-        </StorageContextProvider>
+        </CartasContextProvider>
       </LoginContextProvider>
     </NavigationContainer>
 
