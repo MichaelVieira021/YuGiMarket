@@ -6,26 +6,23 @@ import iconCards from '../../assets/icons/cards.png'
 import { Cards } from '../../screens/Cards';
 import { Deck } from '../../screens/Deck';
 
-
 const Tab = createBottomTabNavigator();
 
 export function BottonTabRoutes() {
 
-
-   
   return (
 
-    <Tab.Navigator 
+    <Tab.Navigator
       screenOptions={{
         headerShown: false,
-        
+
         tabBarStyle: {
           height: 60,
           backgroundColor: '#272727',
           borderTopWidth: 3,
           borderTopColor: '#b88019',
         },
-        
+
         tabBarActiveBackgroundColor: '#b88019',
         tabBarActiveTintColor: "black",
         tabBarInactiveTintColor: '#a5a5a5',
@@ -35,11 +32,11 @@ export function BottonTabRoutes() {
           marginBottom: 3
         },
 
-        tabBarIconStyle: {   
+        tabBarIconStyle: {
           alignItems: 'center',
           marginBottom: -5,
           justifyContent: 'center',
-        } 
+        }
       }}>
 
       <Tab.Screen
@@ -48,33 +45,33 @@ export function BottonTabRoutes() {
             <Entypo name="shop" size={24} color={color} />
           ))
         }}
-        name="SHOP" 
-        component={Shop} 
+        name="SHOP"
+        component={Shop}
       />
 
-      <Tab.Screen 
+      <Tab.Screen
         options={{
           tabBarIcon: (({ color }) => (
-            <View style={{width: 38, height: 38, alignSelf: "center", alignItems: "center", justifyContent: "center"}}>
-              <Image source={iconCards} style={{width: "100%", height: "100%", tintColor: color}} />
+            <View style={{ width: 38, height: 38, alignSelf: "center", alignItems: "center", justifyContent: "center" }}>
+              <Image source={iconCards} style={{ width: "100%", height: "100%", tintColor: color }} />
             </View>
           ))
         }}
-        name="DECK" 
+        name="DECK"
         component={Deck}
       />
 
-      <Tab.Screen 
+      <Tab.Screen
         options={{
           tabBarIcon: (({ color }) => (
             <MaterialCommunityIcons name="cards" size={24} color={color} />
           ))
         }}
-        name="CARDS" 
+        name="CARDS"
         component={Cards}
       />
 
     </Tab.Navigator>
 
-  );
+  )
 }

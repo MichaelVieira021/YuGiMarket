@@ -9,6 +9,7 @@ export const styles = StyleSheet.create({
         position:"relative"
     
     },
+
     container:{
         justifyContent: "space-between",
         width: '66%',
@@ -21,7 +22,8 @@ export const styles = StyleSheet.create({
 
     containerInput:{
         width: '100%',
-        height: '100%',        
+        height: '100%',
+
     },
 
     inputView: {
@@ -42,16 +44,17 @@ export const styles = StyleSheet.create({
         fontFamily: 'Yugi-Normal'
         
     },
-    buttonCadastro:{
-        
-        alignItems: 'center'
-      },
-      buttonCadastroText: {
-          color: 'white',
-          fontSize: 21,
-          fontFamily: 'Yugi-Normal',
-          fontWeight: 'bold'
-  
-      },
 
+    buttonCadastro:{
+        alignItems: 'center'
+        
+    },
+
+      buttonCadastroText: {
+        color: 'white',
+        fontSize: 21,
+        fontFamily: 'Yugi-Normal',
+        fontWeight: 'bold'
+  
+    },
 })

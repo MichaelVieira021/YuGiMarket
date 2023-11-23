@@ -10,16 +10,16 @@ export function getTodasCartas(){
 
 export function getPorNome(nome: string): Promise<AxiosResponse<any, any>>{
     return ApiYugioh.get(`cardinfo.php?name=${nome}`)
-}
+};
 
 export function getPorId(id: string): Promise<AxiosResponse<any, any>>{
     return ApiYugioh.get(`cardinfo.php?id=${id}`)
-}
+};
 
 export function getPorTipo (tipo: string): Promise<AxiosResponse<any, any>>{
     return ApiYugioh.get(`cardinfo.php?&type=${tipo}`);
-}
+};
 
 export function getPorRace (race: string): Promise<AxiosResponse<any, any>>{
     return ApiYugioh.get(`cardinfo.php?&race=${race}`);
-}
+};

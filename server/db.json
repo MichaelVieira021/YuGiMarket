@@ -1643,7 +1643,7 @@
       "nome": "Lucas",
       "email": "Lucas@gmail.com",
       "senha": "123456",
-      "cash": 998.5699999999999,
+      "cash": 995.7299999999999,
       "cartas": [
         {
           "carta": {
@@ -1803,6 +1803,56 @@
             "desc": "You can send 1 face-up \"Umi\" you control to the GY; destroy all other cards on the field.",
             "preco": "0.11",
             "img": "https://images.ygoprodeck.com/images/cards/37721209.jpg"
+          }
+        },
+        {
+          "carta": {
+            "id": 844056,
+            "name": "Red Arrows",
+            "type": "Spell Card",
+            "desc": "Target up to 2 face-up monsters in the Extra Monster Zone(s); banish them until the End Phase. You can only activate 1 \"Red Arrows\" per turn.",
+            "preco": "0.08",
+            "img": "https://images.ygoprodeck.com/images/cards/844056.jpg"
+          }
+        },
+        {
+          "carta": {
+            "id": 82529174,
+            "name": "Ray of Hope",
+            "type": "Trap Card",
+            "desc": "Add 2 LIGHT monsters from your Graveyard to your Deck and shuffle it.",
+            "preco": "0.15",
+            "img": "https://images.ygoprodeck.com/images/cards/82529174.jpg"
+          }
+        },
+        {
+          "carta": {
+            "id": 56747793,
+            "name": "United We Stand",
+            "type": "Spell Card",
+            "desc": "The equipped monster gains 800 ATK/DEF for each face-up monster you control.",
+            "preco": "0.14",
+            "img": "https://images.ygoprodeck.com/images/cards/56747793.jpg"
+          }
+        },
+        {
+          "carta": {
+            "id": 63391643,
+            "name": "Thousand Knives",
+            "type": "Spell Card",
+            "desc": "If you control \"Dark Magician\": Target 1 monster your opponent controls; destroy that target.",
+            "preco": "0.10",
+            "img": "https://images.ygoprodeck.com/images/cards/63391643.jpg"
+          }
+        },
+        {
+          "carta": {
+            "id": 77625948,
+            "name": "Cyberdark Edge",
+            "type": "Effect Monster",
+            "desc": "If this card is Normal Summoned: Target 1 Level 3 or lower Dragon monster in your GY; equip that Dragon monster to this card. Gains ATK equal to the original ATK of the monster equipped to it by this effect. This card can attack directly. If it does using this effect, its ATK is halved during damage calculation only. If this card would be destroyed by battle, destroy the monster equipped to it by its effect, instead.",
+            "preco": "0.06",
+            "img": "https://images.ygoprodeck.com/images/cards/77625948.jpg"
           }
         }
       ],

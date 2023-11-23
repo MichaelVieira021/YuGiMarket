@@ -4,7 +4,7 @@ import AsyncStorage from '@react-native-async-storage/async-storage';
 import { useNavigation } from "@react-navigation/native";
 
 interface ContextProps {
-	children: React.ReactNode
+    children: React.ReactNode
 }
 
 interface PropsContextoLogin {
@@ -24,52 +24,51 @@ interface Usuario {
 
 export const LoginContext = createContext<any>({})
 
-export function LoginContextProvider({children}: ContextProps){
+export function LoginContextProvider({ children }: ContextProps) {
     const [logado, setLogado] = useState("false");
     const navigate = useNavigation<any>();
     const [usuario, setUsuario] = useState<Usuario | {}>({});
     const [usuarioInfos, setUsuarioInfos] = useState<Usuario | null>();
-    
-    useEffect(()=>{
-        console.log(usuario)
-    },[usuario])
 
-    function verificarLogin(email: string, senha: string){
-        getLoginUsuario(email, senha).then((response)=>{
-            
-            if(response.data.length === 1){
+    useEffect(() => {
+        console.log(usuario)
+    }, [usuario])
+
+    function verificarLogin(email: string, senha: string) {
+        getLoginUsuario(email, senha).then((response) => {
+
+            if (response.data.length === 1) {
                 setUsuario((prevState) => {
                     const novoUsuario = {
-                      id: response.data[0].id,
-                      nome: response.data[0].nome,
-                      email: response.data[0].email,
-                      cartas: response.data[0].cartas,
-                      deck: response.data[0].deck,
-                      cash: response.data[0].cash,
+                        id: response.data[0].id,
+                        nome: response.data[0].nome,
+                        email: response.data[0].email,
+                        cartas: response.data[0].cartas,
+                        deck: response.data[0].deck,
+                        cash: response.data[0].cash,
                     };
-                  
+
                     AsyncStorage.setItem('usuario', JSON.stringify(novoUsuario));
                     AsyncStorage.setItem('logado', "true");
-                  
+
                     return novoUsuario;
                 });
 
                 setLogado("true")
-                // alert("Usuario logado");
+
                 usuarioStorage()
                 navigate.navigate("Todos")
 
-            }else{
+            } else {
                 console.log("Tudo errado")
-                // deslogar()
             }
 
-        }).catch((error)=> {
+        }).catch((error) => {
             console.log("Tudo errado", error)
         })
     }
 
-    function deslogar(){
+    function deslogar() {
         AsyncStorage.removeItem("usuario")
         AsyncStorage.setItem('logado', "false")
         setUsuarioInfos(null)
@@ -77,59 +76,31 @@ export function LoginContextProvider({children}: ContextProps){
         navigate.navigate("Login")
     }
 
-    useEffect(()=>{},[logado])
-    async function verificarLogado(){
+    useEffect(() => { }, [logado])
+    async function verificarLogado() {
         const verificado = await AsyncStorage.getItem("logado");
-        if(verificado === "true" || verificado === "false"){
+        if (verificado === "true" || verificado === "false") {
             setLogado(verificado)
-        }else{
+        } else {
             console.log("deu errado ?")
         }
-
-        // const verificado = await AsyncStorage.getItem("logado");
-    //   if(verificado === "true" || verificado === "false"){
-          // setLogado((prevState) => { return verificado})
-        //   if(verificado === "true"){
-        //     setInitial((prevState) => (prevState !== "Todos" ? "Todos" : prevState))
-        //   }
-        //   // alert(initial)
-        // }else{
-        //   console.log("deu errado ?")
-
-        // try {
-        //     const verificado = await AsyncStorage.getItem("logado");
-        
-        //     if (verificado) {
-        //       const verificadoSt = JSON.parse(verificado);
-        //       console.log(verificadoSt);
-        //       setLogado(verificadoSt)
-        //       console.log(logado)
-        //       return console.log(logado);
-        //     } else {
-        //       console.log("verificado?");
-        //       return null;
-        //     }
-        // } catch (error) {
-        //     console.error("Erro ao verificar", error);
-        //     return null;
-        // }
     }
-    
-    useEffect(()=>{},[usuarioInfos])
-    async function usuarioStorage(){
+
+    useEffect(() => { }, [usuarioInfos])
+    async function usuarioStorage() {
         try {
             const usuarioInfosStorage = await AsyncStorage.getItem("usuario");
-        
+
             if (usuarioInfosStorage) {
-              const usuarioObjeto = JSON.parse(usuarioInfosStorage);
-              console.log(usuarioObjeto);
-              setUsuarioInfos(await usuarioObjeto);
-              console.log(usuarioInfos);
- 
-              return usuarioObjeto;
+                const usuarioObjeto = JSON.parse(usuarioInfosStorage);
+                console.log(usuarioObjeto);
+                setUsuarioInfos(await usuarioObjeto);
+                console.log(usuarioInfos);
+
+                return usuarioObjeto;
             } else {
-              console.log("Nenhum usuário encontrado no AsyncStorage");
-              return null;
+                console.log("Nenhum usuário encontrado no AsyncStorage");
+                return null;
             }
 
         } catch (error) {
@@ -138,11 +109,11 @@ export function LoginContextProvider({children}: ContextProps){
         }
     }
 
-    async function infos(){
-        // atualizar(usuario.email)
+    async function infos() {
+
         try {
             const usuarioInfos = await AsyncStorage.getItem("usuario");
-        
+
             if (usuarioInfos) {
                 const usuarioObjeto = JSON.parse(usuarioInfos);
                 setUsuarioInfos(await usuarioObjeto);
@@ -159,11 +130,11 @@ export function LoginContextProvider({children}: ContextProps){
         }
     }
 
-    async function atualizar(email: string){
-        getUsuario(email).then((response)=>{
-            if(response.data.length === 1){
+    async function atualizar(email: string) {
+        getUsuario(email).then((response) => {
+            if (response.data.length === 1) {
 
-                setUsuario((prevState) => { 
+                setUsuario((prevState) => {
                     const novoUsuario = {
                         id: response.data[0].id,
                         nome: response.data[0].nome,
@@ -172,17 +143,17 @@ export function LoginContextProvider({children}: ContextProps){
                         deck: response.data[0].deck,
                         cash: response.data[0].cash,
                     };
-                    console.log(response,"oioioioi")
-                  
+                    console.log(response, "oioioioi")
+
                     AsyncStorage.setItem('usuario', JSON.stringify(novoUsuario));
-                    
+
                     return novoUsuario;
                 });
-            }else{
+            } else {
                 console.log("Tudo errado1")
             }
 
-        }).catch((error)=> {
+        }).catch((error) => {
             console.log("Tudo errado2", error)
         })
     }
@@ -199,6 +170,6 @@ export function LoginContextProvider({children}: ContextProps){
             atualizar,
             infos
         }}>
-        {children}</LoginContext.Provider>
+            {children}</LoginContext.Provider>
     )
 }

@@ -27,7 +27,6 @@ export const InfosUser = () => {
     const openModal = () => {
         setModalVisible(true);
     };
-
     return (
         <View style={styles.container}>
 

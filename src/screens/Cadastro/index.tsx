@@ -1,5 +1,5 @@
 import React, { useState } from "react"
-import { View, ImageBackground, TextInput, Text, Button, Alert, TouchableOpacity, Pressable } from "react-native"
+import { View, ImageBackground, TextInput, Text, TouchableOpacity} from "react-native"
 import { styles } from "./styles"
 import fundoCadastro from "../../assets/images/fundoCadastro.png"
 import { useNavigation } from "@react-navigation/native"
@@ -17,24 +17,24 @@ export const Cadastro = () => {
 
         const response = await getUsuario(email)
 
-        
         if (!email.match(/^\w+@gmail.com$/)) {
-            alert("@gmail.com obrigatório");
+            alert("O campo deve ser um e-mail válido, @gmail.com obrigatório");
             return;
         }
        
-        if(nome.length >= 4){
-            alert("Preencha o nome e minimo de 4 caracteres")
+        if(nome.length <4){
+            alert("Nome deve ter pelo menos 4 caracteres")
+            return
         }
-        
+
         if (senha !== confirmarSenha) {
           alert('As senhas não coincidem')
           return
         }
         
         if(senha.length <6){
-            alert("Minimo 6 caracteres")
-            
+            alert("O campo senha deve ter pelo menos 6 caracteres.")
+            return     
         } else{
   
         if(response.data.length == 0 ) {
@@ -81,8 +81,6 @@ export const Cadastro = () => {
                             placeholder="E-mail"
                             placeholderTextColor="black"
                             onChangeText={(texto) => setEmail(texto)}
-
-
                         />
                     </View>
 
@@ -115,9 +113,6 @@ export const Cadastro = () => {
                     <TouchableOpacity onPress={()=> navigation.navigate("Login")()} style={styles.buttonCadastro}>
                  <Text style={styles.buttonCadastroText}>Já possui cadastro?</Text>
                  </TouchableOpacity>
-                    {/* <Pressable onPress={()=> navigation.navigate("Login")}><Text>Login</Text></Pressable> */}
-                     {/* <ButtonNav  title='Login' openScreen={()=> navigation.navigate("Login")}/> */}
-
                 </View>
             </View>
 

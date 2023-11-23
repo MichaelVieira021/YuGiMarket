@@ -1,8 +1,6 @@
 import { Text, View, Image, ImageBackground, FlatList, TouchableOpacity } from "react-native";
 import { styles } from "./styles";
-import carta from '../../assets/images/Dark.jpeg'
 import dragao from '../../assets/images/dragon.png'
-import { Loading } from "../Loading";
 import { useContext, useEffect, useState } from "react";
 import { LoginContext } from "../../contexts/LoginContext";
 import { CustomModal } from "../../components/ModalCarta";
@@ -28,9 +26,7 @@ export const Cards = () => {
 
     useEffect(() => {
         infos()
-        console.log(usuario.cartas[0], "tudo errado");
         setCartasUsuario(usuario.cartas)
-        console.log(usuario.cartas)
     }, [cartasUsuario])
 
     async function playSound(son: number) {
@@ -58,14 +54,14 @@ export const Cards = () => {
     };
 
     const addAoDeck = async (carta: any) => {
-        if(usuario.deck.length < 40) {
-        const deckDoUsuario = await usuario.deck;
-        const atualizado = [...deckDoUsuario, { carta }]
-        await patchUsuarioDeck(usuario.id, atualizado)
-        await infos()
-        closeModal()
-        } else{
-            alert ("DECK CHEIO")
+        if (usuario.deck.length < 40) {
+            const deckDoUsuario = await usuario.deck;
+            const atualizado = [...deckDoUsuario, { carta }]
+            await patchUsuarioDeck(usuario.id, atualizado)
+            await infos()
+            closeModal()
+        } else {
+            alert("DECK CHEIO")
         }
 
     }
@@ -80,24 +76,11 @@ export const Cards = () => {
         await patchUsuarioCards(usuario.id, novasCartas)
 
         const novoCash: number = (Number(await usuario.cash) + Number(cartaDel.preco))
-        console.log(novoCash);
 
         await patchUsuarioCash(usuario.id, novoCash)
         await infos()
         closeModal()
     }
-
-    // const [showWelcome, setShowWelcome] = useState(true); // State to control whether to show Welcome or Shop
-
-    // useEffect(() => {
-    //     setTimeout(() => {
-    //         setShowWelcome(false); // After a certain time, set showWelcome to false, rendering Shop
-    //     }, 2500); // Set timeout for 5 seconds
-    // }, []); // Run useEffect only once
-
-    // if (showWelcome) {
-    //         return <Loading />; // Render Welcome if showWelcome is true
-    //     }
 
     const Card = ({ carta }: any) => (
         <TouchableOpacity onPress={() => { playSound(3), openModal({ carta }) }} style={styles.cardContainer}>
@@ -121,28 +104,17 @@ export const Cards = () => {
             <Text style={styles.title}>CARDS</Text>
             <FlatList
                 data={usuario.cartas.slice().reverse()}
-                // keyExtractor={(item)=>item.id}
                 renderItem={({ item }) => <Card carta={item.carta} />}
                 showsVerticalScrollIndicator={false}
-                // inverted={true}
                 numColumns={3}
 
             />
             <CustomModal visible={modalVisible} onClose={closeModal}>
 
-                {/* {dataToPass && 
-                <View style={{alignItems: "center", height:460, width: "100%"}}>
-                    <Image source={{uri: dataToPass.img}} style={[styles.imgCard, {height:450}]}/>
-                   
-                    <ButtonNav  style={styles.ButtonNav} title='ADICIONAR AO DECK' openScreen={()=>{playSound(2),addAoDeck(dataToPass)}}/>
-                    <ButtonNav  style={styles.ButtonNav} title="VENDER  R$ " algo={dataToPass.preco} openScreen={()=>{playSound(1),vender(dataToPass)}}/>
-                </View>}
-                 */}
-
                 {dataToPass &&
                     <View style={{ alignItems: "center", height: 460, width: "100%" }}>
                         <Image source={{ uri: dataToPass.img }} style={[styles.imgCard, { height: 450 }]} />
-                        {activation() === true ? <ButtonNav active={true} style={{ backgroundColor: '#b880'}} title='JÁ ADICIONADA' openScreen={() => { playSound(2), addAoDeck(dataToPass) }} /> : <ButtonNav style={{ backgroundColor: '#b88019' }} title='ADICIONAR AO DECK' openScreen={() => { playSound(2), addAoDeck(dataToPass) }} />}
+                        {activation() === true ? <ButtonNav active={true} style={{ backgroundColor: '#b880' }} title='JÁ ADICIONADA' openScreen={() => { playSound(2), addAoDeck(dataToPass) }} /> : <ButtonNav style={{ backgroundColor: '#b88019' }} title='ADICIONAR AO DECK' openScreen={() => { playSound(2), addAoDeck(dataToPass) }} />}
                         <ButtonNav style={{ backgroundColor: '#b88019' }} title="VENDER  R$" algo={dataToPass.preco} openScreen={() => { playSound(1), vender(dataToPass) }} />
                     </View>}
 
