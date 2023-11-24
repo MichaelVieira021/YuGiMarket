@@ -1,0 +1,1247 @@
+{
+  "usuarios": [
+    {
+      "nome": "Janielton",
+      "email": "janielton@gmail.com",
+      "senha": "1pipoca",
+      "cash": 993.5,
+      "cartas": [
+        {
+          "carta": {
+            "id": 44519536,
+            "name": "Left Leg of the Forbidden One",
+            "type": "Normal Monster",
+            "desc": "A forbidden left leg sealed by magic. Whosoever breaks this seal will know infinite power.",
+            "preco": "0.67",
+            "img": "https://images.ygoprodeck.com/images/cards/44519536.jpg"
+          }
+        },
+        {
+          "carta": {
+            "id": 8124921,
+            "name": "Right Leg of the Forbidden One",
+            "type": "Normal Monster",
+            "desc": "A forbidden right leg sealed by magic. Whosoever breaks this seal will know infinite power.",
+            "preco": "0.60",
+            "img": "https://images.ygoprodeck.com/images/cards/8124921.jpg"
+          }
+        },
+        {
+          "carta": {
+            "id": 7902349,
+            "name": "Left Arm of the Forbidden One",
+            "type": "Normal Monster",
+            "desc": "A forbidden left arm sealed by magic. Whosoever breaks this seal will know infinite power.",
+            "preco": "0.61",
+            "img": "https://images.ygoprodeck.com/images/cards/7902349.jpg"
+          }
+        },
+        {
+          "carta": {
+            "id": 38277918,
+            "name": "Exodia the Forbidden One",
+            "type": "Effect Monster",
+            "desc": "If you have \"Right Leg of the Forbidden One\", \"Left Leg of the Forbidden One\", \"Right Arm of the Forbidden One\" and \"Left Arm of the Forbidden One\" in addition to this card in your hand, you win the Duel.",
+            "preco": "0.46",
+            "img": "https://images.ygoprodeck.com/images/cards/33396948.jpg"
+          }
+        },
+        {
+          "carta": {
+            "id": 70903634,
+            "name": "Right Arm of the Forbidden One",
+            "type": "Normal Monster",
+            "desc": "A forbidden right arm sealed by magic. Whosoever breaks this seal will know infinite power.",
+            "preco": "0.66",
+            "img": "https://images.ygoprodeck.com/images/cards/70903634.jpg"
+          }
+        },
+        {
+          "carta": {
+            "id": 89320376,
+            "name": "World Legacy Pawns",
+            "type": "Trap Card",
+            "desc": "You can target 1 face-down monster you control; change it to face-up Attack or Defense Position. You can shuffle 1 \"Krawler\" monster from your GY into the Main Deck, then target 1 face-up monster you control; change it to face-down Defense Position. You can only use 1 \"World Legacy Pawns\" effect per turn, and only once that turn.",
+            "preco": "0.11",
+            "img": "https://images.ygoprodeck.com/images/cards/89320376.jpg"
+          }
+        },
+        {
+          "carta": {
+            "id": 71249758,
+            "name": "D2 Shield",
+            "type": "Trap Card",
+            "desc": "Select 1 face-up Defense Position monster you control. Its DEF becomes double its original DEF.",
+            "preco": "1.89",
+            "img": "https://images.ygoprodeck.com/images/cards/71249758.jpg"
+          }
+        },
+        {
+          "carta": {
+            "id": 22070401,
+            "name": "Starving Venemy Lethal Dose Dragon",
+            "type": "Pendulum Effect Fusion Monster",
+            "desc": "[ Pendulum Effect ] \nOnce per turn, during your Main Phase: You can place 1 Venemy Counter on each face-up monster your opponent controls. All monsters on the field, except DARK Dragon monsters, lose 200 ATK for each Venemy Counter on the field.\n[ Monster Effect ] \n3 DARK Pendulum Monsters\r\nEach time a card(s) is sent from the field to the GY, place 1 Venemy Counter on this card for each sent card. All monsters on the field, except DARK Dragon monsters, lose 200 ATK for each Venemy Counter on the field. Once per turn, during your Main Phase: You can negate the effects of all face-up monsters your opponent currently controls, until the end of this turn. If this card in the Monster Zone is destroyed by battle or card effect: You can place this card in your Pendulum Zone.",
+            "preco": "0.16",
+            "img": "https://images.ygoprodeck.com/images/cards/22070401.jpg"
+          }
+        },
+        {
+          "carta": {
+            "id": 49587034,
+            "name": "Lightforce Sword",
+            "type": "Trap Card",
+            "desc": "Banish 1 random card from your opponent's hand, face-down. During your opponent's 4th Standby Phase after this card's activation, return that card to their hand.",
+            "preco": "0.04",
+            "img": "https://images.ygoprodeck.com/images/cards/49587034.jpg"
+          }
+        },
+        {
+          "carta": {
+            "id": 8316565,
+            "name": "Jolt Counter",
+            "type": "Trap Card",
+            "desc": "During the Battle Phase, when a Spell/Trap Card, or monster effect, is activated while you control a \"Battlin' Boxer\" monster: Negate the activation, and if you do, destroy that card.",
+            "preco": "0.05",
+            "img": "https://images.ygoprodeck.com/images/cards/8316565.jpg"
+          }
+        },
+        {
+          "carta": {
+            "id": 22747316,
+            "name": "Retort",
+            "type": "Trap Card",
+            "desc": "When your opponent activates a Spell/Trap Card with the same name as one in your Graveyard: Negate the activation, and if you do, destroy that card. Then you can add 1 card with that name from your Graveyard to your hand.",
+            "preco": "2.02",
+            "img": "https://images.ygoprodeck.com/images/cards/22747316.jpg"
+          }
+        },
+        {
+          "carta": {
+            "id": 15967552,
+            "name": "Small Scuffle",
+            "type": "Trap Card",
+            "desc": "Choose 2 unused Main Monster Zones in the same column; Special Summon 1 Level 2 or lower monster from your hand or Deck in face-up Attack Position or face-down Defense Position in your chosen Main Monster Zone, then your opponent can do the same from their hand or Deck to theirs. You can only activate 1 \"Small Scuffle\" per turn.",
+            "preco": "0.11",
+            "img": "https://images.ygoprodeck.com/images/cards/15967552.jpg"
+          }
+        },
+        {
+          "carta": {
+            "id": 7811875,
+            "name": "Gravity Collapse",
+            "type": "Trap Card",
+            "desc": "Activate by sending 1 face-up Synchro Monster you control to the Graveyard when your opponent Summons a monster. Negate the Summon and destroy that card. Your opponent cannot Summon a monster until the End Phase of this turn.",
+            "preco": "0.06",
+            "img": "https://images.ygoprodeck.com/images/cards/7811875.jpg"
+          }
+        },
+        {
+          "carta": {
+            "id": 2779999,
+            "name": "Wall of Thorns",
+            "type": "Trap Card",
+            "desc": "When a Plant-Type monster you control is targeted for an attack: Destroy all Attack Position monsters your opponent controls.",
+            "preco": "0.37",
+            "img": "https://images.ygoprodeck.com/images/cards/2779999.jpg"
+          }
+        },
+        {
+          "carta": {
+            "id": 20920083,
+            "name": "Scrum Force",
+            "type": "Trap Card",
+            "desc": "While you control 2 or more face-up Defense Position monsters, your opponent cannot target Defense Position monsters you control with card effects, and they cannot be destroyed by your opponent's card effects. If this card would be destroyed by card effect, you can destroy 1 card in your Spell & Trap Zone instead.",
+            "preco": "0.06",
+            "img": "https://images.ygoprodeck.com/images/cards/20920083.jpg"
+          }
+        },
+        {
+          "carta": {
+            "id": 17841166,
+            "name": "Magnet Force",
+            "type": "Trap Card",
+            "desc": "This turn, all monsters on the field whose original Types are Machine or Rock, are unaffected by your opponent's monster effects (except their own).",
+            "preco": "0.24",
+            "img": "https://images.ygoprodeck.com/images/cards/17841166.jpg"
+          }
+        },
+        {
+          "carta": {
+            "id": 74218258,
+            "name": "The Weather Rainbowed Canvas",
+            "type": "Trap Card",
+            "desc": "You can only control 1 \"The Weather Rainbowed Canvas\". \"The Weather\" Effect Monsters in your Main Monster Zones of this card's column and its adjacent columns gain this effect.\r\n● If your opponent controls a monster (Quick Effect): You can banish this card; Special Summon 1 \"The Weather\" monster with a different name from your Deck, also you cannot Special Summon other monsters from the Deck for the rest of this turn.",
+            "preco": "0.05",
+            "img": "https://images.ygoprodeck.com/images/cards/74218258.jpg"
+          }
+        },
+        {
+          "carta": {
+            "id": 21123811,
+            "name": "Cosmic Blazar Dragon",
+            "type": "Synchro Monster",
+            "desc": "1 Tuner Synchro Monster + 2+ non-Tuner Synchro Monsters\r\nMust be Synchro Summoned. (Quick Effect): You can banish this card until the End Phase to activate 1 of these effects;\r\n● When your opponent activates a card or effect: Negate the activation, and if you do, destroy that card.\r\n● When your opponent would Summon a monster(s): Negate the Summon, and if you do, destroy that monster(s).\r\n● When an opponent's monster declares an attack: Negate the attack, then end the Battle Phase.",
+            "preco": "0.17",
+            "img": "https://images.ygoprodeck.com/images/cards/21123811.jpg"
+          }
+        }
+      ],
+      "deck": [
+        {
+          "carta": {
+            "id": 44519536,
+            "name": "Left Leg of the Forbidden One",
+            "type": "Normal Monster",
+            "desc": "A forbidden left leg sealed by magic. Whosoever breaks this seal will know infinite power.",
+            "preco": "0.67",
+            "img": "https://images.ygoprodeck.com/images/cards/44519536.jpg"
+          }
+        },
+        {
+          "carta": {
+            "id": 8124921,
+            "name": "Right Leg of the Forbidden One",
+            "type": "Normal Monster",
+            "desc": "A forbidden right leg sealed by magic. Whosoever breaks this seal will know infinite power.",
+            "preco": "0.60",
+            "img": "https://images.ygoprodeck.com/images/cards/8124921.jpg"
+          }
+        },
+        {
+          "carta": {
+            "id": 7902349,
+            "name": "Left Arm of the Forbidden One",
+            "type": "Normal Monster",
+            "desc": "A forbidden left arm sealed by magic. Whosoever breaks this seal will know infinite power.",
+            "preco": "0.61",
+            "img": "https://images.ygoprodeck.com/images/cards/7902349.jpg"
+          }
+        },
+        {
+          "carta": {
+            "id": 38277918,
+            "name": "Exodia the Forbidden One",
+            "type": "Effect Monster",
+            "desc": "If you have \"Right Leg of the Forbidden One\", \"Left Leg of the Forbidden One\", \"Right Arm of the Forbidden One\" and \"Left Arm of the Forbidden One\" in addition to this card in your hand, you win the Duel.",
+            "preco": "0.46",
+            "img": "https://images.ygoprodeck.com/images/cards/33396948.jpg"
+          }
+        },
+        {
+          "carta": {
+            "id": 70903634,
+            "name": "Right Arm of the Forbidden One",
+            "type": "Normal Monster",
+            "desc": "A forbidden right arm sealed by magic. Whosoever breaks this seal will know infinite power.",
+            "preco": "0.66",
+            "img": "https://images.ygoprodeck.com/images/cards/70903634.jpg"
+          }
+        }
+      ],
+      "id": 2
+    },
+    {
+      "nome": "Michael021",
+      "email": "michael@gmail.com",
+      "senha": "123456",
+      "cash": 966.5,
+      "cartas": [
+        {
+          "carta": {
+            "id": 47264717,
+            "name": "Shooting Star",
+            "type": "Trap Card",
+            "desc": "If a \"Stardust\" monster is on the field: Target 1 card on the field; destroy that target.",
+            "preco": "0.10",
+            "img": "https://images.ygoprodeck.com/images/cards/47264717.jpg"
+          }
+        },
+        {
+          "carta": {
+            "id": 94997874,
+            "name": "Prediction Princess Tarotrei",
+            "type": "Ritual Effect Monster",
+            "desc": "You can Ritual Summon this card with \"Prediction Ritual\". Once per turn, during your End Phase: You can Special Summon 1 Flip monster from your hand or Graveyard in face-down Defense Position. You can only use 1 of the following effects of \"Prediction Princess Tarotrei\" per turn, and only once that turn.\n● During either player's turn: You can target 1 face-down monster on the field; change it to face-up Attack Position.\n● During either player's turn: You can target 1 face-up monster on the field; change it to face-down Defense Position.",
+            "preco": "0.15",
+            "img": "https://images.ygoprodeck.com/images/cards/94997874.jpg"
+          }
+        },
+        {
+          "carta": {
+            "id": 16279989,
+            "name": "Ghostrick Stein",
+            "type": "Effect Monster",
+            "desc": "Cannot be Normal Summoned, unless you control a \"Ghostrick\" monster. Once per turn: You can change this card to face-down Defense Position. When this card inflicts battle damage to your opponent: You can add 1 \"Ghostrick\" Spell/Trap Card from your Deck to your hand. You can only use this effect of \"Ghostrick Stein\" once per turn.",
+            "preco": "0.09",
+            "img": "https://images.ygoprodeck.com/images/cards/16279989.jpg"
+          }
+        },
+        {
+          "carta": {
+            "id": 80701178,
+            "name": "Impcantation Talismandra",
+            "type": "Effect Monster",
+            "desc": "You can reveal 1 Ritual Monster in your hand; Special Summon both this card from your hand and 1 \"Impcantation\" monster from your Deck, except \"Impcantation Talismandra\". If this card is Special Summoned from the Deck: You can add 1 Ritual Monster from your Deck to your hand. You can only use 1 \"Impcantation Talismandra\" effect per turn, and only once that turn. You cannot Special Summon monsters from the Extra Deck.",
+            "preco": "0.10",
+            "img": "https://images.ygoprodeck.com/images/cards/80701178.jpg"
+          }
+        },
+        {
+          "carta": {
+            "id": 49881766,
+            "name": "Archfiend Soldier",
+            "type": "Normal Monster",
+            "desc": "An expert at battle who belongs to a crack diabolical unit. He's famous because he always gets the job done.",
+            "preco": "0.11",
+            "img": "https://images.ygoprodeck.com/images/cards/49881766.jpg"
+          }
+        },
+        {
+          "carta": {
+            "id": 41722932,
+            "name": "Dark Mambele",
+            "type": "Spell Card",
+            "desc": "If you control 3 or more DARK monsters: Target 1 face-up card on the field; banish that target.",
+            "preco": "0.07",
+            "img": "https://images.ygoprodeck.com/images/cards/41722932.jpg"
+          }
+        },
+        {
+          "carta": {
+            "id": 66069967,
+            "name": "Prediction Princess Bibliomuse",
+            "type": "Flip Effect Monster",
+            "desc": "FLIP: You can add 1 \"Prediction Princess\" monster, except \"Prediction Princess Bibliomuse\", and 1 Ritual Spell from your Deck to your hand.\r\nIf this card is Tributed and sent to the GY: You can Special Summon this card in face-down Defense Position.\r\nYou can only use each of the preceding effects of \"Prediction Princess Bibliomuse\" once per turn. Your opponent cannot target Ritual Monsters you control with card effects, also they cannot be destroyed by your opponent's card effects.",
+            "preco": "0.05",
+            "img": "https://images.ygoprodeck.com/images/cards/66069967.jpg"
+          }
+        },
+        {
+          "carta": {
+            "id": 56001930,
+            "name": "The Return to the Normal",
+            "type": "Trap Card",
+            "desc": "When exactly 1 monster is Normal or Special Summoned face-up (except during the Damage Step): Destroy all monsters on the field with less ATK than that monster. You can only activate 1 \"The Return to the Normal\" per turn.",
+            "preco": "0.02",
+            "img": "https://images.ygoprodeck.com/images/cards/56001930.jpg"
+          }
+        },
+        {
+          "carta": {
+            "id": 40089744,
+            "name": "Gateway to Chaos",
+            "type": "Spell Card",
+            "desc": "When this card is activated: Add 1 \"Black Luster Soldier\" Ritual Monster or 1 \"Gaia The Fierce Knight\" monster from your Deck to your hand. Each time a Monster Card(s) is sent from the hand or field to the GY, place 1 Spell Counter on this card for each of those cards (max. 6). Once per turn: You can remove 3 Spell Counters from this card; add 1 Ritual Spell from your Deck to your hand. You can only activate 1 \"Gateway to Chaos\" per turn.",
+            "preco": "0.88",
+            "img": "https://images.ygoprodeck.com/images/cards/40089744.jpg"
+          }
+        },
+        {
+          "carta": {
+            "id": 1688285,
+            "name": "Traptrix Pinguicula",
+            "type": "XYZ Monster",
+            "desc": "2 Level 4 monsters\r\nWhile this card has material, it is unaffected by Trap effects and the activated effects of other monsters with the same Type as this card's material. You can only use each of the following effects of \"Traptrix Pinguicula\" once per turn. You can detach 1 material from this card; add 1 \"Traptrix\" monster from your Deck to your hand. If a monster(s) owned by your opponent is sent to the GY, or banished, by a card effect (except during the Damage Step): You can attach 1 of those monsters to this card as material.",
+            "preco": "0.24",
+            "img": "https://images.ygoprodeck.com/images/cards/1688285.jpg"
+          }
+        },
+        {
+          "carta": {
+            "id": 42874792,
+            "name": "Wind-Up Rabbit",
+            "type": "Effect Monster",
+            "desc": "(Quick Effect): You can target 1 \"Wind-Up\" monster you control; banish it until your next Standby Phase. This effect can be used only once while this card is face-up on the field.",
+            "preco": "0.10",
+            "img": "https://images.ygoprodeck.com/images/cards/42874792.jpg"
+          }
+        },
+        {
+          "carta": {
+            "id": 4130270,
+            "name": "G.B. Hunter",
+            "type": "Effect Monster",
+            "desc": "Cards on the field cannot be returned to the Deck.",
+            "preco": "0.53",
+            "img": "https://images.ygoprodeck.com/images/cards/4130270.jpg"
+          }
+        },
+        {
+          "carta": {
+            "id": 71705144,
+            "name": "Performapal Recasting",
+            "type": "Spell Card",
+            "desc": "Reveal any number of \"Performapal\" monsters from your hand and shuffle them into the Deck, then draw cards equal to the number of cards you shuffled into the Deck +1. You can only activate 1 \"Performapal Recasting\" per turn.",
+            "preco": "0.10",
+            "img": "https://images.ygoprodeck.com/images/cards/71705144.jpg"
+          }
+        },
+        {
+          "carta": {
+            "id": 61884774,
+            "name": "Yosenju Oroshi Channeling",
+            "type": "Spell Card",
+            "desc": "If you control no monsters: Activate 1 of the following effects; also for the rest of this turn after this card resolves, you cannot Special Summon monsters, except \"Yosenju\" monsters.\r\n● Add 1 Level 5 or higher \"Yosenju\" monster from your Deck to your hand.\r\n● Place 1 \"Yosenju Shinchu L\" and 1 \"Yosenju Shinchu R\" from your Deck in your Pendulum Zones, but destroy them during your opponent's next End Phase.",
+            "preco": "0.13",
+            "img": "https://images.ygoprodeck.com/images/cards/61884774.jpg"
+          }
+        },
+        {
+          "carta": {
+            "id": 9402966,
+            "name": "Superheavy Samurai Battleball",
+            "type": "Tuner Monster",
+            "desc": "If all monsters you control are \"Superheavy Samurai\" monsters, and you have no Spell/Trap Cards in your Graveyard: You can target 1 face-up monster your opponent controls that has a Level; send both it and this card from the field to the Graveyard, then Special Summon from your Extra Deck 1 \"Superheavy Samurai\" Synchro Monster whose Level equals the total original Levels of those 2 monsters in the Graveyard. (This Special Summon is treated as a Synchro Summon.) You can only use this effect of \"Superheavy Samurai Battleball\" once per turn.",
+            "preco": "2.37",
+            "img": "https://images.ygoprodeck.com/images/cards/9402966.jpg"
+          }
+        },
+        {
+          "carta": {
+            "id": 18752938,
+            "name": "Seed of Deception",
+            "type": "Spell Card",
+            "desc": "Special Summon 1 Level 2 or lower Plant-Type monster from your hand.",
+            "preco": "0.22",
+            "img": "https://images.ygoprodeck.com/images/cards/18752938.jpg"
+          }
+        },
+        {
+          "carta": {
+            "id": 19671102,
+            "name": "Stairs of Mail",
+            "type": "Spell Card",
+            "desc": "During your Main Phase: You can activate this effect; discard 1 \"Tindangle\" card, and if you do, apply 1 of these effects.\r\n● Change 1 face-down Defense Position monster you control to face-up Attack Position.\r\n● Change 1 face-up Attack Position monster you control to face-down Defense Position.\r\nThis turn, you cannot discard another card with the same name for the effect of \"Stairs of Mail\" (even if this card leaves the field).",
+            "preco": "0.04",
+            "img": "https://images.ygoprodeck.com/images/cards/19671102.jpg"
+          }
+        },
+        {
+          "carta": {
+            "id": 26412047,
+            "name": "Hammer Shot",
+            "type": "Spell Card",
+            "desc": "Destroy 1 face-up Attack Position monster with the highest ATK. (If it is a tie, you get to choose.)",
+            "preco": "0.07",
+            "img": "https://images.ygoprodeck.com/images/cards/26412047.jpg"
+          }
+        },
+        {
+          "carta": {
+            "id": 33066139,
+            "name": "Reaper of the Cards",
+            "type": "Flip Effect Monster",
+            "desc": "FLIP: Select 1 Trap Card on the field and destroy it. If the selected card is Set, pick up and see the card. If it is a Trap Card, it is destroyed. If it is a Spell Card, return it to its original position.",
+            "preco": "0.22",
+            "img": "https://images.ygoprodeck.com/images/cards/33066139.jpg"
+          }
+        },
+        {
+          "carta": {
+            "id": 56343672,
+            "name": "Rescue Ferret",
+            "type": "Effect Monster",
+            "desc": "You can shuffle this card you control into the Deck; Special Summon monster(s) from your Deck, except \"Rescue Ferret\", whose total Levels equal 6, to your zone(s) a Link Monster(s) points to, but those Summoned monsters have their effects negated, also destroy them during the End Phase. You can only use this effect of \"Rescue Ferret\" once per turn.",
+            "preco": "0.13",
+            "img": "https://images.ygoprodeck.com/images/cards/56343672.jpg"
+          }
+        },
+        {
+          "carta": {
+            "id": 62895219,
+            "name": "Soprano the Melodious Songstress",
+            "type": "Effect Monster",
+            "desc": "When this card is Special Summoned: You can target 1 \"Melodious\" monster in your Graveyard, except \"Soprano the Melodious Songstress\"; add it to your hand. You can only use this effect of \"Soprano the Melodious Songstress\" once per turn. Once per turn: You can Fusion Summon 1 \"Melodious\" Fusion Monster from your Extra Deck, using monsters you control as Fusion Materials, including this card.",
+            "preco": "0.10",
+            "img": "https://images.ygoprodeck.com/images/cards/62895219.jpg"
+          }
+        },
+        {
+          "carta": {
+            "id": 77411244,
+            "name": "B-Buster Drake",
+            "type": "Union Effect Monster",
+            "desc": "Once per turn, you can either: Target 1 LIGHT Machine monster you control; equip this card to that target, OR: Unequip this card and Special Summon it. A monster equipped with this card is unaffected by your opponent's Spell effects, also if the equipped monster would be destroyed by battle or card effect, destroy this card instead. If this card is sent from the field to the GY: You can add 1 Union monster from your Deck to your hand.",
+            "preco": "0.73",
+            "img": "https://images.ygoprodeck.com/images/cards/77411244.jpg"
+          }
+        },
+        {
+          "carta": {
+            "id": 76137614,
+            "name": "Disenchanter",
+            "type": "Effect Monster",
+            "desc": "Once per turn: You can target 1 face-up Spell on the field; remove 1 Spell Counter from anywhere on the field, and if you do, return that target to the hand.",
+            "preco": "0.03",
+            "img": "https://images.ygoprodeck.com/images/cards/76137614.jpg"
+          }
+        },
+        {
+          "carta": {
+            "id": 35606858,
+            "name": "Masterking Archfiend",
+            "type": "Link Monster",
+            "desc": "2 Fiend monsters\nOnce per turn, during your Standby Phase, pay 500 LP or destroy this card. Once per Chain, if you pay LP (except during the Damage Step): You can send 1 Fiend monster from your Deck to the GY with ATK or DEF equal to the amount paid. Once per Chain, if a Fiend monster(s) is sent to your GY (except during the Damage Step): You can roll a six-sided die, then apply this effect on 1 of those monsters based on the result.\n● 1: Add it to your hand. ● 2, 3, 4, 5: Shuffle into the Deck. ● 6: Special Summon it.",
+            "preco": "0.18",
+            "img": "https://images.ygoprodeck.com/images/cards/35606858.jpg"
+          }
+        },
+        {
+          "carta": {
+            "id": 9560338,
+            "name": "Reaper of Prophecy",
+            "type": "Effect Monster",
+            "desc": "When this card is Normal or Special Summoned: You can activate this effect; apply as many effects as possible, based on the number of \"Spellbook\" Spell Cards with different names in your Graveyard. You can only use the effect of \"Reaper of Prophecy\" once per turn.\n● 3 or more: This card gains 600 ATK.\n● 4 or more: Add 1 \"Spellbook\" Spell Card from your Deck to your hand.\n● 5 or more: Special Summon 1 Level 5 or higher DARK Spellcaster-Type monster from your Deck.",
+            "preco": "1.21",
+            "img": "https://images.ygoprodeck.com/images/cards/9560338.jpg"
+          }
+        },
+        {
+          "carta": {
+            "id": 40597694,
+            "name": "Scatter Fusion",
+            "type": "Spell Card",
+            "desc": "During your Main Phase, if your opponent controls a monster: You can Fusion Summon 1 non-Rock \"Gem-Knight\" monster from your Extra Deck, using monsters from your Deck as material, also you cannot Special Summon monsters from the Extra Deck for the rest of this turn, except \"Gem-Knight\" monsters. You can only use this effect of \"Scatter Fusion\" once per turn. When this card leaves the field, destroy all monsters Summoned by this card's effect.",
+            "preco": "0.08",
+            "img": "https://images.ygoprodeck.com/images/cards/40597694.jpg"
+          }
+        },
+        {
+          "carta": {
+            "id": 39439590,
+            "name": "Cyber Dinosaur",
+            "type": "Effect Monster",
+            "desc": "When your opponent Special Summons a monster from their hand (except during the Damage Step): You can Special Summon this card from your hand.",
+            "preco": "0.08",
+            "img": "https://images.ygoprodeck.com/images/cards/39439590.jpg"
+          }
+        },
+        {
+          "carta": {
+            "id": 17141718,
+            "name": "Flower Cardian Zebra Grass",
+            "type": "Effect Monster",
+            "desc": "While you control a Level 7 or lower \"Flower Cardian\" monster: You can Special Summon this card from your hand, also you cannot Normal or Special Summon monsters for the rest of this turn, except \"Flower Cardian\" monsters. If this card is Normal or Special Summoned: You can reveal any number of \"Flower Cardian\" monsters in your hand, shuffle them into the Deck, then draw the same number of cards.",
+            "preco": "0.11",
+            "img": "https://images.ygoprodeck.com/images/cards/17141718.jpg"
+          }
+        },
+        {
+          "carta": {
+            "id": 84814897,
+            "name": "Kiryu",
+            "type": "Union Effect Monster",
+            "desc": "Once per turn, during your Main Phase, if you control this card on the field, you can equip it to your \"Dark Blade\" as an Equip Spell Card, OR unequip the Union equipment and Special Summon this card in face-up Attack Position. While equipped to a monster by this card's effect, increase the ATK/DEF of the equipped monster by 900 points, and you can Tribute this card to allow the equipped monster to attack your opponent's Life Points directly this turn. (1 monster can only be equipped with 1 Union Monster at a time. If the equipped monster is destroyed as a result of battle, destroy this card instead.)",
+            "preco": "0.45",
+            "img": "https://images.ygoprodeck.com/images/cards/84814897.jpg"
+          }
+        },
+        {
+          "carta": {
+            "id": 91073013,
+            "name": "Vanquish Soul Caesar Valius",
+            "type": "Effect Monster",
+            "desc": "During the Main Phase (Quick Effect): You can target 1 non-Dragon \"Vanquish Soul\" monster you control; return it to the hand, and if you do, Special Summon this card from your hand. (Quick Effect): You can activate 1 of these effects, by revealing monster(s) in your hand with the listed Attribute(s);\r\n● EARTH: This face-up card is unaffected by your opponent's activated effects this turn.\r\n● EARTH, FIRE, & DARK: Destroy 1 other card on the field.\r\nYou can only use each effect of \"Vanquish Soul Caesar Valius\" once per turn, and cannot activate more than 1 in the same Chain.",
+            "preco": "0.00",
+            "img": "https://images.ygoprodeck.com/images/cards/91073013.jpg"
+          }
+        },
+        {
+          "carta": {
+            "id": 62514770,
+            "name": "Labradorite Dragon",
+            "type": "Normal Tuner Monster",
+            "desc": "The ancients compared this prized creature to moonlight rippling across water. A bringer of harmony, reminder of past glories, able to soothe the hearts of even the most ambitious men.",
+            "preco": "0.18",
+            "img": "https://images.ygoprodeck.com/images/cards/62514770.jpg"
+          }
+        },
+        {
+          "carta": {
+            "id": 51570882,
+            "name": "Greedy Venom Fusion Dragon",
+            "type": "Fusion Monster",
+            "desc": "1 \"Predaplant\" monster + 1 DARK monster whose original Level is 8 or higher\r\nMust first be Fusion Summoned. Once per turn: You can target 1 face-up monster on the field; until the end of this turn, change that target's ATK to 0, also that target has its effects negated. If this card is destroyed and sent to the Graveyard: Destroy as many monsters on the field as possible, then you can banish 1 Level 8 or higher DARK monster from your Graveyard and Special Summon this card from the Graveyard.",
+            "preco": "4.12",
+            "img": "https://images.ygoprodeck.com/images/cards/51570882.jpg"
+          }
+        },
+        {
+          "carta": {
+            "id": 564541,
+            "name": "Totem Dragon",
+            "type": "Effect Monster",
+            "desc": "This card can be treated as 2 Tributes for the Tribute Summon of a Dragon-Type monster. If this card is in your Graveyard during your Standby Phase and you control no monsters, you can Special Summon this card in Attack Position. You cannot activate this effect if there are any monsters in your Graveyard that are not Dragon-Type. If this card is Special Summoned with this effect, remove it from play when it is removed from the field.",
+            "preco": "0.38",
+            "img": "https://images.ygoprodeck.com/images/cards/564541.jpg"
+          }
+        },
+        {
+          "carta": {
+            "id": 36768783,
+            "name": "Armillyre, the Starleader Dragon",
+            "type": "Link Monster",
+            "desc": "2 Effect Monsters\r\nCannot be used as Link Material. You can target 1 face-up monster this card points to; Special Summon 1 monster with the same original Level from your hand to your zone this card points to, in Defense Position, but negate its effects. You can only use this effect of \"Armillyre, the Starleader Dragon\" once per turn.",
+            "preco": "0.21",
+            "img": "https://images.ygoprodeck.com/images/cards/36768783.jpg"
+          }
+        },
+        {
+          "carta": {
+            "id": 7987191,
+            "name": "Borreload Riot Dragon",
+            "type": "Ritual Effect Monster",
+            "desc": "You can Ritual Summon this card with \"Heavy Interlock\". When your opponent Special Summons a monster(s) (Quick Effect): You can negate the Special Summon, and if you do, destroy that monster(s), then destroy this card or 1 \"Rokket\" monster you control. If this card is in your GY: You can target 1 \"Borrel\" or \"Rokket\" monster in your GY; destroy 1 card you control or in your hand, and if you do, add that target to your hand. You can only use each effect of \"Borreload Riot Dragon\" once per turn.",
+            "preco": "0.54",
+            "img": "https://images.ygoprodeck.com/images/cards/7987191.jpg"
+          }
+        },
+        {
+          "carta": {
+            "id": 59765225,
+            "name": "Crystal Clear Wing Synchro Dragon",
+            "type": "Synchro Monster",
+            "desc": "1 Tuner Synchro Monster + 1 non-Tuner \"Clear Wing\" monster\r\nOnce per turn, when your opponent activates a monster effect (except during the Damage Step) (Quick Effect): You can activate this effect; until the end of this turn, this face-up card is unaffected by the activated effects of your opponent's monsters, also this card gains ATK equal to that opponent's monster's original ATK. Once per turn, when a Spell/Trap Card or effect is activated (Quick Effect): You can negate the activation, and if you do, destroy that card. If this Synchro Summoned card you control is sent to your GY by an opponent's card: You can add 1 WIND monster from your Deck to your hand.",
+            "preco": "2.14",
+            "img": "https://images.ygoprodeck.com/images/cards/59765225.jpg"
+          }
+        },
+        {
+          "carta": {
+            "id": 93717133,
+            "name": "Galaxy-Eyes Photon Dragon",
+            "type": "Effect Monster",
+            "desc": "You can Special Summon this card (from your hand) by Tributing 2 monsters with 2000 or more ATK. During the Battle Step, if this card battles an opponent's monster (Quick Effect): You can target that opponent's monster; banish both this card from the field and that target. Return those banished monsters to the field at the end of the Battle Phase, and if you banished an Xyz Monster, this card gains 500 ATK for each material it had when it was banished.",
+            "preco": "1.15",
+            "img": "https://images.ygoprodeck.com/images/cards/93717133.jpg"
+          }
+        },
+        {
+          "carta": {
+            "id": 90835938,
+            "name": "Starry Night, Starry Dragon",
+            "type": "Effect Monster",
+            "desc": "If this card is Normal or Special Summoned from the hand: You can target 1 card on the field; destroy it. Cannot be destroyed by battle with a DARK monster, or by a DARK monster's effects. Once per turn, at the start of the Damage Step, if this card attacks an opponent's monster: You can banish that opponent's monster until the End Phase, also this card can make a second attack in a row.",
+            "preco": "0.45",
+            "img": "https://images.ygoprodeck.com/images/cards/90835938.jpg"
+          }
+        },
+        {
+          "carta": {
+            "id": 15960641,
+            "name": "Mirage Dragon",
+            "type": "Effect Monster",
+            "desc": "Your opponent cannot activate Trap Cards during the Battle Phase.",
+            "preco": "0.05",
+            "img": "https://images.ygoprodeck.com/images/cards/15960641.jpg"
+          }
+        },
+        {
+          "carta": {
+            "id": 8836329,
+            "name": "Raging Storm Dragon - Beaufort IX",
+            "type": "Ritual Effect Monster",
+            "desc": "You can Ritual Summon this card with \"Breath of Acclamation\". When an opponent's monster declares a direct attack: You can discard this card; negate the attack, and if you do, negate that monster's effects. (Quick Effect): You can target 1 face-up monster your opponent controls; return both that monster and this card to the hand. You can only use each effect of \"Raging Storm Dragon - Beaufort IX\" once per turn.",
+            "preco": "0.06",
+            "img": "https://images.ygoprodeck.com/images/cards/8836329.jpg"
+          }
+        },
+        {
+          "carta": {
+            "id": 29143726,
+            "name": "Samsara, Dragon of Rebirth",
+            "type": "Synchro Monster",
+            "desc": "1 Tuner + 1 or more non-Tuner monsters\nIf this card is destroyed by battle and sent to the Graveyard, or if this card you control is sent to your Graveyard by an opponent's card effect: You can target 1 monster in either player's Graveyard, except \"Samsara, Dragon of Rebirth\"; Special Summon it. You can only use this effect of \"Samsara, Dragon of Rebirth\" once per turn.",
+            "preco": "1.62",
+            "img": "https://images.ygoprodeck.com/images/cards/29143726.jpg"
+          }
+        },
+        {
+          "carta": {
+            "id": 30126992,
+            "name": "Lightray Diabolos",
+            "type": "Effect Monster",
+            "desc": "Cannot be Normal Summoned/Set. Must first be Special Summoned (from your hand) by having 5 or more LIGHT monsters with different names in your Graveyard. Once per turn: You can banish 1 LIGHT monster from your Graveyard, then target 1 Set card your opponent controls; reveal that target, then place that target on either the top or bottom of the Deck.",
+            "preco": "0.08",
+            "img": "https://images.ygoprodeck.com/images/cards/30126992.jpg"
+          }
+        },
+        {
+          "carta": {
+            "id": 28346136,
+            "name": "Galaxy-Eyes Cipher X Dragon",
+            "type": "XYZ Monster",
+            "desc": "2 Level 10 monsters\r\nOnce per turn, you can also Xyz Summon \"Galaxy-Eyes Cipher X Dragon\" by using a \"Cipher Dragon\" monster you control as material. (Transfer its materials to this card.) You can detach 2 materials from this card; your opponent cannot target LIGHT monsters you control with card effects, until the end of your opponent's turn. Once per turn, during your Standby Phase: You can return 1 Rank 9 or lower Dragon Xyz Monster from your GY to the Extra Deck, then you can Special Summon that monster from your Extra Deck, by using this card you control as material. (This is treated as an Xyz Summon. Transfer this card's materials to the Summoned monster.)",
+            "preco": "4.32",
+            "img": "https://images.ygoprodeck.com/images/cards/28346136.jpg"
+          }
+        },
+        {
+          "carta": {
+            "id": 18511599,
+            "name": "Evolzar Solda",
+            "type": "XYZ Monster",
+            "desc": "2 Level 6 Dinosaur-Type monsters\nThis card cannot be destroyed by card effects while it has Xyz Material. When your opponent Special Summons a monster(s): You can detach 1 Xyz Material from this card; destroy that monster(s).",
+            "preco": "0.07",
+            "img": "https://images.ygoprodeck.com/images/cards/18511599.jpg"
+          }
+        },
+        {
+          "carta": {
+            "id": 64514622,
+            "name": "Hieratic Seal of the Dragon King",
+            "type": "Gemini Monster",
+            "desc": "This card is treated as a Normal Monster while face-up on the field or in the Graveyard. While this card is face-up on the field, you can Normal Summon it to have it become an Effect Monster with this effect.\n● You can Tribute this card; Special Summon 1 \"Hieratic\" monster, except \"Hieratic Seal of the Dragon King\", from your hand, Deck or Graveyard, in face-up Defense Position.",
+            "preco": "0.17",
+            "img": "https://images.ygoprodeck.com/images/cards/64514622.jpg"
+          }
+        },
+        {
+          "carta": {
+            "id": 68226653,
+            "name": "Flamvell Dragnov",
+            "type": "Effect Monster",
+            "desc": "When this card is destroyed by battle and sent to the Graveyard, inflict 500 damage to your opponent. You can remove from play this card in your Graveyard, along with 1 face-up FIRE monster you control, to add 1 \"Flamvell Dragnov\" from your Deck to your hand.",
+            "preco": "0.21",
+            "img": "https://images.ygoprodeck.com/images/cards/68226653.jpg"
+          }
+        },
+        {
+          "carta": {
+            "id": 70917315,
+            "name": "Amorphage Lechery",
+            "type": "Pendulum Effect Monster",
+            "desc": "[ Pendulum Effect ] \nWhile you control an \"Amorphage\" monster, neither player can activate Spell Cards or their effects, except for \"Amorphage\" cards. Once per turn, during your Standby Phase, Tribute 1 monster or destroy this card.\n[ Monster Effect ] \nIf this card is Pendulum Summoned or flipped face-up, neither player can Special Summon monsters from the Extra Deck while this card is face-up on the field, except \"Amorphage\" monsters.",
+            "preco": "0.13",
+            "img": "https://images.ygoprodeck.com/images/cards/70917315.jpg"
+          }
+        },
+        {
+          "carta": {
+            "id": 48355999,
+            "name": "Rokket Synchron",
+            "type": "Tuner Monster",
+            "desc": "When this card is Normal Summoned: You can target 1 Level 5 or higher DARK Dragon monster in your GY; Special Summon it in Defense Position, negate its effects, destroy it during the End Phase, also you cannot Special Summon monsters from the Extra Deck for the rest of this turn, except DARK monsters.",
+            "preco": "0.14",
+            "img": "https://images.ygoprodeck.com/images/cards/48355999.jpg"
+          }
+        },
+        {
+          "carta": {
+            "id": 44209392,
+            "name": "Castle Walls",
+            "type": "Trap Card",
+            "desc": "Increase the DEF of 1 face-up monster on the field by 500 points until the end of this turn.",
+            "preco": "0.14",
+            "img": "https://images.ygoprodeck.com/images/cards/44209392.jpg"
+          }
+        },
+        {
+          "carta": {
+            "id": 85359414,
+            "name": "Freezing Beast",
+            "type": "Union Effect Monster",
+            "desc": "Once per turn, during your Main Phase, if you control this monster on the field, you can equip it to your \"Burning Beast\" as an Equip Spell Card, OR unequip the Union equipment and Special Summon this card in face-up Attack Position. While equipped to a monster by this card's effect, each time the equipped monster inflicts Battle Damage to your opponent, destroy 1 face-down Spell or Trap Card on the field. (1 monster can only be equipped with 1 Union Monster at a time. If the equipped monster is destroyed as a result of battle, destroy this card instead.)",
+            "preco": "0.22",
+            "img": "https://images.ygoprodeck.com/images/cards/85359414.jpg"
+          }
+        },
+        {
+          "carta": {
+            "id": 48048590,
+            "name": "Keeper of Dragon Magic",
+            "type": "Effect Monster",
+            "desc": "If this card is Normal or Special Summoned: You can discard 1 card; add 1 \"Polymerization\" Normal Spell or \"Fusion\" Normal Spell from your Deck to your hand. You can reveal 1 Fusion Monster in your Extra Deck; Special Summon 1 of the Fusion Materials whose name is specifically listed on that monster from your GY, in face-down Defense Position. You can only use each effect of \"Keeper of Dragon Magic\" once per turn. You cannot Special Summon monsters from the Extra Deck, except Fusion Monsters, the turn you activate either of this card's effects.",
+            "preco": "0.11",
+            "img": "https://images.ygoprodeck.com/images/cards/48048590.jpg"
+          }
+        },
+        {
+          "carta": {
+            "id": 9433350,
+            "name": "Malefic Blue-Eyes White Dragon",
+            "type": "Effect Monster",
+            "desc": "Cannot be Normal Summoned/Set. Must first be Special Summoned (from your hand) by banishing 1 \"Blue-Eyes White Dragon\" from your Deck. There can only be 1 \"Malefic\" monster on the field. Other monsters you control cannot declare an attack. If there is no face-up Field Spell Card on the field, destroy this card.",
+            "preco": "0.20",
+            "img": "https://images.ygoprodeck.com/images/cards/9433350.jpg"
+          }
+        },
+        {
+          "carta": {
+            "id": 14105623,
+            "name": "Odd-Eyes Arc Pendulum Dragon",
+            "type": "Pendulum Normal Monster",
+            "desc": "[ Pendulum Effect ] \nIf an \"Odd-Eyes\" card(s) you control is destroyed by battle or card effect: You can Special Summon 1 \"Odd-Eyes\" monster from your hand, Deck, or GY. You can only use this effect of \"Odd-Eyes Arc Pendulum Dragon\" once per turn.\n[ Monster Effect ] \n''Made from miracles, this valiant and beautiful dragon has gleaming eyes that reflect an arc drawn in the sky.''",
+            "preco": "3.67",
+            "img": "https://images.ygoprodeck.com/images/cards/14105623.jpg"
+          }
+        },
+        {
+          "carta": {
+            "id": 48229808,
+            "name": "Horus the Black Flame Dragon LV8",
+            "type": "Effect Monster",
+            "desc": "Cannot be Normal Summoned/Set. Must be Special Summoned by \"Horus the Black Flame Dragon LV6\", and cannot be Special Summoned by other ways. During either player's turn, when a Spell Card is activated: You can negate the activation, and if you do, destroy it. You must control this face-up card to activate and to resolve this effect.",
+            "preco": "7.06",
+            "img": "https://images.ygoprodeck.com/images/cards/48229808.jpg"
+          }
+        },
+        {
+          "carta": {
+            "id": 53184342,
+            "name": "Dragunity Arma Gram",
+            "type": "Effect Monster",
+            "desc": "You can banish 2 Dragon and/or Winged Beast monsters from your GY: Special Summon this card from your hand or GY. You can target 1 face-up monster; its effects are negated, also it loses 1000 ATK for each Equip Card you control. When your opponent's monster is destroyed by battle and sent to the GY: You can equip it to this card. You can only use each effect of \"Dragunity Arma Gram\" once per turn.",
+            "preco": "0.98",
+            "img": "https://images.ygoprodeck.com/images/cards/53184342.jpg"
+          }
+        },
+        {
+          "carta": {
+            "id": 69757518,
+            "name": "Number C5: Chaos Chimera Dragon",
+            "type": "XYZ Monster",
+            "desc": "3 or more Level 6 monsters\nThis card gains 1000 ATK for each Xyz Material attached to it. If this card attacks, at the end of the Damage Step: You can detach 1 Xyz Material from this card; this card can attack an opponent's monster again in a row. At the end of the Battle Phase: You can pay half your Life Points, then target 2 cards in any Graveyard(s); place 1 of them on the top of the Deck, and if you do, attach the other to this card as an Xyz Material.",
+            "preco": "0.13",
+            "img": "https://images.ygoprodeck.com/images/cards/69757518.jpg"
+          }
+        },
+        {
+          "carta": {
+            "id": 93612434,
+            "name": "Double Disruptor Dragon",
+            "type": "Effect Monster",
+            "desc": "You can Tribute this card, then target 2 \"Rokket\" monsters in your GY with different names; Special Summon them in Defense Position. You can banish this card from your GY; add 1 \"Rapid Trigger\" or \"Heavy Interlock\" from your Deck or GY to your hand. You can only use each effect of \"Double Disruptor Dragon\" once per turn.",
+            "preco": "0.26",
+            "img": "https://images.ygoprodeck.com/images/cards/93612434.jpg"
+          }
+        },
+        {
+          "carta": {
+            "id": 42160203,
+            "name": "Supreme King Dragon Dark Rebellion",
+            "type": "XYZ Monster",
+            "desc": "2 Level 4 DARK Pendulum Monsters\r\nOnce per turn, before damage calculation, if this card battles an opponent's monster: You can detach 1 material from this card; until the end of this turn, change the ATK of that face-up opponent's monster to 0, and if you do, this card gains ATK equal to the original ATK of that opponent's monster. During the Battle Phase (Quick Effect): You can return this card to the Extra Deck; Special Summon up to 2 face-up \"Supreme King Dragon\" and/or \"Supreme King Gate\" Pendulum Monsters from your Extra Deck in Defense Position.",
+            "preco": "0.23",
+            "img": "https://images.ygoprodeck.com/images/cards/42160203.jpg"
+          }
+        },
+        {
+          "carta": {
+            "id": 22070401,
+            "name": "Starving Venemy Lethal Dose Dragon",
+            "type": "Pendulum Effect Fusion Monster",
+            "desc": "[ Pendulum Effect ] \nOnce per turn, during your Main Phase: You can place 1 Venemy Counter on each face-up monster your opponent controls. All monsters on the field, except DARK Dragon monsters, lose 200 ATK for each Venemy Counter on the field.\n[ Monster Effect ] \n3 DARK Pendulum Monsters\r\nEach time a card(s) is sent from the field to the GY, place 1 Venemy Counter on this card for each sent card. All monsters on the field, except DARK Dragon monsters, lose 200 ATK for each Venemy Counter on the field. Once per turn, during your Main Phase: You can negate the effects of all face-up monsters your opponent currently controls, until the end of this turn. If this card in the Monster Zone is destroyed by battle or card effect: You can place this card in your Pendulum Zone.",
+            "preco": "0.16",
+            "img": "https://images.ygoprodeck.com/images/cards/22070401.jpg"
+          }
+        },
+        {
+          "carta": {
+            "id": 31437713,
+            "name": "Number 82: Heartlandraco",
+            "type": "XYZ Monster",
+            "desc": "2 Level 4 monsters\r\nWhile you control a face-up Spell, your opponent cannot target this card for attacks. Once per turn: You can detach 1 material from this card; this turn, this card can attack your opponent directly, but other monsters cannot attack.",
+            "preco": "1.35",
+            "img": "https://images.ygoprodeck.com/images/cards/31437713.jpg"
+          }
+        },
+        {
+          "carta": {
+            "id": 2732323,
+            "name": "Decoy Dragon",
+            "type": "Effect Monster",
+            "desc": "If this card is targeted for an attack: Target 1 Level 7 or higher Dragon-Type monster in your Graveyard; Special Summon it, and if you do, change the attack target to it and perform damage calculation.",
+            "preco": "0.11",
+            "img": "https://images.ygoprodeck.com/images/cards/2732323.jpg"
+          }
+        },
+        {
+          "carta": {
+            "id": 30794966,
+            "name": "Hieratic Dragon of Asar",
+            "type": "Effect Monster",
+            "desc": "You can Special Summon this card (from your hand) by banishing 1 LIGHT Dragon-Type monster and 1 Dragon-Type Normal Monster from your Graveyard. If this face-up card on the field would be destroyed, you can Tribute 1 face-up \"Hieratic\" monster instead, except this card.",
+            "preco": "0.24",
+            "img": "https://images.ygoprodeck.com/images/cards/30794966.jpg"
+          }
+        },
+        {
+          "carta": {
+            "id": 59464593,
+            "name": "Armed Dragon LV10",
+            "type": "Effect Monster",
+            "desc": "This card cannot be Normal Summoned or Set. This card cannot be Special Summoned except by Tributing 1 \"Armed Dragon LV7\". You can send 1 card from your hand to the Graveyard to destroy all face-up monsters your opponent controls.",
+            "preco": "1.14",
+            "img": "https://images.ygoprodeck.com/images/cards/59464593.jpg"
+          }
+        },
+        {
+          "carta": {
+            "id": 94568601,
+            "name": "Tyrant Dragon",
+            "type": "Effect Monster",
+            "desc": "During your Battle Phase, if your opponent controls a monster after this card's first attack, this card can make a second attack. Negate any Trap effects that target this card on the field, and if you do, destroy that Trap. This card cannot be Special Summoned from the GY, unless you Tribute 1 Dragon monster.",
+            "preco": "0.29",
+            "img": "https://images.ygoprodeck.com/images/cards/94568601.jpg"
+          }
+        },
+        {
+          "carta": {
+            "id": 38694052,
+            "name": "Voloferniges, the Darkest Dragon Doomrider",
+            "type": "XYZ Monster",
+            "desc": "2 Level 7 monsters\r\nOnce per turn: You can detach 2 materials from this card, then target 1 face-up card on the field; destroy it, and if you destroyed a monster, you can make 1 face-up monster you control gain ATK equal to the destroyed monster's original Level/Rank x 300 until the end of the next turn. This card cannot attack the turn you activate this effect. This is a Quick Effect if this card has a Dragon monster as material, but cannot be activated in the Damage Step.",
+            "preco": "0.06",
+            "img": "https://images.ygoprodeck.com/images/cards/38694052.jpg"
+          }
+        },
+        {
+          "carta": {
+            "id": 41659072,
+            "name": "Judgment, the Dragon of Heaven",
+            "type": "Synchro Monster",
+            "desc": "1 Tuner + 1+ non-Tuner monsters\r\nIf you Synchro Summon this card, all materials must be the same Attribute. Once per turn, if you have 4 or more Tuners with different names in your GY and control this Synchro Summoned card: You can pay half your LP; destroy all other cards on the field, also, you cannot Special Summon monsters for the rest of this turn, except Dragon monsters. Once per turn, during your End Phase: Banish 4 cards from the top of your Deck.",
+            "preco": "1.85",
+            "img": "https://images.ygoprodeck.com/images/cards/41659072.jpg"
+          }
+        },
+        {
+          "carta": {
+            "id": 3300267,
+            "name": "Hieratic Dragon of Su",
+            "type": "Effect Monster",
+            "desc": "You can Special Summon this card (from your hand) by Tributing 1 \"Hieratic\" monster. Once per turn: You can Tribute 1 \"Hieratic\" monster, except this card, from your hand or your side of the field, to target 1 Spell/Trap Card your opponent controls; destroy that target. When this card is Tributed: Special Summon 1 Dragon-Type Normal Monster from your hand, Deck, or Graveyard, and make its ATK and DEF 0.",
+            "preco": "0.21",
+            "img": "https://images.ygoprodeck.com/images/cards/3300267.jpg"
+          }
+        }
+      ],
+      "deck": [
+        {
+          "carta": {
+            "id": 49881766,
+            "name": "Archfiend Soldier",
+            "type": "Normal Monster",
+            "desc": "An expert at battle who belongs to a crack diabolical unit. He's famous because he always gets the job done.",
+            "preco": "0.11",
+            "img": "https://images.ygoprodeck.com/images/cards/49881766.jpg"
+          }
+        },
+        {
+          "carta": {
+            "id": 41722932,
+            "name": "Dark Mambele",
+            "type": "Spell Card",
+            "desc": "If you control 3 or more DARK monsters: Target 1 face-up card on the field; banish that target.",
+            "preco": "0.07",
+            "img": "https://images.ygoprodeck.com/images/cards/41722932.jpg"
+          }
+        },
+        {
+          "carta": {
+            "id": 9560338,
+            "name": "Reaper of Prophecy",
+            "type": "Effect Monster",
+            "desc": "When this card is Normal or Special Summoned: You can activate this effect; apply as many effects as possible, based on the number of \"Spellbook\" Spell Cards with different names in your Graveyard. You can only use the effect of \"Reaper of Prophecy\" once per turn.\n● 3 or more: This card gains 600 ATK.\n● 4 or more: Add 1 \"Spellbook\" Spell Card from your Deck to your hand.\n● 5 or more: Special Summon 1 Level 5 or higher DARK Spellcaster-Type monster from your Deck.",
+            "preco": "1.21",
+            "img": "https://images.ygoprodeck.com/images/cards/9560338.jpg"
+          }
+        },
+        {
+          "carta": {
+            "id": 47264717,
+            "name": "Shooting Star",
+            "type": "Trap Card",
+            "desc": "If a \"Stardust\" monster is on the field: Target 1 card on the field; destroy that target.",
+            "preco": "0.10",
+            "img": "https://images.ygoprodeck.com/images/cards/47264717.jpg"
+          }
+        },
+        {
+          "carta": {
+            "id": 70917315,
+            "name": "Amorphage Lechery",
+            "type": "Pendulum Effect Monster",
+            "desc": "[ Pendulum Effect ] \nWhile you control an \"Amorphage\" monster, neither player can activate Spell Cards or their effects, except for \"Amorphage\" cards. Once per turn, during your Standby Phase, Tribute 1 monster or destroy this card.\n[ Monster Effect ] \nIf this card is Pendulum Summoned or flipped face-up, neither player can Special Summon monsters from the Extra Deck while this card is face-up on the field, except \"Amorphage\" monsters.",
+            "preco": "0.13",
+            "img": "https://images.ygoprodeck.com/images/cards/70917315.jpg"
+          }
+        },
+        {
+          "carta": {
+            "id": 85359414,
+            "name": "Freezing Beast",
+            "type": "Union Effect Monster",
+            "desc": "Once per turn, during your Main Phase, if you control this monster on the field, you can equip it to your \"Burning Beast\" as an Equip Spell Card, OR unequip the Union equipment and Special Summon this card in face-up Attack Position. While equipped to a monster by this card's effect, each time the equipped monster inflicts Battle Damage to your opponent, destroy 1 face-down Spell or Trap Card on the field. (1 monster can only be equipped with 1 Union Monster at a time. If the equipped monster is destroyed as a result of battle, destroy this card instead.)",
+            "preco": "0.22",
+            "img": "https://images.ygoprodeck.com/images/cards/85359414.jpg"
+          }
+        },
+        {
+          "carta": {
+            "id": 64514622,
+            "name": "Hieratic Seal of the Dragon King",
+            "type": "Gemini Monster",
+            "desc": "This card is treated as a Normal Monster while face-up on the field or in the Graveyard. While this card is face-up on the field, you can Normal Summon it to have it become an Effect Monster with this effect.\n● You can Tribute this card; Special Summon 1 \"Hieratic\" monster, except \"Hieratic Seal of the Dragon King\", from your hand, Deck or Graveyard, in face-up Defense Position.",
+            "preco": "0.17",
+            "img": "https://images.ygoprodeck.com/images/cards/64514622.jpg"
+          }
+        },
+        {
+          "carta": {
+            "id": 48355999,
+            "name": "Rokket Synchron",
+            "type": "Tuner Monster",
+            "desc": "When this card is Normal Summoned: You can target 1 Level 5 or higher DARK Dragon monster in your GY; Special Summon it in Defense Position, negate its effects, destroy it during the End Phase, also you cannot Special Summon monsters from the Extra Deck for the rest of this turn, except DARK monsters.",
+            "preco": "0.14",
+            "img": "https://images.ygoprodeck.com/images/cards/48355999.jpg"
+          }
+        },
+        {
+          "carta": {
+            "id": 3300267,
+            "name": "Hieratic Dragon of Su",
+            "type": "Effect Monster",
+            "desc": "You can Special Summon this card (from your hand) by Tributing 1 \"Hieratic\" monster. Once per turn: You can Tribute 1 \"Hieratic\" monster, except this card, from your hand or your side of the field, to target 1 Spell/Trap Card your opponent controls; destroy that target. When this card is Tributed: Special Summon 1 Dragon-Type Normal Monster from your hand, Deck, or Graveyard, and make its ATK and DEF 0.",
+            "preco": "0.21",
+            "img": "https://images.ygoprodeck.com/images/cards/3300267.jpg"
+          }
+        },
+        {
+          "carta": {
+            "id": 59464593,
+            "name": "Armed Dragon LV10",
+            "type": "Effect Monster",
+            "desc": "This card cannot be Normal Summoned or Set. This card cannot be Special Summoned except by Tributing 1 \"Armed Dragon LV7\". You can send 1 card from your hand to the Graveyard to destroy all face-up monsters your opponent controls.",
+            "preco": "1.14",
+            "img": "https://images.ygoprodeck.com/images/cards/59464593.jpg"
+          }
+        },
+        {
+          "carta": {
+            "id": 31437713,
+            "name": "Number 82: Heartlandraco",
+            "type": "XYZ Monster",
+            "desc": "2 Level 4 monsters\r\nWhile you control a face-up Spell, your opponent cannot target this card for attacks. Once per turn: You can detach 1 material from this card; this turn, this card can attack your opponent directly, but other monsters cannot attack.",
+            "preco": "1.35",
+            "img": "https://images.ygoprodeck.com/images/cards/31437713.jpg"
+          }
+        },
+        {
+          "carta": {
+            "id": 2732323,
+            "name": "Decoy Dragon",
+            "type": "Effect Monster",
+            "desc": "If this card is targeted for an attack: Target 1 Level 7 or higher Dragon-Type monster in your Graveyard; Special Summon it, and if you do, change the attack target to it and perform damage calculation.",
+            "preco": "0.11",
+            "img": "https://images.ygoprodeck.com/images/cards/2732323.jpg"
+          }
+        },
+        {
+          "carta": {
+            "id": 41659072,
+            "name": "Judgment, the Dragon of Heaven",
+            "type": "Synchro Monster",
+            "desc": "1 Tuner + 1+ non-Tuner monsters\r\nIf you Synchro Summon this card, all materials must be the same Attribute. Once per turn, if you have 4 or more Tuners with different names in your GY and control this Synchro Summoned card: You can pay half your LP; destroy all other cards on the field, also, you cannot Special Summon monsters for the rest of this turn, except Dragon monsters. Once per turn, during your End Phase: Banish 4 cards from the top of your Deck.",
+            "preco": "1.85",
+            "img": "https://images.ygoprodeck.com/images/cards/41659072.jpg"
+          }
+        },
+        {
+          "carta": {
+            "id": 91073013,
+            "name": "Vanquish Soul Caesar Valius",
+            "type": "Effect Monster",
+            "desc": "During the Main Phase (Quick Effect): You can target 1 non-Dragon \"Vanquish Soul\" monster you control; return it to the hand, and if you do, Special Summon this card from your hand. (Quick Effect): You can activate 1 of these effects, by revealing monster(s) in your hand with the listed Attribute(s);\r\n● EARTH: This face-up card is unaffected by your opponent's activated effects this turn.\r\n● EARTH, FIRE, & DARK: Destroy 1 other card on the field.\r\nYou can only use each effect of \"Vanquish Soul Caesar Valius\" once per turn, and cannot activate more than 1 in the same Chain.",
+            "preco": "0.00",
+            "img": "https://images.ygoprodeck.com/images/cards/91073013.jpg"
+          }
+        }
+      ],
+      "id": 3
+    },
+    {
+      "nome": "Fredd",
+      "email": "fred@gmail.com",
+      "senha": "123456",
+      "cash": 996.12,
+      "cartas": [
+        {
+          "carta": {
+            "id": 33698022,
+            "name": "Black Rose Moonlight Dragon",
+            "type": "Synchro Monster",
+            "desc": "1 Tuner + 1 or more non-Tuner monsters\nIf this card is Special Summoned, or a Level 5 or higher monster(s) is Special Summoned to your opponent's side of the field: Target 1 Special Summoned monster your opponent controls; return that target to the hand. You can only use this effect of \"Black Rose Moonlight Dragon\" once per turn.",
+            "preco": "1.52",
+            "img": "https://images.ygoprodeck.com/images/cards/33698022.jpg"
+          }
+        },
+        {
+          "carta": {
+            "id": 98360333,
+            "name": "Evil★Twin Challenge",
+            "type": "Trap Card",
+            "desc": "Target 1 \"Ki-sikil\" monster or 1 \"Lil-la\" monster in your GY; Special Summon it, then you can apply the following effect.\r\n● Immediately after this effect resolves, Link Summon 1 \"Evil★Twin\" Link Monster using monsters you control as material.\r\nYou can only activate 1 \"Evil★Twin Challenge\" per turn.",
+            "preco": "0.11",
+            "img": "https://images.ygoprodeck.com/images/cards/98360333.jpg"
+          }
+        },
+        {
+          "carta": {
+            "id": 32939238,
+            "name": "Ninjitsu Art Tool - Iron Digger",
+            "type": "Spell Card",
+            "desc": "The equipped monster gains 500 ATK, also it is treated as a \"Ninja\" monster. You can only use each of the following effects of \"Ninjitsu Art Tool - Iron Digger\" once per turn. You can banish 1 \"Ninja\" monster from your GY, then target 1 card on the field; destroy it. If this card is sent from the field to the GY: You can target 1 of your banished \"Ninja\" monsters; add it to your hand or Special Summon it in face-down Defense Position.",
+            "preco": "0.02",
+            "img": "https://images.ygoprodeck.com/images/cards/32939238.jpg"
+          }
+        },
+        {
+          "carta": {
+            "id": 99054885,
+            "name": "The Agent of Destruction - Venus",
+            "type": "Tuner Monster",
+            "desc": "You can banish 1 \"The Agent of Creation - Venus\" from your GY; Special Summon this card from your hand. You can pay LP in multiples of 500, then for every 500 LP paid, target 1 of your \"Mystical Shine Ball\" that is banished or in your GY; Special Summon them, but place them on the bottom of the Deck when they leave the field. You can only use 1 \"The Agent of Destruction - Venus\" effect per turn, and only once that turn.",
+            "preco": "0.02",
+            "img": "https://images.ygoprodeck.com/images/cards/99054885.jpg"
+          }
+        },
+        {
+          "carta": {
+            "id": 94950218,
+            "name": "Reverse Breaker",
+            "type": "Spell Card",
+            "desc": "Equip only to a \"Utopia\" monster. When the equipped monster declares an attack: Target 1 Spell/Trap Card your opponent controls; destroy that target. Your opponent cannot activate Spell/Trap Cards in response to this effect's activation.",
+            "preco": "0.09",
+            "img": "https://images.ygoprodeck.com/images/cards/94950218.jpg"
+          }
+        },
+        {
+          "carta": {
+            "id": 62991886,
+            "name": "Unstable Evolution",
+            "type": "Spell Card",
+            "desc": "While your LP is lower than your opponent's, the equipped monster's original ATK becomes 2400. While your LP is higher, the equipped monster's original ATK becomes 1000.",
+            "preco": "0.11",
+            "img": "https://images.ygoprodeck.com/images/cards/62991886.jpg"
+          }
+        },
+        {
+          "carta": {
+            "id": 91279700,
+            "name": "Evilswarm Ophion",
+            "type": "XYZ Monster",
+            "desc": "2 Level 4 \"lswarm\" monsters\nWhile this card has Xyz Material, Level 5 or higher monsters cannot be Special Summoned. Once per turn: You can detach 1 Xyz Material from this card; add 1 \"Infestation\" Spell/Trap Card from your Deck to your hand.",
+            "preco": "1.44",
+            "img": "https://images.ygoprodeck.com/images/cards/91279700.jpg"
+          }
+        }
+      ],
+      "deck": [],
+      "id": 4
+    },
+    {
+      "nome": "fredhsq",
+      "email": "fredhsq@gmail.com",
+      "senha": "2pipoca",
+      "cash": 995.1800000000001,
+      "cartas": [
+        {
+          "carta": {
+            "id": 59277750,
+            "name": "Intruder Alarm - Yellow Alert",
+            "type": "Trap Card",
+            "desc": "When an opponent's monster declares an attack: Special Summon 1 monster from your hand, but return it to the hand at the end of the Battle Phase. While you control that face-up Special Summoned monster, your opponent cannot target other monsters for attacks. You can only activate 1 \"Intruder Alarm - Yellow Alert\" per turn.",
+            "preco": "0.09",
+            "img": "https://images.ygoprodeck.com/images/cards/59277750.jpg"
+          }
+        },
+        {
+          "carta": {
+            "id": 16550875,
+            "name": "Inzektor Sword - Zektkaliber",
+            "type": "Spell Card",
+            "desc": "Equip only to an \"Inzektor\" monster. It gains 800 ATK and DEF. When this face-up card on the field is sent to the Graveyard: Target 1 \"Inzektor\" monster in your Graveyard; add that target to your hand.",
+            "preco": "0.02",
+            "img": "https://images.ygoprodeck.com/images/cards/16550875.jpg"
+          }
+        },
+        {
+          "carta": {
+            "id": 37364101,
+            "name": "Stoic Challenge",
+            "type": "Spell Card",
+            "desc": "You can only control 1 \"Stoic Challenge\". Equip only to a face-up Xyz Monster that has Xyz Material. It gains 600 ATK for each Xyz Material attached to a monster you control, and any battle damage your opponent takes from battles involving it and their monster is doubled, but its effects cannot be activated. During your opponent's End Phase: Send this card to the Graveyard. When this card leaves the field, destroy the equipped monster.",
+            "preco": "0.29",
+            "img": "https://images.ygoprodeck.com/images/cards/37364101.jpg"
+          }
+        },
+        {
+          "carta": {
+            "id": 94982447,
+            "name": "Dreiath III, the True Dracocavalry General",
+            "type": "Effect Monster",
+            "desc": "To Tribute Summon this card face-up, you can Tribute a Continuous Spell/Trap Card you control, instead of a monster. Your opponent cannot target face-up \"True Draco\" or \"True King\" monsters on the field with card effects, except this one, also they cannot be destroyed by your opponent's card effects. If this face-up Tribute Summoned monster leaves the field: You can Special Summon 1 \"True Draco\" or \"True King\" monster from your Deck in Defense Position.",
+            "preco": "0.38",
+            "img": "https://images.ygoprodeck.com/images/cards/94982447.jpg"
+          }
+        },
+        {
+          "carta": {
+            "id": 15381252,
+            "name": "Berserker Soul",
+            "type": "Spell Card",
+            "desc": "When a monster you control inflicts 1500 or less damage to your opponent by a direct attack: Discard your entire hand (min. 1); excavate the top card of your Deck, and if it is a Monster Card, send it to the Graveyard, and if you do that, inflict 500 damage to your opponent, then repeat this effect up to 7 more times or until you excavate a non-Monster Card. If a non-Monster Card is excavated, place it on the top of your Deck. You can only activate 1 \"Berserker Soul\" per turn.",
+            "preco": "0.05",
+            "img": "https://images.ygoprodeck.com/images/cards/15381252.jpg"
+          }
+        },
+        {
+          "carta": {
+            "id": 70307656,
+            "name": "Mucus Yolk",
+            "type": "Effect Monster",
+            "desc": "This card can attack your opponent's Life Points directly. Each time this card inflicts Battle Damage to your opponent's Life Points, increase the ATK of this card by 1000 points during your next Standby Phase. The ATK increase lasts as long as this card remains face-up on the field.",
+            "preco": "0.31",
+            "img": "https://images.ygoprodeck.com/images/cards/70307656.jpg"
+          }
+        },
+        {
+          "carta": {
+            "id": 69757518,
+            "name": "Number C5: Chaos Chimera Dragon",
+            "type": "XYZ Monster",
+            "desc": "3 or more Level 6 monsters\nThis card gains 1000 ATK for each Xyz Material attached to it. If this card attacks, at the end of the Damage Step: You can detach 1 Xyz Material from this card; this card can attack an opponent's monster again in a row. At the end of the Battle Phase: You can pay half your Life Points, then target 2 cards in any Graveyard(s); place 1 of them on the top of the Deck, and if you do, attach the other to this card as an Xyz Material.",
+            "preco": "0.13",
+            "img": "https://images.ygoprodeck.com/images/cards/69757518.jpg"
+          }
+        },
+        {
+          "carta": {
+            "id": 34072799,
+            "name": "Transonic Bird",
+            "type": "Ritual Effect Monster",
+            "desc": "You can Ritual Summon this card with \"Sonic Tracker\". Once per turn: You can reveal 1 Ritual Spell in your hand, add 1 Ritual Monster from your Deck to your hand whose name is listed on that card, and if you do, shuffle the revealed card into the Deck. Once per opponent's turn (Quick Effect): You can send 1 Ritual Spell from your Deck to the GY; this effect becomes that card's effect that Ritual Summons a monster when the card is activated. If this Ritual Summoned card is Tributed: You can target 1 face-up card your opponent controls; negate its effects until the end of this turn.",
+            "preco": "0.08",
+            "img": "https://images.ygoprodeck.com/images/cards/34072799.jpg"
+          }
+        }
+      ],
+      "deck": [
+        {
+          "carta": {
+            "id": 69757518,
+            "name": "Number C5: Chaos Chimera Dragon",
+            "type": "XYZ Monster",
+            "desc": "3 or more Level 6 monsters\nThis card gains 1000 ATK for each Xyz Material attached to it. If this card attacks, at the end of the Damage Step: You can detach 1 Xyz Material from this card; this card can attack an opponent's monster again in a row. At the end of the Battle Phase: You can pay half your Life Points, then target 2 cards in any Graveyard(s); place 1 of them on the top of the Deck, and if you do, attach the other to this card as an Xyz Material.",
+            "preco": "0.13",
+            "img": "https://images.ygoprodeck.com/images/cards/69757518.jpg"
+          }
+        }
+      ],
+      "id": 5
+    }
+  ]
+}
